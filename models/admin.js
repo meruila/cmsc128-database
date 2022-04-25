@@ -13,10 +13,13 @@ const bcrypt = require('bcrypt');
 
 const Admin = new mongoose.Schema({
   email: { type: String, unique: true, required: true, trim: true },
+  name: {
+    fname: { type: String, required: true, trim: true },
+    lname: { type: String, required: true, trim: true },
+  },
   password: { type: String, required: true, trim: true },
-  firstname: { type: String, required: true, trim: true },
-  lastname: { type: String, required: true, trim: true },
 });
+
 
 // Middleware to be used when an admin gets created
 Admin.pre('save', async function (next) {
