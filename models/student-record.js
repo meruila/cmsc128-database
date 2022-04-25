@@ -34,4 +34,4 @@ const SR_Schema = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model("Student-Record", DegreeSchema);
+module.exports = mongoose.model("Student-Record", SR_Schema);
