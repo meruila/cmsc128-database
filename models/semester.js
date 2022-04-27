@@ -1,5 +1,16 @@
+/*******************************
+ *
+ * semester.js is where the Semester schema is defined.
+ *
+ * ATTRIBUTES:
+ * 		sem: semester
+ * 		year: school year
+ * 		subjects: reference to Subject schema,
+ * 				  subjects that were taken by the user
+ *
+ ********************************/
+
 const mongoose = require('mongoose');
-const SubjectSchema = require('./subject');
 
 // Semester Schema
 const SemSchema = new mongoose.Schema({
@@ -11,7 +22,10 @@ const SemSchema = new mongoose.Schema({
 		type: String,
 		required: true,
 	},
-	subjects: [SubjectSchema],
+	subjects: {
+		type: [mongoose.ObjectId],
+		required: true,
+	},
 });
 
 module.exports = mongoose.model('Semester', SemSchema);
