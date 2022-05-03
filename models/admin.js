@@ -8,18 +8,32 @@
  * Hashing password is done with the use of bcrypt library.
  * 
  **********************************/
+
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 
-const Admin = new mongoose.Schema({
-  email: { type: String, unique: true, required: true, trim: true },
-  name: {
-    fname: { type: String, required: true, trim: true },
-    lname: { type: String, required: true, trim: true },
-  },
-  password: { type: String, required: true, trim: true },
-});
 
+// We can also write the subdocument on a separate file like here:
+//  https://stackoverflow.com/questions/25880589/how-can-i-separate-mongoose-subdocument-into-seperate-files
+// So we can utilize the code reuse for both admin and regular-user.
+// I'm not sure if under ng models ba talaga ilalagay yun or sa helpers or utils folder, if ever.
+
+const Admin = new mongoose.Schema({
+  // -- Start user info subdocument
+  user: {
+    name: {
+      fname: { type: String, required: true, trim: true },
+      lname: { type: String, required: true, trim: true },
+    },
+    email: { type: String, unique: true, required: true, trim: true },
+    role: { type: String, required: true },
+    username: { type: String, unique: true, required: true, trim: true },
+    password: { type: String, required: true },
+  },
+  // -- end subdocument
+
+  managedUsers: [ { type: mongoose.ObjectId, ref: 'Regular-User' } ],
+});
 
 // Middleware to be used when an admin gets created
 Admin.pre('save', async function (next) {
