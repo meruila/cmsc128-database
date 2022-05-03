@@ -87,11 +87,11 @@ const StudentRecord_Schema = new mongoose.Schema({
     },
     studentNumber : {
         type: String,                               //string ba talaga, hindi number??? bale pwede kasi na wala na yung dash
-        unique: true,
-        required: true
-    },
-    degreeProgram: {
-        type: mongoose.ObjectId,
+        unique: true,                               // Reply: yes string siya. tama ka na number technically yung student number pero hindi naman 
+        required: true                              //        kasi need gawan ng arithmetic yung pagka-"number" niya, kaya mas convenient na
+    },                                              //        string na lang. Usually need ang first 4 numbers ng student number (e.g. 2019-XXXXX)
+    degreeProgram: {                                //        and mas madali/dynamic i-extract yung data na yun sa pag-split ng student number using 
+        type: mongoose.ObjectId,                    //        the dash imbis na gumamit ng indexing
         required: true,
         ref: 'Degree'
     },
