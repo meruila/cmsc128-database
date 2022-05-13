@@ -17,6 +17,7 @@ const LogSchema = new mongoose.Schema({
 	description: {type: String, required: true},
 	record: {type: mongoose.ObjectId, required: true},
 	editor: {type: mongoose.ObjectId, required: true}
-});
+},
+	{collection: 'log'});
 
 module.exports = mongoose.model('Log', LogSchema);
