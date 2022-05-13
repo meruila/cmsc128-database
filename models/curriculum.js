@@ -41,7 +41,9 @@ const DegreeSchema = new mongoose.Schema({
 		type: Number,
 		required: true,
 	},
-});
+},
+	{ collection : 'curriculum' }
+);
 
 // GE Elective Schema
 const GEElectiveSchema = new mongoose.Schema({
