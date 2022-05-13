@@ -10,12 +10,13 @@ const RegularUserSchema = new mongoose.Schema({
     },
     email: { type: String, unique: true, required: true, trim: true },
     role: { type: String, required: true },
-    username: { type: String, unique: true, required: true, trim: true },
     password: { type: String, required: true },
   },
   // -- end subdocument
-  managedRecords: [ { type: mongoose.ObjectId, ref: 'Student-Record' } ],
-});
+  managedRecords: [ { type: mongoose.ObjectId, ref: 'Student-Record' } ]
+},
+  { collection : 'user' }
+);
 
 RegularUserSchema.pre("save", function(next) {
   const user = this;
