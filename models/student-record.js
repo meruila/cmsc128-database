@@ -123,6 +123,7 @@ const StudentRecord_Schema = new mongoose.Schema({
         enum: ['Admin', 'User']
     }
     //#endregion
-});
+},
+{ collection : 'student-record' });
 
 module.exports = mongoose.model("Student-Record", StudentRecord_Schema);
