@@ -25,6 +25,9 @@ const DegreeSchema = new mongoose.Schema({
 		type: String,
 		required: true,
 	},
+	major : {
+		type: String
+	},
 	subjects: {
 		type: [mongoose.ObjectId],
 		required: true,
@@ -51,6 +54,11 @@ const GEElectiveSchema = new mongoose.Schema({
 		type: [mongoose.ObjectId],
 		required: true,
 	},
-});
+},
+	{ collection : 'curriculum' }
+);
 
-module.exports = { 'Degree': DegreeSchema, 'GEElective': GEElectiveSchema };
+const degreeSchema = mongoose.model('degrees', DegreeSchema);
+const geElectiveSchema = mongoose.model('electives', GEElectiveSchema);
+
+module.exports = { 'Degree': degreeSchema, 'GEElective': geElectiveSchema };
