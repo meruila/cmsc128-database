@@ -18,25 +18,29 @@ const RegularUserSchema = new mongoose.Schema({
   { collection : 'user' }
 );
 
-RegularUserSchema.pre("save", function(next) {
-  const user = this;
+// Middleware to be used when an regularUser gets created
+RegularUserSchema.pre('save', function (next) {
+  const regularUser = this;
+  if(!regularUser.isModified("user.password")) {
+    return next();
+  } 
+  
+  return bcrypt.genSalt((saltError, salt) =>{
+    if (saltError) {return next(saltError);}
+    
+    return bcrypt.hash(regularUser.user.password, salt, (hashError, hash) => {
+      
+      if (hashError) {return next(hashError); }
 
-  if (!user.isModified("password")) return next();
-
-  return bcrypt.genSalt((saltError, salt) => {
-    if (saltError) { return next(saltError); }
-
-    return bcrypt.hash(user.password, salt, (hashError, hash) => {
-      if (hashError) { return next(hashError); }
-
-      user.password = hash;
+      regularUser.user.password = hash;
+      
       return next();
     });
   });
-});
+ });
 
-RegularUserSchema.methods.comparePassword = function(password, callback) {
-  bcrypt.compare(password, this.password, callback);
+ RegularUserSchema.methods.comparePassword = function(password, callback) {
+  bcrypt.compare(password, this.user.password, callback);
 }
 
 module.exports = mongoose.model("Regular-User", RegularUserSchema);
