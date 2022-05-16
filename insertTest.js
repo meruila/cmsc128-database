@@ -36,152 +36,42 @@ var ObjectId = require('mongodb').ObjectId;
 // 2. push to github
 
 const degree = {
-	"name" : "BSCHEM",
-	"major" : "Thesis",
+	"name" : "BSMST",
+	"major" : "Biology",
 	"subjects" : [
+		ObjectId("6281243c9aa35146663c8010"),
+		// {
+		// 	"code" : "MST 101a",
+		// 	"units" : 1
+		// },
+		ObjectId("62728df25f73ec537aa62c22"),
+		// {
+		// 	"code" : "BIO 11.1",
+		// 	"units" : 2
+		// },
 		ObjectId("62728cc3591bd41f02539493"),
 		// {
 		// 	"code" : "CHEM 18",
-		// 	"units" : 4
+		// 	"units" : 3
 		// },
 		ObjectId("62728cc3591bd41f02539494"),
 		// {
 		// 	"code" : "CHEM 18.1",
-		// 	"units" : 5
-		// },
-		ObjectId("62728cc3591bd41f02539495"),
-		// {
-		// 	"code" : "MCB 11",
 		// 	"units" : 2
 		// },
-		ObjectId("62728cc3591bd41f02539496"),
+		ObjectId("6281243c9aa35146663c8011"),
 		// {
-		// 	"code" : "MATH 27",
+		// 	"code" : "PHYS 50",
 		// 	"units" : 3
 		// },
-		ObjectId("626d42befee24c0a7a8e930f"),
+		ObjectId("62729007ab87167c1fc0cb81"),
 		// {
-		// 	"code" : "ETHICS 1",
+		// 	"code" : "MATH 25",
 		// 	"units" : 3
 		// },
-		ObjectId("626d42befee24c0a7a8e9311"),
+		ObjectId("626d42befee24c0a7a8e9312"),
 		// {
-		// 	"code" : "HIST 1",
-		// 	"units" : 3
-		// },
-		ObjectId("626d42befee24c0a7a8e9310"),
-		// {
-		// 	"code" : "KAS 1",
-		// 	"units" : 0
-		// },
-		ObjectId("626d44d7eb3a38230c7a3e76"),
-		// {
-		// 	"code" : "HK 11",
-		// 	"units" : 3
-		// },
-		ObjectId("62728d04ecce07f44e4d1758"),
-		// {
-		// 	"code" : "CHEM 19",
-		// 	"units" : 3
-		// },
-		ObjectId("62728d04ecce07f44e4d175c"),
-		// {
-		// 	"code" : "CHEM 32",
-		// 	"units" : 3
-		// },
-		ObjectId("62728d04ecce07f44e4d175d"),
-		// {
-		// 	"code" : "CHEM 32.1",
-		// 	"units" : 2
-		// },
-		ObjectId("62728d04ecce07f44e4d175e"),
-		// {
-		// 	"code" : "PHYS 71",
-		// 	"units" : 3
-		// },
-		ObjectId("62728d04ecce07f44e4d175f"),
-		// {
-		// 	"code" : "PHYS 71.1",
-		// 	"units" : 0
-		// },
-		ObjectId("626d42befee24c0a7a8e930d"),
-		// {
-		// 	"code" : "ARTS 1",
-		// 	"units" : 0
-		// },
-		ObjectId("626d44d7eb3a38230c7a3e7a"),
-		// {
-		// 	"code" : "HK 12",
-		// 	"units" : 3
-		// },
-		ObjectId("626d44d7eb3a38230c7a3e7b"),
-		// {
-		// 	"code" : "HK 13",
-		// 	"units" : 5
-		// },
-		ObjectId("626d44d7eb3a38230c7a3e81"),
-		// {
-		// 	"code" : "NSTP 1",
-		// 	"units" : 3
-		// },
-		ObjectId("62728d04ecce07f44e4d1759"),
-		// {
-		// 	"code" : "MATH 28",
-		// 	"units" : 4
-		// },
-		ObjectId("62728d04ecce07f44e4d1763"),
-		// {
-		// 	"code" : "CHEM 43",
-		// 	"units" : 1
-		// },
-		ObjectId("62728d04ecce07f44e4d1764"),
-		// {
-		// 	"code" : "CHEM 43.1",
-		// 	"units" : 0
-		// },
-		ObjectId("62728d04ecce07f44e4d1765"),
-		// {
-		// 	"code" : "PHYS 72",
-		// 	"units" : 3
-		// },
-		ObjectId("62728d04ecce07f44e4d1766"),
-		// {
-		// 	"code" : "PHYS 72.1",
-		// 	"units" : 3
-		// },
-		ObjectId("62728d04ecce07f44e4d1761"),
-		// {
-		// 	"code" : "CMSC 12",
-		// 	"units" : 3
-		// },
-		ObjectId("62728d04ecce07f44e4d1762"),
-		// {
-		// 	"code" : "AMAT 152",
-		// 	"units" : 3
-		// },
-		ObjectId("626d44d7eb3a38230c7a3e85"),
-		// {
-		// 	"code" : "NSTP 2",
-		// 	"units" : 3
-		// },
-		ObjectId("62728d04ecce07f44e4d1769"),
-		// {
-		// 	"code" : "CHEM 44",
-		// 	"units" : 0
-		// },
-		ObjectId("62728d04ecce07f44e4d176a"),
-		// {
-		// 	"code" : "CHEM 44.1",
-		// 	"units" : 3
-		// },
-		ObjectId("62728d04ecce07f44e4d1770"),
-		// {
-		// 	"code" : "CHEM 111",
-		// 	"units" : 3
-		// },
-		ObjectId("62728d04ecce07f44e4d176b"),
-		// {
-		// 	"code" : "STAT 162",
+		// 	"code" : "STS 1",
 		// 	"units" : 3
 		// },
 		ObjectId("626d42befee24c0a7a8e9313"),
@@ -189,105 +79,245 @@ const degree = {
 		// 	"code" : "PI 10",
 		// 	"units" : 3
 		// },
-		ObjectId("62728d04ecce07f44e4d1773"),
+		ObjectId("626d44d7eb3a38230c7a3e76"),
 		// {
-		// 	"code" : "CHEM 161A",
+		// 	"code" : "HK 11",
+		// 	"units" : 0
+		// },
+		ObjectId("6281243c9aa35146663c8012"),
+		// {
+		// 	"code" : "MST 101B",
+		// 	"units" : 1
+		// },
+		ObjectId("62729007ab87167c1fc0cb84"),
+		// {
+		// 	"code" : "BIO 14",
+		// 	"units" : 5
+		// },
+		ObjectId("62729007ab87167c1fc0cb82"),
+		// {
+		// 	"code" : "CHEM 40",
+		// 	"units" : 4
+		// },
+		ObjectId("62729007ab87167c1fc0cb83"),
+		// {
+		// 	"code" : "CHEM 40.1",
+		// 	"units" : 1
+		// },
+		ObjectId("62728df25f73ec537aa62c20"),
+		// {
+		// 	"code" : "AMAT 19",
 		// 	"units" : 3
 		// },
-		ObjectId("62728d04ecce07f44e4d177a"),
+		ObjectId("62728cc3591bd41f02539496"),
 		// {
-		// 	"code" : "CHEM 192",
+		// 	"code" : "MATH 27",
 		// 	"units" : 3
 		// },
-		ObjectId("62728d04ecce07f44e4d1776"),
+		ObjectId("626d42befee24c0a7a8e9310"),
 		// {
-		// 	"code" : "CHEM 111.1",
+		// 	"code" : "KAS 1",
 		// 	"units" : 3
 		// },
-		ObjectId("62728d04ecce07f44e4d1777"),
+		ObjectId("626d42befee24c0a7a8e9311"),
 		// {
-		// 	"code" : "CHEM 112",
+		// 	"code" : "HIST 1",
 		// 	"units" : 3
 		// },
-		ObjectId("62728d04ecce07f44e4d1778"),
+		ObjectId("626d44d7eb3a38230c7a3e7a"),
 		// {
-		// 	"code" : "CHEM 137",
+		// 	"code" : "HK 12",
+		// 	"units" : 0
+		// },
+		ObjectId("626d44d7eb3a38230c7a3e7b"),
+		// {
+		// 	"code" : "HK 13",
+		// 	"units" : 0
+		// },
+		ObjectId("6281243c9aa35146663c8013"),
+		// {
+		// 	"code" : "MST 101C",
+		// 	"units" : 1
+		// },
+		ObjectId("6281243c9aa35146663c8014"),
+		// {
+		// 	"code" : "EDUC 102",
 		// 	"units" : 3
 		// },
-		ObjectId("62728d04ecce07f44e4d1772"),
+		ObjectId("6281243c9aa35146663c8015"),
 		// {
-		// 	"code" : "CHEM 140",
+		// 	"code" : "EDUC 111",
 		// 	"units" : 3
 		// },
-		ObjectId("62728d04ecce07f44e4d1779"),
+		ObjectId("62728d04ecce07f44e4d175a"),
 		// {
-		// 	"code" : "CHEM 161B",
+		// 	"code" : "BIO 30",
 		// 	"units" : 3
+		// },
+		ObjectId("627289becf55453d96c4bd0f"),
+		// {
+		// 	"code" : "STAT 166",
+		// 	"units" : 3
+		// },
+		ObjectId("6281245283f2534fc23c64cc"),
+		// {
+		// 	"code" : "SPCM 156",
+		// 	"units" : 3
+		// },
+		ObjectId("626d42befee24c0a7a8e930f"),
+		// {
+		// 	"code" : "ETHICS 1",
+		// 	"units" : 3
+		// },
+		ObjectId("626d44d7eb3a38230c7a3e81"),
+		// {
+		// 	"code" : "NSTP 1",
+		// 	"units" : 0
+		// },
+		ObjectId("6281245283f2534fc23c64cd"),
+		// {
+		// 	"code" : "MST 101D",
+		// 	"units" : 1
+		// },
+		ObjectId("6281245283f2534fc23c64ce"),
+		// {
+		// 	"code" : "DEVC 40",
+		// 	"units" : 3
+		// },
+		ObjectId("6281245283f2534fc23c64cf"),
+		// {
+		// 	"code" : "MST 40",
+		// 	"units" : 3
+		// },
+		ObjectId("6281245283f2534fc23c64d0"),
+		// {
+		// 	"code" : "EDUC 122",
+		// 	"units" : 3
+		// },
+		ObjectId("62729007ab87167c1fc0cb85"),
+		// {
+		// 	"code" : "BOT 14",
+		// 	"units" : 3
+		// },
+		ObjectId("62729007ab87167c1fc0cb87"),
+		// {
+		// 	"code" : "CHEM 160",
+		// 	"units" : 3
+		// },
+		ObjectId("62728d04ecce07f44e4d175e"),
+		// {
+		// 	"code" : "PHYS 71",
+		// 	"units" : 4
+		// },
+		ObjectId("62728d04ecce07f44e4d175f"),
+		// {
+		// 	"code" : "PHYS 71.1",
+		// 	"units" : 1
+		// },
+		ObjectId("62728606f5ec17dac940459d"),
+		// {
+		// 	"code" : "COMA 150",
+		// 	"units" : 3
+		// },
+		ObjectId("626d44d7eb3a38230c7a3e85"),
+		// {
+		// 	"code" : "NSTP 2",
+		// 	"units" : 0
+		// },
+		ObjectId("62812469c68081ea6a30df41"),
+		// {
+		// 	"code" : "MST 123",
+		// 	"units" : 5
+		// },
+		ObjectId("62812469c68081ea6a30df42"),
+        // {
+		// 	"code" : "EDUC 144",
+		// 	"units" : 3
+		// },
+		ObjectId("62729007ab87167c1fc0cb88"),
+		// {
+		// 	"code" : "BIO 150",
+		// 	"units" : 4
+		// },
+		ObjectId("62728cc3591bd41f02539495"),
+		// {
+		// 	"code" : "MCB 11",
+		// 	"units" : 3
+		// },
+		ObjectId("62729007ab87167c1fc0cb86"),
+		// {
+		// 	"code" : "ZOO 14",
+		// 	"units" : 3
+		// },
+		ObjectId("62728d04ecce07f44e4d176b"),
+		// {
+		// 	"code" : "STAT 162",
+		// 	"units" : 3
+		// },
+		ObjectId("62812469c68081ea6a30df43"),
+		// {
+		// 	"code" : "MST 195",
+		// 	"units" : 3
+		// },
+		ObjectId("62812469c68081ea6a30df44"),
+		// {
+		// 	"code" : "MST 199",
+		// 	"units" : 1
+		// },
+		ObjectId("62812469c68081ea6a30df45"),
+		// {
+		// 	"code" : "MST 200A",
+		// 	"units" : 3
+		// },
+		ObjectId("62812469c68081ea6a30df46"),
+		// {
+		// 	"code" : "MATH 18",
+		// 	"units" : 5
 		// },
 		ObjectId("626d42befee24c0a7a8e930e"),
-		// {
+        // {
 		// 	"code" : "COMM 10",
-		// 	"units" : 1
+		// 	"units" : 3
 		// },
-		ObjectId("62728d04ecce07f44e4d177c"),
-		// {
-		// 	"code" : "CHEM 112.1",
-		// 	"units" : 1
-		// },
-		ObjectId("62728d04ecce07f44e4d177d"),
-		// {
-		// 	"code" : "CHEM 115",
-		// 	"units" : 1
-		// },
-		ObjectId("62728d04ecce07f44e4d177e"),
+		ObjectId("62812469c68081ea6a30df47"),
         // {
-		// 	"code" : "CHEM 137.1",
+		// 	"code" : "MST 190",
 		// 	"units" : 3
 		// },
-		ObjectId("62728d04ecce07f44e4d177f"),
+		ObjectId("62812469c68081ea6a30df48"),
 		// {
-		// 	"code" : "CHEM 161.1",
+		// 	"code" : "MST 191",
 		// 	"units" : 3
 		// },
-		ObjectId("62728d04ecce07f44e4d1786"),
+		ObjectId("62812469c68081ea6a30df49"),
 		// {
-		// 	"code" : "CHEM 180",
-		// 	"units" : 1
-		// },
-		ObjectId("62728d04ecce07f44e4d1780"),
-		// {
-		// 	"code" : "CHEM 198",
-		// 	"units" : 1
-		// },
-		ObjectId("62728d04ecce07f44e4d1782"),
-		// {
-		// 	"code" : "CHEM 120",
-		// 	"units" : 1
-		// },
-		ObjectId("627291d58e8742dc2f3176fe"),
-        // {
-		// 	"code" : "CHEM 120.1",
+		// 	"code" : "MST 200B",
 		// 	"units" : 3
 		// },
-		ObjectId("627291d58e8742dc2f3176ff"),
+		ObjectId("626d42befee24c0a7a8e930d"),
 		// {
-		// 	"code" : "CHEM 171",
+		// 	"code" : "ARTS 1",
 		// 	"units" : 3
 		// },
-		ObjectId("62728d04ecce07f44e4d1783"),
+		ObjectId("62812469c68081ea6a30df4a"),
 		// {
-		// 	"code" : "CHEM 199",
-		// 	"units" : 1
+		// 	"code" : "HFDS 12",
+		// 	"units" : 3
 		// },
-		ObjectId("627291d58e8742dc2f3176fd")
+		ObjectId("62728d04ecce07f44e4d1765"),
 		// {
-		// 	"code" : "CHEM 200",
+		// 	"code" : "PHYS 72",
+		// 	"units" : 4
+		// },
+		ObjectId("62728d04ecce07f44e4d1766")
+		// {
+		// 	"code" : "PHYS 72.1",
 		// 	"units" : 1
 		// }
 	],
-	"specializationUnits" : 9,
+	"specializationUnits" : 0,
 	"geElectiveUnits" : 9,
-	"maxThesisIterations" : 9
+	"maxThesisIterations" : 3
 }
 
 const go = async () => {
