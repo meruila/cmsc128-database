@@ -35,6 +35,10 @@ var ObjectId = require('mongodb').ObjectId;
 // 1. mongodump your saved curricula
 // 2. push to github
 
+// For other MST curricula, change the major to Physics/Mathematics/Chemistry,
+// add required subjects, and change specializationUnits to 0 since they are
+// explicitly stated in the curricula.
+
 const degree = {
 	"name" : "BSMST",
 	"major" : "Biology",
