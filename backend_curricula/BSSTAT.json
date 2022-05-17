@@ -1,0 +1,209 @@
+{
+	"name": "BSSTAT",
+	"major": "SP",
+	"subjects": [
+		{
+			"code": "ETHICS 1",
+			"units": 3
+		},
+		{
+			"code": "KAS 1",
+			"units": 3
+		},
+		{
+			"code": "HIST 1",
+			"units": 3
+		},
+		{
+			"code": "MATH 27",
+			"units": 3
+		},
+		{
+			"code": "BIO 30",
+			"units": 3
+		},
+		{
+			"code": "STAT 101",
+			"units": 3
+		},
+		{
+			"code": "HK 11",
+			"units": 0
+		},
+		{
+			"code": "ARTS 1",
+			"units": 3
+		},
+		{
+			"code": "MATH 28",
+			"units": 3
+		},
+		{
+			"code": "CMSC 12",
+			"units": 3
+		},
+		{
+			"code": "STAT 162",
+			"units": 3
+		},
+		{
+			"code": "HK 12",
+			"units": 0
+		},
+		{
+			"code": "HK 13",
+			"units": 0
+		},
+		{
+			"code": "STAT 135",
+			"units": 3
+		},
+		{
+			"code": "STAT 182",
+			"units": 3
+		},
+		{
+			"code": "STS 1",
+			"units": 3
+		},
+		{
+			"code": "CMSC 21",
+			"units": 3
+		},
+		{
+			"code": "ECON 11",
+			"units": 3
+		},
+		{
+			"code": "STAT 144",
+			"units": 3
+		},
+		{
+			"code": "STAT 168",
+			"units": 3
+		},
+		{
+			"code": "MATH 182",
+			"units": 3
+		},
+		{
+			"code": "CMSC 22",
+			"units": 3
+		},
+		{
+			"code": "ABME 10",
+			"units": 3
+		},
+		{
+			"code": "STAT 145",
+			"units": 3
+		},
+		{
+			"code": "STAT 163",
+			"units": 3
+		},
+		{
+			"code": "NSTP 1",
+			"units": 0
+		},
+		{
+			"code": "COMM 10",
+			"units": 3
+		},
+		{
+			"code": "STAT 146",
+			"units": 3
+		},
+		{
+			"code": "STAT 173",
+			"units": 3
+		},
+		{
+			"code": "STAT 175",
+			"units": 3
+		},
+		{
+			"code": "STAT 181",
+			"units": 3
+		},
+		{
+			"code": "NSTP 2",
+			"units": 0
+		},
+		{
+			"code": "CMSC 127",
+			"units": 3
+		},
+		{
+			"code": "STAT 147",
+			"units": 3
+		},
+		{
+			"code": "STAT 151",
+			"units": 3
+		},
+		{
+			"code": "STAT 156",
+			"units": 3
+		},
+		{
+			"code": "ENG 10",
+			"units": 3
+		},
+		{
+			"code": "STAT 148",
+			"units": 3
+		},
+		{
+			"code": "STAT 165",
+			"units": 3
+		},
+		{
+			"code": "STAT 190",
+			"units": 3
+		},
+		{
+			"code": "STAT 191",
+			"units": 3
+		},
+		{
+			"code": "STAT 174",
+			"units": 3
+		},
+		{
+			"code": "PI 10",
+			"units": 3
+		},
+		{
+			"code": "STAT 157",
+			"units": 3
+		},
+		{
+			"code": "STAT 167",
+			"units": 3
+		},
+		{
+			"code": "STAT 183",
+			"units": 3
+		},
+		{
+			"code": "STAT 190",
+			"units": 3
+		},
+		{
+			"code": "STAT 199",
+			"units": 3
+		},
+		{
+			"code": "STAT 192.1",
+			"units": 3
+		},
+		{
+			"code": "STAT 198",
+			"units": 3
+		}
+	],
+	"specializationUnits": 9,
+	"geElectiveUnits": 9,
+	"maxThesisIterations": 9
+}

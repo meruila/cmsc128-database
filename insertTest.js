@@ -323,7 +323,7 @@ const degree = {
 		// 	"units" : 3
 		// },
 	],
-	'specializationUnits': 39,
+	'specializationUnits': 0,
 	'geElectiveUnits': 9,
 	'maxThesisIterations': 9,
 };

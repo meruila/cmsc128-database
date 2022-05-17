@@ -1,0 +1,348 @@
+[
+	{
+		"name": "BSMATH",
+		"major": "Thesis",
+		"subjects": [
+			{
+				"code": "MATH 20",
+				"units": 3
+			},
+			{
+				"code": "MATH 36",
+				"units": 5
+			},
+			{
+				"code": "BIO 11.1",
+				"units": 2
+			},
+			{
+				"code": "KAS 1",
+				"units": 3
+			},
+			{
+				"code": "HIST 1",
+				"units": 3
+			},
+			{
+				"code": "ETHICS 1",
+				"units": 3
+			},
+			{
+				"code": "HK 11",
+				"units": 0
+			},
+			{
+				"code": "MATH 37",
+				"units": 3
+			},
+			{
+				"code": "STAT 101",
+				"units": 3
+			},
+			{
+				"code": "CHEM 18",
+				"units": 3
+			},
+			{
+				"code": "CHEM 18.1",
+				"units": 2
+			},
+			{
+				"code": "ARTS 1",
+				"units": 3
+			},
+			{
+				"code": "HK 12",
+				"units": 0
+			},
+			{
+				"code": "HK 13",
+				"units": 0
+			},
+			{
+				"code": "MATH 38",
+				"units": 5
+			},
+			{
+				"code": "MATH 101",
+				"units": 3
+			},
+			{
+				"code": "PHYS 51",
+				"units": 4
+			},
+			{
+				"code": "PHYS 51.1",
+				"units": 1
+			},
+			{
+				"code": "NSTP 1",
+				"units": 0
+			},
+			{
+				"code": "MATH 103",
+				"units": 3
+			},
+			{
+				"code": "MATH 138",
+				"units": 3
+			},
+			{
+				"code": "MATH 141",
+				"units": 3
+			},
+			{
+				"code": "AMAT 152",
+				"units": 3
+			},
+			{
+				"code": "STS 1",
+				"units": 3
+			},
+			{
+				"code": "NSTP 2",
+				"units": 0
+			},
+			{
+				"code": "MATH 111",
+				"units": 3
+			},
+			{
+				"code": "MATH 155",
+				"units": 3
+			},
+			{
+				"code": "MATH 195",
+				"units": 3
+			},
+			{
+				"code": "COMA 150",
+				"units": 3
+			},
+			{
+				"code": "COMM 10",
+				"units": 3
+			},
+			{
+				"code": "MATH 120",
+				"units": 3
+			},
+			{
+				"code": "MATH 133",
+				"units": 3
+			},
+			{
+				"code": "MATH 151",
+				"units": 3
+			},
+			{
+				"code": "PI 10",
+				"units": 3
+			},
+			{
+				"code": "MATH 198",
+				"units": 3
+			},
+			{
+				"code": "MATH 200",
+				"units": 3
+			},
+			{
+				"code": "MATH 135",
+				"units": 3
+			},
+			{
+				"code": "MATH 165",
+				"units": 3
+			},
+			{
+				"code": "MATH 181",
+				"units": 3
+			},
+			{
+				"code": "MATH 192",
+				"units": 3
+			},
+			{
+				"code": "MATH 199",
+				"units": 1
+			}
+		],
+		"specializationUnits": 15,
+		"geElectiveUnits": 9,
+		"maxThesisIterations": 9
+	},
+	{
+		"name": "BSMATH",
+		"major": "SP",
+		"subjects": [
+			{
+				"code": "MATH 20",
+				"units": 3
+			},
+			{
+				"code": "MATH 36",
+				"units": 5
+			},
+			{
+				"code": "BIO 11.1",
+				"units": 2
+			},
+			{
+				"code": "KAS 1",
+				"units": 3
+			},
+			{
+				"code": "HIST 1",
+				"units": 3
+			},
+			{
+				"code": "ETHICS 1",
+				"units": 3
+			},
+			{
+				"code": "HK 11",
+				"units": 0
+			},
+			{
+				"code": "MATH 37",
+				"units": 3
+			},
+			{
+				"code": "STAT 101",
+				"units": 3
+			},
+			{
+				"code": "CHEM 18",
+				"units": 3
+			},
+			{
+				"code": "CHEM 18.1",
+				"units": 2
+			},
+			{
+				"code": "ARTS 1",
+				"units": 3
+			},
+			{
+				"code": "HK 12",
+				"units": 0
+			},
+			{
+				"code": "HK 13",
+				"units": 0
+			},
+			{
+				"code": "MATH 38",
+				"units": 5
+			},
+			{
+				"code": "MATH 101",
+				"units": 3
+			},
+			{
+				"code": "PHYS 51",
+				"units": 4
+			},
+			{
+				"code": "PHYS 51.1",
+				"units": 1
+			},
+			{
+				"code": "NSTP 1",
+				"units": 0
+			},
+			{
+				"code": "MATH 103",
+				"units": 3
+			},
+			{
+				"code": "MATH 138",
+				"units": 3
+			},
+			{
+				"code": "MATH 141",
+				"units": 3
+			},
+			{
+				"code": "AMAT 152",
+				"units": 3
+			},
+			{
+				"code": "STS 1",
+				"units": 3
+			},
+			{
+				"code": "NSTP 2",
+				"units": 0
+			},
+			{
+				"code": "MATH 111",
+				"units": 3
+			},
+			{
+				"code": "MATH 155",
+				"units": 3
+			},
+			{
+				"code": "MATH 195",
+				"units": 3
+			},
+			{
+				"code": "COMA 150",
+				"units": 3
+			},
+			{
+				"code": "COMM 10",
+				"units": 3
+			},
+			{
+				"code": "MATH 120",
+				"units": 3
+			},
+			{
+				"code": "MATH 133",
+				"units": 3
+			},
+			{
+				"code": "MATH 151",
+				"units": 3
+			},
+			{
+				"code": "PI 10",
+				"units": 3
+			},
+			{
+				"code": "MATH 198",
+				"units": 3
+			},
+			{
+				"code": "MATH 135",
+				"units": 3
+			},
+			{
+				"code": "MATH 165",
+				"units": 3
+			},
+			{
+				"code": "MATH 181",
+				"units": 3
+			},
+			{
+				"code": "MATH 190",
+				"units": 3
+			},
+			{
+				"code": "MATH 192",
+				"units": 3
+			},
+			{
+				"code": "MATH 199",
+				"units": 1
+			}
+		],
+		"specializationUnits": 18,
+		"geElectiveUnits": 9,
+		"maxThesisIterations": 9
+	}
+]
