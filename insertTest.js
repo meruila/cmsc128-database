@@ -1,20 +1,24 @@
 // const { MongoClient } = require("mongodb");
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 // create a client to mongodb
 
 mongoose.connect(
-    "mongodb://localhost:27017/shac-database",
-    { useNewUrlParser: true, useUnifiedTopology: true },
-    (err) => {
-      if (err) { console.log(err); }
-      else { console.log("Successfully connected to Mongo DB"); }
-});
+	'mongodb://localhost:27017/shac-database',
+	{ useNewUrlParser: true, useUnifiedTopology: true },
+	(err) => {
+		if (err) {
+			console.log(err);
+		} else {
+			console.log('Successfully connected to Mongo DB');
+		}
+	}
+);
 
 // const User = require("./database/models/regular-user");
 // const Admin = require("./database/models/admin");
 
-const Subject = require("./models/subject.js");
-const { Degree } = require("./models/curriculum");
+const Subject = require('./models/subject.js');
+const { Degree } = require('./models/curriculum');
 var ObjectId = require('mongodb').ObjectId;
 
 // HOW TO FIND FOR SUBJECTS:
@@ -137,39 +141,41 @@ go();
 
 // [SUBJECT INSERT CODE]
 // Subject.insertMany([
-//     // { code: "CHEM 102", units: 3 }
-//     // { code: "MATH 101", units: 3 },
-//     // { code: "MATH 103", units: 3 },
-//     // { code: "AMAT 105", units: 3 }
-//     // { code: "MST 101c", units: 1 },
-//     // { code: "EDUC 102", units: 3 },
-//     // { code: "EDUC 111", units: 3 },
-//     // { code: "STAT 166", units: 3 },
-//     // { code: "SPCM 156", units: 3 },
-//     // { code: "MST 101d", units: 1 },
-//     // { code: "DEVC 40", units: 3 },
-//     // { code: "MST 40", units: 3 },
-//     // { code: "EDUC 122", units: 3 },
-//     // { code: "BOT 14", units: 3 },
-//     // { code: "CHEM 160", units: 3 },
-//     // { code: "MST 123", units: 5 },
-//     // { code: "EDUC 144", units: 3 },
-//     // { code: "MST 195", units: 3 },
-//     // { code: "MST 199", units: 1 },
-//     // { code: "MST 200a", units: 3 },
-//     // { code: "MATH 18", units: 3 },
-//     // { code: "MST 190", units: 3 },
-//     // { code: "MST 191", units: 3 },
-//     // { code: "MST 200b", units: 3 },
-//     // { code: "HFDS 12", units: 3 },
-//     // { code: "MATH 190", units: 3 },
-//     // { code: "MATH 192", units: 3 },
-//     // { code: "MA", units: 3 },
-//     // { code: "CHEM 120.1", units: 2 },
-//     // { code: "CHEM 171", units: 3 },
-//     // { code: "CHEM 199", units: 1 }
-// ]).then(function(){
-//     console.log("Data inserted")  // Success
-// }).catch(function(error){
-//     console.log(error)      // Failure
-// });
+// 	{ code: 'CMSC 198', units: 3 },
+// 	{ code: 'MATH 198', units: 3 },
+// 	//     // { code: "MATH 103", units: 3 },
+// 	//     // { code: "AMAT 105", units: 3 }
+// 	//     // { code: "MST 101c", units: 1 },
+// 	//     // { code: "EDUC 102", units: 3 },
+// 	//     // { code: "EDUC 111", units: 3 },
+// 	//     // { code: "STAT 166", units: 3 },
+// 	//     // { code: "SPCM 156", units: 3 },
+// 	//     // { code: "MST 101d", units: 1 },
+// 	//     // { code: "DEVC 40", units: 3 },
+// 	//     // { code: "MST 40", units: 3 },
+// 	//     // { code: "EDUC 122", units: 3 },
+// 	//     // { code: "BOT 14", units: 3 },
+// 	//     // { code: "CHEM 160", units: 3 },
+// 	//     // { code: "MST 123", units: 5 },
+// 	//     // { code: "EDUC 144", units: 3 },
+// 	//     // { code: "MST 195", units: 3 },
+// 	//     // { code: "MST 199", units: 1 },
+// 	//     // { code: "MST 200a", units: 3 },
+// 	//     // { code: "MATH 18", units: 3 },
+// 	//     // { code: "MST 190", units: 3 },
+// 	//     // { code: "MST 191", units: 3 },
+// 	//     // { code: "MST 200b", units: 3 },
+// 	//     // { code: "HFDS 12", units: 3 },
+// 	//     // { code: "MATH 190", units: 3 },
+// 	//     // { code: "MATH 192", units: 3 },
+// 	//     // { code: "MA", units: 3 },
+// 	//     // { code: "CHEM 120.1", units: 2 },
+// 	//     // { code: "CHEM 171", units: 3 },
+// 	//     // { code: "CHEM 199", units: 1 }
+// ])
+// 	.then(function () {
+// 		console.log('Data inserted'); // Success
+// 	})
+// 	.catch(function (error) {
+// 		console.log(error); // Failure
+// 	});
