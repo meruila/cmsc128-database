@@ -45,7 +45,7 @@ var ObjectId = require('mongodb').ObjectId;
 
 const degree = {
 	'name': 'BSCS',
-	'major': 'Thesis',
+	'major': 'SP',
 	'subjects': [
 		ObjectId('62728d04ecce07f44e4d1761'),
 		// {
