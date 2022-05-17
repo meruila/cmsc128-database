@@ -192,11 +192,11 @@
 		},
 		{
 			"code": "STAT 199",
-			"units": 3
+			"units": 1
 		},
 		{
 			"code": "STAT 192.1",
-			"units": 3
+			"units": 1
 		},
 		{
 			"code": "STAT 198",

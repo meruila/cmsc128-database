@@ -44,23 +44,13 @@ var ObjectId = require('mongodb').ObjectId;
 // explicitly stated in the curricula.
 
 const degree = {
-	'name': 'BSMATH',
+	'name': 'BSSTAT',
 	'major': 'SP',
 	'subjects': [
-		ObjectId('627293b65a538e6c6223a967'),
+		ObjectId('626d42befee24c0a7a8e930f'),
 		// {
-		// 	"code" : "MATH 20",
+		// 	"code" : "ETHICS 1",
 		// 	"units" : 3
-		// },
-		ObjectId('62728df25f73ec537aa62c21'),
-		// {
-		// 	"code" : "MATH 36",
-		// 	"units" : 5
-		// },
-		ObjectId('62728df25f73ec537aa62c22'),
-		// {
-		// 	"code" : "BIO 11.1",
-		// 	"units" : 2
 		// },
 		ObjectId('626d42befee24c0a7a8e9310'),
 		// {
@@ -72,19 +62,14 @@ const degree = {
 		// 	"code" : "HIST 1",
 		// 	"units" : 3
 		// },
-		ObjectId('626d42befee24c0a7a8e930f'),
+		ObjectId('62728cc3591bd41f02539496'),
 		// {
-		// 	"code" : "ETHICS 1",
+		// 	"code" : "MATH 27",
 		// 	"units" : 3
 		// },
-		ObjectId('626d44d7eb3a38230c7a3e76'),
+		ObjectId('62728d04ecce07f44e4d175a'),
 		// {
-		// 	"code" : "HK 11",
-		// 	"units" : 0
-		// },
-		ObjectId('62728df25f73ec537aa62c23'),
-		// {
-		// 	"code" : "MATH 37",
+		// 	"code" : "BIO 30",
 		// 	"units" : 3
 		// },
 		ObjectId('62728df25f73ec537aa62c24'),
@@ -92,19 +77,29 @@ const degree = {
 		// 	"code" : "STAT 101",
 		// 	"units" : 3
 		// },
-		ObjectId('62728cc3591bd41f02539493'),
+		ObjectId('626d44d7eb3a38230c7a3e76'),
 		// {
-		// 	"code" : "CHEM 18",
-		// 	"units" : 3
-		// },
-		ObjectId('62728cc3591bd41f02539494'),
-		// {
-		// 	"code" : "CHEM 18.1",
-		// 	"units" : 2
+		// 	"code" : "HK 11",
+		// 	"units" : 0
 		// },
 		ObjectId('626d42befee24c0a7a8e930d'),
 		// {
 		// 	"code" : "ARTS 1",
+		// 	"units" : 3
+		// },
+		ObjectId('62728d04ecce07f44e4d1759'),
+		// {
+		// 	"code" : "MATH 28",
+		// 	"units" : 3
+		// },
+		ObjectId('62728d04ecce07f44e4d1761'),
+		// {
+		// 	"code" : "CMSC 12",
+		// 	"units" : 3
+		// },
+		ObjectId('62728d04ecce07f44e4d176b'),
+		// {
+		// 	"code" : "STAT 162",
 		// 	"units" : 3
 		// },
 		ObjectId('626d44d7eb3a38230c7a3e7a'),
@@ -117,49 +112,14 @@ const degree = {
 		// 	"code" : "HK 13",
 		// 	"units" : 0
 		// },
-		ObjectId('62728e10280e1499e84e2231'),
+		ObjectId('62729638aa9f273873972315'),
 		// {
-		// 	"code" : "MATH 38",
-		// 	"units" : 5
-		// },
-		ObjectId('62728e10280e1499e84e2232'),
-		// {
-		// 	"code" : "MATH 101",
+		// 	"code" : "STAT 135",
 		// 	"units" : 3
 		// },
-		ObjectId('62728e10280e1499e84e2233'),
+		ObjectId('62729641ce27ee52b0575010'),
 		// {
-		// 	"code" : "PHYS 51",
-		// 	"units" : 4
-		// },
-		ObjectId('62728e10280e1499e84e2234'),
-		// {
-		// 	"code" : "PHYS 51.1",
-		// 	"units" : 1
-		// },
-		ObjectId('626d44d7eb3a38230c7a3e81'),
-		// {
-		// 	"code" : "NSTP 1",
-		// 	"units" : 0
-		// },
-		ObjectId('627293e1fc9afe8f46ba59aa'),
-		// {
-		// 	"code" : "MATH 103",
-		// 	"units" : 3
-		// },
-		ObjectId('627293e1fc9afe8f46ba59ab'),
-		// {
-		// 	"code" : "MATH 138",
-		// 	"units" : 3
-		// },
-		ObjectId('627293e1fc9afe8f46ba59ac'),
-		// {
-		// 	"code" : "MATH 141",
-		// 	"units" : 3
-		// },
-		ObjectId('62728d04ecce07f44e4d1762'),
-		// {
-		// 	"code" : "AMAT 152",
+		// 	"code" : "STAT 182",
 		// 	"units" : 3
 		// },
 		ObjectId('626d42befee24c0a7a8e9312'),
@@ -167,44 +127,134 @@ const degree = {
 		// 	"code" : "STS 1",
 		// 	"units" : 3
 		// },
-		ObjectId('626d44d7eb3a38230c7a3e85'),
+		ObjectId('627292bbe42248877729dd82'),
 		// {
-		// 	"code" : "NSTP 2",
+		// 	"code" : "CMSC 21",
+		// 	"units" : 3
+		// },
+		ObjectId('62728748ad94f0ad06fe971f'),
+		// {
+		// 	"code" : "ECON 11",
+		// 	"units" : 3
+		// },
+		ObjectId('62729641ce27ee52b0575011'),
+		// {
+		// 	"code" : "STAT 144",
+		// 	"units" : 3
+		// },
+		ObjectId('62729641ce27ee52b0575012'),
+		// {
+		// 	"code" : "STAT 168",
+		// 	"units" : 3
+		// },
+		ObjectId('62729641ce27ee52b0575013'),
+		// {
+		// 	"code" : "MATH 182",
+		// 	"units" : 3
+		// },
+		ObjectId('627292bbe42248877729dd84'),
+		// {
+		// 	"code" : "CMSC 22",
+		// 	"units" : 3
+		// },
+		ObjectId('627290194e19b2ffd466b9d0'),
+		// {
+		// 	"code" : "ABME 10",
+		// 	"units" : 3
+		// },
+		ObjectId('62729641ce27ee52b0575014'),
+		// {
+		// 	"code" : "STAT 145",
+		// 	"units" : 3
+		// },
+		ObjectId('62729641ce27ee52b0575015'),
+		// {
+		// 	"code" : "STAT 163",
+		// 	"units" : 3
+		// },
+		ObjectId('626d44d7eb3a38230c7a3e81'),
+		// {
+		// 	"code" : "NSTP 1",
 		// 	"units" : 0
-		// },
-		ObjectId('627293efd2258011801da807'),
-		// {
-		// 	"code" : "MATH 111",
-		// 	"units" : 3
-		// },
-		ObjectId('62728e1f77ef69a8b992531e'),
-		// {
-		// 	"code" : "MATH 155",
-		// 	"units" : 3
-		// },
-		ObjectId('62728606f5ec17dac940459d'),
-		// {
-		// 	"code" : "COMA 150",
-		// 	"units" : 3
 		// },
 		ObjectId('626d42befee24c0a7a8e930e'),
 		// {
 		// 	"code" : "COMM 10",
 		// 	"units" : 3
 		// },
-		ObjectId('627293fb25ee6c7d1b0249dd'),
+		ObjectId('62729641ce27ee52b0575016'),
 		// {
-		// 	"code" : "MATH 120",
+		// 	"code" : "STAT 146",
 		// 	"units" : 3
 		// },
-		ObjectId('627293fb25ee6c7d1b0249de'),
+		ObjectId('62729641ce27ee52b0575017'),
 		// {
-		// 	"code" : "MATH 133",
+		// 	"code" : "STAT 173",
 		// 	"units" : 3
 		// },
-		ObjectId('62728e1f77ef69a8b992531b'),
+		ObjectId('62729641ce27ee52b0575018'),
 		// {
-		// 	"code" : "MATH 151",
+		// 	"code" : "STAT 175",
+		// 	"units" : 3
+		// },
+		ObjectId('62729641ce27ee52b0575019'),
+		// {
+		// 	"code" : "STAT 181",
+		// 	"units" : 3
+		// },
+		ObjectId('626d44d7eb3a38230c7a3e85'),
+		// {
+		// 	"code" : "NSTP 2",
+		// 	"units" : 0
+		// },
+		ObjectId('627292bbe42248877729dd8a'),
+		// {
+		// 	"code" : "CMSC 127",
+		// 	"units" : 3
+		// },
+		ObjectId('62729641ce27ee52b057501a'),
+		// {
+		// 	"code" : "STAT 147",
+		// 	"units" : 3
+		// },
+		ObjectId('62729641ce27ee52b057501b'),
+		// {
+		// 	"code" : "STAT 151",
+		// 	"units" : 3
+		// },
+		ObjectId('62729641ce27ee52b057501c'),
+		// {
+		// 	"code" : "STAT 156",
+		// 	"units" : 3
+		// },
+		ObjectId('627292c8486fcb85aa703aca'),
+		// {
+		// 	"code" : "ENG 10",
+		// 	"units" : 3
+		// },
+		ObjectId('62729641ce27ee52b0575020'),
+		// {
+		// 	"code" : "STAT 148",
+		// 	"units" : 3
+		// },
+		ObjectId('62729641ce27ee52b0575021'),
+		// {
+		// 	"code" : "STAT 165",
+		// 	"units" : 3
+		// },
+		ObjectId('62729641ce27ee52b0575022'),
+		// {
+		// 	"code" : "STAT 190",
+		// 	"units" : 3
+		// },
+		ObjectId('62729641ce27ee52b0575023'),
+		// {
+		// 	"code" : "STAT 191",
+		// 	"units" : 3
+		// },
+		ObjectId('62729641ce27ee52b057501d'),
+		// {
+		// 	"code" : "STAT 174",
 		// 	"units" : 3
 		// },
 		ObjectId('626d42befee24c0a7a8e9313'),
@@ -212,45 +262,45 @@ const degree = {
 		// 	"code" : "PI 10",
 		// 	"units" : 3
 		// },
-		ObjectId('6283e8ed0175f7122e43e496'),
+		ObjectId('62729641ce27ee52b0575024'),
 		// {
-		// 	"code" : "MATH 198",
+		// 	"code" : "STAT 157",
 		// 	"units" : 3
 		// },
-		ObjectId('627294067d4a78a8ddf2429a'),
+		ObjectId('62729641ce27ee52b0575025'),
 		// {
-		// 	"code" : "MATH 135",
+		// 	"code" : "STAT 167",
 		// 	"units" : 3
 		// },
-		ObjectId('627294067d4a78a8ddf2429b'),
+		ObjectId('62729641ce27ee52b0575026'),
 		// {
-		// 	"code" : "MATH 165",
+		// 	"code" : "STAT 183",
 		// 	"units" : 3
 		// },
-		ObjectId('62728e1f77ef69a8b992531d'),
+		ObjectId('62729641ce27ee52b0575022'),
 		// {
-		// 	"code" : "MATH 181",
+		// 	"code" : "STAT 190",
 		// 	"units" : 3
 		// },
-		ObjectId('62729422a4b8a01428939152'),
+		ObjectId('62729641ce27ee52b0575027'),
 		// {
-		// 	"code" : "MATH 190",
-		// 	"units" : 3
-		// },
-		ObjectId('62729422a4b8a01428939150'),
-		// {
-		// 	"code" : "MATH 192",
-		// 	"units" : 3
-		// },
-		ObjectId('62729422a4b8a01428939151'),
-		// {
-		// 	"code" : "MATH 199",
+		// 	"code" : "STAT 199",
 		// 	"units" : 1
 		// },
+		ObjectId('62729641ce27ee52b057501e'),
+		// {
+		// 	"code" : "STAT 192.1",
+		// 	"units" : 1
+		// },
+		ObjectId('62729641ce27ee52b057501f'),
+		// {
+		// 	"code" : "STAT 198",
+		// 	"units" : 3
+		// },
 	],
-	'specializationUnits': 18,
+	'specializationUnits': 9,
 	'geElectiveUnits': 9,
-	'maxThesisIterations': 3,
+	'maxThesisIterations': 9,
 };
 
 const go = async () => {
