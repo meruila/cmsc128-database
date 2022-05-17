@@ -1,0 +1,171 @@
+[
+  {
+    "name": "BSBIO",
+    "major": "Thesis",
+    "subjects": [
+      {
+        "code": "CHEM 18",
+        "units": 3
+      },
+      {
+        "code": "MATH 25",
+        "units": 3
+      },
+      {
+        "code": "MCB 11",
+        "units": 3
+      },
+      {
+        "code": "KAS 1",
+        "units": 3
+      },
+      {
+        "code": "HIST 1",
+        "units": 3
+      },
+      {
+        "code": "ARTS 1",
+        "units": 3
+      },
+      {
+        "code": "STS 1",
+        "units": 3
+      },
+      {
+        "code": "HK 11",
+        "units": 0
+      },
+      {
+        "code": "BIO 11.1",
+        "units": 2
+      },
+      {
+        "code": "CHEM 18.1",
+        "units": 2
+      },
+      {
+        "code": "BIO 30",
+        "units": 3
+      },
+      {
+        "code": "PI 10",
+        "units": 3
+      },
+      {
+        "code": "HK 12",
+        "units": 0
+      },
+      {
+        "code": "HK 13",
+        "units": 0
+      },
+      {
+        "code": "CHEM 40",
+        "units": 4
+      },
+      {
+        "code": "CHEM 40.1",
+        "units": 1
+      },
+      {
+        "code": "BIO 14",
+        "units": 5
+      },
+      {
+        "code": "BOT 14",
+        "units": 3
+      },
+      {
+        "code": "ZOO 14",
+        "units": 3
+      },
+      {
+        "code": "CHEM 160",
+        "units": 3
+      },
+      {
+        "code": "BIO 150",
+        "units": 4
+      },
+      {
+        "code": "NSTP 1",
+        "units": 0
+      },
+      {
+        "code": "PHYS 51",
+        "units": 4
+      },
+      {
+        "code": "PHYS 51.1",
+        "units": 1
+      },
+      {
+        "code": "BIO 101",
+        "units": 3
+      },
+      {
+        "code": "CHEM 160.1",
+        "units": 2
+      },
+      {
+        "code": "BIO 140",
+        "units": 3
+      },
+      {
+        "code": "ABME 10",
+        "units": 3
+      },
+      {
+        "code": "NSTP 2",
+        "units": 0
+      },
+      {
+        "code": "STAT 164",
+        "units": 3
+      },
+      {
+        "code": "BIO 120",
+        "units": 3
+      },
+      {
+        "code": "BIO 142",
+        "units": 3
+      },
+      {
+        "code": "COMM 10",
+        "units": 3
+      },
+      {
+        "code": "BIO 195",
+        "units": 3
+      },
+      {
+        "code": "BIO 127",
+        "units": 3
+      },
+      {
+        "code": "ETHICS 1",
+        "units": 3
+      },
+      {
+        "code": "BIO 198",
+        "units": 3
+      },
+      {
+        "code": "COMA 150",
+        "units": 3
+      },
+      {
+        "code": "BIO 199",
+        "units": 1
+      },
+      {
+        "code": "BIO 200",
+        "units": 3
+      }
+    ],
+    "specializationUnits": 33,
+    "geElectiveUnits": 9,
+    "maxThesisIterations": 9
+  }
+]

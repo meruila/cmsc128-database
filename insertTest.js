@@ -323,9 +323,9 @@ const degree = {
 		// 	"units" : 3
 		// },
 	],
-	'specializationUnits': 0,
+	'specializationUnits': 39,
 	'geElectiveUnits': 9,
-	'maxThesisIterations': 3,
+	'maxThesisIterations': 9,
 };
 
 const go = async () => {

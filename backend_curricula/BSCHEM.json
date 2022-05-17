@@ -1,0 +1,207 @@
+[
+  {
+    "name": "BSCHEM",
+    "major": "Thesis",
+    "subjects": [
+      {
+        "code": "CHEM 18",
+        "units": 3
+      },
+      {
+        "code": "CHEM 18.1",
+        "units": 2
+      },
+      {
+        "code": "MCB 11",
+        "units": 3
+      },
+      {
+        "code": "MATH 27",
+        "units": 3
+      },
+      {
+        "code": "ETHICS 1",
+        "units": 3
+      },
+      {
+        "code": "HIST 1",
+        "units": 3
+      },
+      {
+        "code": "KAS 1",
+        "units": 3
+      },
+      {
+        "code": "HK 11",
+        "units": 0
+      },
+      {
+        "code": "CHEM 19",
+        "units": 3
+      },
+      {
+        "code": "CHEM 32",
+        "units": 3
+      },
+      {
+        "code": "CHEM 32.1",
+        "units": 2
+      },
+      {
+        "code": "PHYS 71",
+        "units": 4
+      },
+      {
+        "code": "PHYS 71.1",
+        "units": 1
+      },
+      {
+        "code": "ARTS 1",
+        "units": 3
+      },
+      {
+        "code": "HK 12",
+        "units": 0
+      },
+      {
+        "code": "HK 13",
+        "units": 0
+      },
+      {
+        "code": "NSTP 1",
+        "units": 0
+      },
+      {
+        "code": "MATH 28",
+        "units": 3
+      },
+      {
+        "code": "CHEM 43",
+        "units": 3
+      },
+      {
+        "code": "CHEM 43.1",
+        "units": 2
+      },
+      {
+        "code": "PHYS 72",
+        "units": 4
+      },
+      {
+        "code": "PHYS 72.1",
+        "units": 1
+      },
+      {
+        "code": "CMSC 12",
+        "units": 3
+      },
+      {
+        "code": "AMAT 152",
+        "units": 3
+      },
+      {
+        "code": "NSTP 2",
+        "units": 0
+      },
+      {
+        "code": "CHEM 44",
+        "units": 3
+      },
+      {
+        "code": "CHEM 44.1",
+        "units": 2
+      },
+      {
+        "code": "CHEM 111",
+        "units": 3
+      },
+      {
+        "code": "STAT 162",
+        "units": 3
+      },
+      {
+        "code": "PI 10",
+        "units": 3
+      },
+      {
+        "code": "CHEM 161A",
+        "units": 4
+      },
+      {
+        "code": "CHEM 192",
+        "units": 3
+      },
+      {
+        "code": "CHEM 111.1",
+        "units": 2
+      },
+      {
+        "code": "CHEM 112",
+        "units": 3
+      },
+      {
+        "code": "CHEM 137",
+        "units": 3
+      },
+      {
+        "code": "CHEM 140",
+        "units": 4
+      },
+      {
+        "code": "CHEM 161B",
+        "units": 3
+      },
+      {
+        "code": "COMM 10",
+        "units": 3
+      },
+      {
+        "code": "CHEM 112.1",
+        "units": 2
+      },
+      {
+        "code": "CHEM 115",
+        "units": 3
+      },
+      {
+        "code": "CHEM 137.1",
+        "units": 2
+      },
+      {
+        "code": "CHEM 161.1",
+        "units": 2
+      },
+      {
+        "code": "CHEM 180",
+        "units": 3
+      },
+      {
+        "code": "CHEM 198",
+        "units": 3
+      },
+      {
+        "code": "CHEM 120",
+        "units": 3
+      },
+      {
+        "code": "CHEM 120.1",
+        "units": 2
+      },
+      {
+        "code": "CHEM 171",
+        "units": 3
+      },
+      {
+        "code": "CHEM 199",
+        "units": 1
+      },
+      {
+        "code": "CHEM 200",
+        "units": 3
+      }
+    ],
+    "specializationUnits": 9,
+    "geElectiveUnits": 9,
+    "maxThesisIterations": 9
+  }
+]
