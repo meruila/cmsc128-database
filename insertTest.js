@@ -44,22 +44,22 @@ var ObjectId = require('mongodb').ObjectId;
 // explicitly stated in the curricula.
 
 const degree = {
-	'name': 'BSSTAT',
-	'major': 'SP',
+	'name': 'BSCS',
+	'major': 'Thesis',
 	'subjects': [
+		ObjectId('62728d04ecce07f44e4d1761'),
+		// {
+		// 	"code" : "CMSC 12",
+		// 	"units" : 3
+		// },
+		ObjectId('627292bbe42248877729dd81'),
+		// {
+		// 	"code" : "CMSC 56",
+		// 	"units" : 3
+		// },
 		ObjectId('626d42befee24c0a7a8e930f'),
 		// {
 		// 	"code" : "ETHICS 1",
-		// 	"units" : 3
-		// },
-		ObjectId('626d42befee24c0a7a8e9310'),
-		// {
-		// 	"code" : "KAS 1",
-		// 	"units" : 3
-		// },
-		ObjectId('626d42befee24c0a7a8e9311'),
-		// {
-		// 	"code" : "HIST 1",
 		// 	"units" : 3
 		// },
 		ObjectId('62728cc3591bd41f02539496'),
@@ -67,14 +67,9 @@ const degree = {
 		// 	"code" : "MATH 27",
 		// 	"units" : 3
 		// },
-		ObjectId('62728d04ecce07f44e4d175a'),
+		ObjectId('626d42befee24c0a7a8e9312'),
 		// {
-		// 	"code" : "BIO 30",
-		// 	"units" : 3
-		// },
-		ObjectId('62728df25f73ec537aa62c24'),
-		// {
-		// 	"code" : "STAT 101",
+		// 	"code" : "STS 1",
 		// 	"units" : 3
 		// },
 		ObjectId('626d44d7eb3a38230c7a3e76'),
@@ -87,19 +82,29 @@ const degree = {
 		// 	"code" : "ARTS 1",
 		// 	"units" : 3
 		// },
+		ObjectId('627292bbe42248877729dd82'),
+		// {
+		// 	"code" : "CMSC 21",
+		// 	"units" : 3
+		// },
+		ObjectId('627292bbe42248877729dd83'),
+		// {
+		// 	"code" : "CMSC 57",
+		// 	"units" : 3
+		// },
 		ObjectId('62728d04ecce07f44e4d1759'),
 		// {
 		// 	"code" : "MATH 28",
 		// 	"units" : 3
 		// },
-		ObjectId('62728d04ecce07f44e4d1761'),
+		ObjectId('626d42befee24c0a7a8e9310'),
 		// {
-		// 	"code" : "CMSC 12",
+		// 	"code" : "KAS 1",
 		// 	"units" : 3
 		// },
-		ObjectId('62728d04ecce07f44e4d176b'),
+		ObjectId('626d42befee24c0a7a8e9311'),
 		// {
-		// 	"code" : "STAT 162",
+		// 	"code" : "HIST 1",
 		// 	"units" : 3
 		// },
 		ObjectId('626d44d7eb3a38230c7a3e7a'),
@@ -112,149 +117,24 @@ const degree = {
 		// 	"code" : "HK 13",
 		// 	"units" : 0
 		// },
-		ObjectId('62729638aa9f273873972315'),
-		// {
-		// 	"code" : "STAT 135",
-		// 	"units" : 3
-		// },
-		ObjectId('62729641ce27ee52b0575010'),
-		// {
-		// 	"code" : "STAT 182",
-		// 	"units" : 3
-		// },
-		ObjectId('626d42befee24c0a7a8e9312'),
-		// {
-		// 	"code" : "STS 1",
-		// 	"units" : 3
-		// },
-		ObjectId('627292bbe42248877729dd82'),
-		// {
-		// 	"code" : "CMSC 21",
-		// 	"units" : 3
-		// },
-		ObjectId('62728748ad94f0ad06fe971f'),
-		// {
-		// 	"code" : "ECON 11",
-		// 	"units" : 3
-		// },
-		ObjectId('62729641ce27ee52b0575011'),
-		// {
-		// 	"code" : "STAT 144",
-		// 	"units" : 3
-		// },
-		ObjectId('62729641ce27ee52b0575012'),
-		// {
-		// 	"code" : "STAT 168",
-		// 	"units" : 3
-		// },
-		ObjectId('62729641ce27ee52b0575013'),
-		// {
-		// 	"code" : "MATH 182",
-		// 	"units" : 3
-		// },
 		ObjectId('627292bbe42248877729dd84'),
 		// {
 		// 	"code" : "CMSC 22",
 		// 	"units" : 3
 		// },
-		ObjectId('627290194e19b2ffd466b9d0'),
+		ObjectId('627292bbe42248877729dd85'),
 		// {
-		// 	"code" : "ABME 10",
+		// 	"code" : "CMSC 123",
 		// 	"units" : 3
 		// },
-		ObjectId('62729641ce27ee52b0575014'),
+		ObjectId('627292bbe42248877729dd86'),
 		// {
-		// 	"code" : "STAT 145",
+		// 	"code" : "CMSC 130",
 		// 	"units" : 3
 		// },
-		ObjectId('62729641ce27ee52b0575015'),
+		ObjectId('627292bbe42248877729dd87'),
 		// {
-		// 	"code" : "STAT 163",
-		// 	"units" : 3
-		// },
-		ObjectId('626d44d7eb3a38230c7a3e81'),
-		// {
-		// 	"code" : "NSTP 1",
-		// 	"units" : 0
-		// },
-		ObjectId('626d42befee24c0a7a8e930e'),
-		// {
-		// 	"code" : "COMM 10",
-		// 	"units" : 3
-		// },
-		ObjectId('62729641ce27ee52b0575016'),
-		// {
-		// 	"code" : "STAT 146",
-		// 	"units" : 3
-		// },
-		ObjectId('62729641ce27ee52b0575017'),
-		// {
-		// 	"code" : "STAT 173",
-		// 	"units" : 3
-		// },
-		ObjectId('62729641ce27ee52b0575018'),
-		// {
-		// 	"code" : "STAT 175",
-		// 	"units" : 3
-		// },
-		ObjectId('62729641ce27ee52b0575019'),
-		// {
-		// 	"code" : "STAT 181",
-		// 	"units" : 3
-		// },
-		ObjectId('626d44d7eb3a38230c7a3e85'),
-		// {
-		// 	"code" : "NSTP 2",
-		// 	"units" : 0
-		// },
-		ObjectId('627292bbe42248877729dd8a'),
-		// {
-		// 	"code" : "CMSC 127",
-		// 	"units" : 3
-		// },
-		ObjectId('62729641ce27ee52b057501a'),
-		// {
-		// 	"code" : "STAT 147",
-		// 	"units" : 3
-		// },
-		ObjectId('62729641ce27ee52b057501b'),
-		// {
-		// 	"code" : "STAT 151",
-		// 	"units" : 3
-		// },
-		ObjectId('62729641ce27ee52b057501c'),
-		// {
-		// 	"code" : "STAT 156",
-		// 	"units" : 3
-		// },
-		ObjectId('627292c8486fcb85aa703aca'),
-		// {
-		// 	"code" : "ENG 10",
-		// 	"units" : 3
-		// },
-		ObjectId('62729641ce27ee52b0575020'),
-		// {
-		// 	"code" : "STAT 148",
-		// 	"units" : 3
-		// },
-		ObjectId('62729641ce27ee52b0575021'),
-		// {
-		// 	"code" : "STAT 165",
-		// 	"units" : 3
-		// },
-		ObjectId('62729641ce27ee52b0575022'),
-		// {
-		// 	"code" : "STAT 190",
-		// 	"units" : 3
-		// },
-		ObjectId('62729641ce27ee52b0575023'),
-		// {
-		// 	"code" : "STAT 191",
-		// 	"units" : 3
-		// },
-		ObjectId('62729641ce27ee52b057501d'),
-		// {
-		// 	"code" : "STAT 174",
+		// 	"code" : "CMSC 150",
 		// 	"units" : 3
 		// },
 		ObjectId('626d42befee24c0a7a8e9313'),
@@ -262,43 +142,118 @@ const degree = {
 		// 	"code" : "PI 10",
 		// 	"units" : 3
 		// },
-		ObjectId('62729641ce27ee52b0575024'),
+		ObjectId('626d44d7eb3a38230c7a3e81'),
 		// {
-		// 	"code" : "STAT 157",
+		// 	"code" : "NSTP 1",
+		// 	"units" : 0
+		// },
+		ObjectId('627292bbe42248877729dd88'),
+		// {
+		// 	"code" : "CMSC 23",
 		// 	"units" : 3
 		// },
-		ObjectId('62729641ce27ee52b0575025'),
+		ObjectId('627292bbe42248877729dd89'),
 		// {
-		// 	"code" : "STAT 167",
+		// 	"code" : "CMSC 100",
 		// 	"units" : 3
 		// },
-		ObjectId('62729641ce27ee52b0575026'),
+		ObjectId('627292bbe42248877729dd8a'),
 		// {
-		// 	"code" : "STAT 183",
+		// 	"code" : "CMSC 127",
 		// 	"units" : 3
 		// },
-		ObjectId('62729641ce27ee52b0575022'),
+		ObjectId('627292bbe42248877729dd8b'),
 		// {
-		// 	"code" : "STAT 190",
+		// 	"code" : "CMSC 131",
 		// 	"units" : 3
 		// },
-		ObjectId('62729641ce27ee52b0575027'),
+		ObjectId('62728df25f73ec537aa62c24'),
 		// {
-		// 	"code" : "STAT 199",
+		// 	"code" : "STAT 101",
+		// 	"units" : 3
+		// },
+		ObjectId('626d44d7eb3a38230c7a3e85'),
+		// {
+		// 	"code" : "NSTP 2",
+		// 	"units" : 0
+		// },
+		ObjectId('626d42befee24c0a7a8e930e'),
+		// {
+		// 	"code" : "COMM 10",
+		// 	"units" : 3
+		// },
+		ObjectId('627292c8486fcb85aa703abd'),
+		// {
+		// 	"code" : "CMSC 124",
+		// 	"units" : 3
+		// },
+		ObjectId('627292c8486fcb85aa703abe'),
+		// {
+		// 	"code" : "CMSC 125",
+		// 	"units" : 3
+		// },
+		ObjectId('627292c8486fcb85aa703abf'),
+		// {
+		// 	"code" : "CMSC 132",
+		// 	"units" : 3
+		// },
+		ObjectId('627292c8486fcb85aa703ac0'),
+		// {
+		// 	"code" : "CMSC 141",
+		// 	"units" : 3
+		// },
+		ObjectId('627292c8486fcb85aa703ac1'),
+		// {
+		// 	"code" : "CMSC 170",
+		// 	"units" : 3
+		// },
+		ObjectId('627292c8486fcb85aa703ac2'),
+		// {
+		// 	"code" : "CMSC 128",
+		// 	"units" : 3
+		// },
+		ObjectId('627292c8486fcb85aa703ac3'),
+		// {
+		// 	"code" : "CMSC 137",
+		// 	"units" : 3
+		// },
+		ObjectId('627292c8486fcb85aa703ac4'),
+		// {
+		// 	"code" : "CMSC 142",
+		// 	"units" : 3
+		// },
+		ObjectId('627292c8486fcb85aa703ac5'),
+		// {
+		// 	"code" : "CMSC 173",
+		// 	"units" : 3
+		// },
+		ObjectId('627292c8486fcb85aa703ac6'),
+		// {
+		// 	"code" : "CMSC 180",
+		// 	"units" : 3
+		// },
+		ObjectId('6283e8ed0175f7122e43e495'),
+		// {
+		// 	"code" : "CMSC 198",
+		// 	"units" : 3
+		// },
+		ObjectId('627292c8486fcb85aa703ac7'),
+		// {
+		// 	"code" : "CMSC 199",
 		// 	"units" : 1
 		// },
-		ObjectId('62729641ce27ee52b057501e'),
+		ObjectId('627292c8486fcb85aa703ac8'),
 		// {
-		// 	"code" : "STAT 192.1",
-		// 	"units" : 1
+		// 	"code" : "CMSC 200",
+		// 	"units" : 3
 		// },
-		ObjectId('62729641ce27ee52b057501f'),
+		ObjectId('627292c8486fcb85aa703aca'),
 		// {
-		// 	"code" : "STAT 198",
+		// 	"code" : "ENG 10",
 		// 	"units" : 3
 		// },
 	],
-	'specializationUnits': 9,
+	'specializationUnits': 15,
 	'geElectiveUnits': 9,
 	'maxThesisIterations': 9,
 };
