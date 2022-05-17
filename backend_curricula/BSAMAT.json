@@ -1,0 +1,326 @@
+[
+  {
+    "_id": "627e46bcaa3e77b108d4a381",
+    "name": "BSAMAT",
+    "major": "SP",
+    "subjects": [
+      {
+        "code": "AMAT 19",
+        "units": 3
+      },
+      {
+        "code": "MATH 36",
+        "units": 5
+      },
+      {
+        "code": "BIO 11.1",
+        "units": 2
+      },
+      {
+        "code": "KAS 1",
+        "units": 3
+      },
+      {
+        "code": "HIST 1",
+        "units": 3
+      },
+      {
+        "code": "ETHICS 1",
+        "units": 3
+      },
+      {
+        "code": "HK 11",
+        "units": 0
+      },
+      {
+        "code": "MATH 37",
+        "units": 3
+      },
+      {
+        "code": "STAT 101",
+        "units": 3
+      },
+      {
+        "code": "CHEM 18",
+        "units": 3
+      },
+      {
+        "code": "CHEM 18.1",
+        "units": 2
+      },
+      {
+        "code": "ARTS 1",
+        "units": 3
+      },
+      {
+        "code": "HK 12",
+        "units": 0
+      },
+      {
+        "code": "HK 13",
+        "units": 0
+      },
+      {
+        "code": "AMAT 110",
+        "units": 3
+      },
+      {
+        "code": "MATH 38",
+        "units": 5
+      },
+      {
+        "code": "MATH 101",
+        "units": 3
+      },
+      {
+        "code": "PHYS 51",
+        "units": 4
+      },
+      {
+        "code": "PHYS 51.1",
+        "units": 1
+      },
+      {
+        "code": "NSTP 1",
+        "units": 0
+      },
+      {
+        "code": "AMAT 105",
+        "units": 3
+      },
+      {
+        "code": "AMAT 112",
+        "units": 3
+      },
+      {
+        "code": "AMAT 152",
+        "units": 3
+      },
+      {
+        "code": "AMAT 170",
+        "units": 3
+      },
+      {
+        "code": "STS 1",
+        "units": 3
+      },
+      {
+        "code": "NSTP 2",
+        "units": 0
+      },
+      {
+        "code": "MATH 151",
+        "units": 3
+      },
+      {
+        "code": "MATH 174",
+        "units": 3
+      },
+      {
+        "code": "MATH 181",
+        "units": 3
+      },
+      {
+        "code": "COMM 10",
+        "units": 3
+      },
+      {
+        "code": "MATH 155",
+        "units": 3
+      },
+      {
+        "code": "MATH 175",
+        "units": 3
+      },
+      {
+        "code": "MATH 195",
+        "units": 3
+      },
+      {
+        "code": "COMA 150",
+        "units": 3
+      },
+      {
+        "code": "PI 10",
+        "units": 3
+      },
+      {
+        "code": "AMAT 190",
+        "units": 3
+      },
+      {
+        "code": "AMAT 198",
+        "units": 3
+      },
+      {
+        "code": "AMAT 199",
+        "units": 1
+      }
+    ],
+    "specializationUnits": 27,
+    "geElectiveUnits": 9,
+    "maxThesisIterations": 3
+  },
+  {
+    "_id": "628111eb8efbb24f9a54fe13",
+    "name": "BSAMAT",
+    "major": "Thesis",
+    "subjects": [
+      {
+        "code": "AMAT 19",
+        "units": 3
+      },
+      {
+        "code": "MATH 36",
+        "units": 5
+      },
+      {
+        "code": "BIO 11.1",
+        "units": 2
+      },
+      {
+        "code": "KAS 1",
+        "units": 3
+      },
+      {
+        "code": "HIST 1",
+        "units": 3
+      },
+      {
+        "code": "ETHICS 1",
+        "units": 3
+      },
+      {
+        "code": "HK 11",
+        "units": 0
+      },
+      {
+        "code": "MATH 37",
+        "units": 3
+      },
+      {
+        "code": "STAT 101",
+        "units": 3
+      },
+      {
+        "code": "CHEM 18",
+        "units": 3
+      },
+      {
+        "code": "CHEM 18.1",
+        "units": 2
+      },
+      {
+        "code": "ARTS 1",
+        "units": 3
+      },
+      {
+        "code": "HK 12",
+        "units": 0
+      },
+      {
+        "code": "HK 13",
+        "units": 0
+      },
+      {
+        "code": "AMAT 110",
+        "units": 3
+      },
+      {
+        "code": "MATH 38",
+        "units": 5
+      },
+      {
+        "code": "MATH 101",
+        "units": 3
+      },
+      {
+        "code": "PHYS 51",
+        "units": 4
+      },
+      {
+        "code": "PHYS 51.1",
+        "units": 1
+      },
+      {
+        "code": "NSTP 1",
+        "units": 0
+      },
+      {
+        "code": "AMAT 105",
+        "units": 3
+      },
+      {
+        "code": "AMAT 112",
+        "units": 3
+      },
+      {
+        "code": "AMAT 152",
+        "units": 3
+      },
+      {
+        "code": "AMAT 170",
+        "units": 3
+      },
+      {
+        "code": "STS 1",
+        "units": 3
+      },
+      {
+        "code": "NSTP 2",
+        "units": 0
+      },
+      {
+        "code": "MATH 151",
+        "units": 3
+      },
+      {
+        "code": "MATH 174",
+        "units": 3
+      },
+      {
+        "code": "MATH 181",
+        "units": 3
+      },
+      {
+        "code": "COMM 10",
+        "units": 3
+      },
+      {
+        "code": "MATH 155",
+        "units": 3
+      },
+      {
+        "code": "MATH 175",
+        "units": 3
+      },
+      {
+        "code": "MATH 195",
+        "units": 3
+      },
+      {
+        "code": "COMA 150",
+        "units": 3
+      },
+      {
+        "code": "PI 10",
+        "units": 3
+      },
+      {
+        "code": "AMAT 200",
+        "units": 3
+      },
+      {
+        "code": "AMAT 198",
+        "units": 3
+      },
+      {
+        "code": "AMAT 199",
+        "units": 1
+      }
+    ],
+    "specializationUnits": 24,
+    "geElectiveUnits": 9,
+    "maxThesisIterations": 9
+  }
+]
