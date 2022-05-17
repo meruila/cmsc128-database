@@ -35,13 +35,13 @@ var ObjectId = require('mongodb').ObjectId;
 // 1. mongodump your saved curricula
 // 2. push to github
 
-// For other MST curricula, change the major to Physics/Mathematics/Chemistry,
+// For other MST curricula, change the major to Physics,
 // add required subjects, and change specializationUnits to 0 since they are
 // explicitly stated in the curricula.
 
 const degree = {
 	"name" : "BSMST",
-	"major" : "Chemistry",
+	"major" : "Mathematics",
 	"subjects" : [
 		ObjectId("6281243c9aa35146663c8010"),
 		// {
@@ -148,45 +148,30 @@ const degree = {
 		// 	"code" : "EDUC 102",
 		// 	"units" : 3
 		// },
-		ObjectId("62728d04ecce07f44e4d175c"),
+		ObjectId("6281243c9aa35146663c8015"),
 		// {
-		// 	"code" : "CHEM 32",
+		// 	"code" : "EDUC 111",
 		// 	"units" : 3
 		// },
-		ObjectId("62728d04ecce07f44e4d175d"),
-        // {
-		// 	"code" : "CHEM 32.1",
-		// 	"units" : 2
+		ObjectId("627293b65a538e6c6223a967"),
+		// {
+		// 	"code" : "MATH 20",
+		// 	"units" : 3
+		// },
+		ObjectId("62728d04ecce07f44e4d1759"),
+		// {
+		// 	"code" : "MATH 28",
+		// 	"units" : 3
 		// },
 		ObjectId("62728d04ecce07f44e4d175a"),
 		// {
 		// 	"code" : "BIO 30",
 		// 	"units" : 3
 		// },
-		ObjectId("62728d04ecce07f44e4d176b"),
-		// {
-		// 	"code" : "STAT 162",
-		// 	"units" : 3
-		// },
-		ObjectId("6281245283f2534fc23c64cc"),
-		// {
-		// 	"code" : "SPCM 156",
-		// 	"units" : 3
-		// },
 		ObjectId("626d42befee24c0a7a8e930f"),
 		// {
 		// 	"code" : "ETHICS 1",
 		// 	"units" : 3
-		// },
-		ObjectId("626d44d7eb3a38230c7a3e7a"),
-		// {
-		// 	"code" : "HK 12",
-		// 	"units" : 0
-		// },
-		ObjectId("626d44d7eb3a38230c7a3e7b"),
-		// {
-		// 	"code" : "HK 13",
-		// 	"units" : 0
 		// },
 		ObjectId("626d44d7eb3a38230c7a3e81"),
 		// {
@@ -196,6 +181,11 @@ const degree = {
 		ObjectId("6281245283f2534fc23c64cd"),
 		// {
 		// 	"code" : "MST 101D",
+		// 	"units" : 0
+		// },
+		ObjectId("6281245283f2534fc23c64d0"),
+		// {
+		// 	"code" : "EDUC 122",
 		// 	"units" : 1
 		// },
 		ObjectId("6281245283f2534fc23c64ce"),
@@ -208,9 +198,14 @@ const degree = {
 		// 	"code" : "MST 40",
 		// 	"units" : 3
 		// },
-		ObjectId("6281245283f2534fc23c64d0"),
+		ObjectId("62812469c68081ea6a30df46"),
 		// {
-		// 	"code" : "EDUC 122",
+		// 	"code" : "MATH 18",
+		// 	"units" : 3
+		// },
+		ObjectId("62728e10280e1499e84e2232"),
+		// {
+		// 	"code" : "MATH 101",
 		// 	"units" : 3
 		// },
 		ObjectId("627289becf55453d96c4bd0f"),
@@ -218,54 +213,49 @@ const degree = {
 		// 	"code" : "STAT 166",
 		// 	"units" : 3
 		// },
-		ObjectId("62729007ab87167c1fc0cb87"),
-		// {
-		// 	"code" : "CHEM 160",
-		// 	"units" : 3
-		// },
-		ObjectId("62728d04ecce07f44e4d175e"),
-		// {
-		// 	"code" : "PHYS 71",
-		// 	"units" : 4
-		// },
-		ObjectId("62728d04ecce07f44e4d175f"),
-		// {
-		// 	"code" : "PHYS 71.1",
-		// 	"units" : 1
-		// },
 		ObjectId("62728606f5ec17dac940459d"),
 		// {
 		// 	"code" : "COMA 150",
-		// 	"units" : 3
+		// 	"units" : 4
 		// },
 		ObjectId("626d44d7eb3a38230c7a3e85"),
 		// {
 		// 	"code" : "NSTP 2",
-		// 	"units" : 0
+		// 	"units" : 1
 		// },
 		ObjectId("62812469c68081ea6a30df41"),
 		// {
 		// 	"code" : "MST 123",
 		// 	"units" : 5
 		// },
-		ObjectId("6281243c9aa35146663c8015"),
+		ObjectId("62812469c68081ea6a30df42"),
         // {
-		// 	"code" : "EDUC 111",
+		// 	"code" : "EDUC 144",
 		// 	"units" : 3
 		// },
 		ObjectId("6283a29fa802c7a41e6e2e8a"),
 		// {
 		// 	"code" : "BIO 160.1",
-		// 	"units" : 3
-		// },
-		ObjectId("62728d04ecce07f44e4d1765"),
-		// {
-		// 	"code" : "PHYS 72",
 		// 	"units" : 4
 		// },
-		ObjectId("62728d04ecce07f44e4d1766"),
+		ObjectId("62728d04ecce07f44e4d175e"),
 		// {
-		// 	"code" : "PHYS 72.1",
+		// 	"code" : "PHYS 71",
+		// 	"units" : 3
+		// },
+		ObjectId("62728d04ecce07f44e4d175f"),
+		// {
+		// 	"code" : "PHYS 71.1",
+		// 	"units" : 3
+		// },
+		ObjectId("62728d04ecce07f44e4d176b"),
+		// {
+		// 	"code" : "STAT 162",
+		// 	"units" : 3
+		// },
+		ObjectId("6281245283f2534fc23c64cc"),
+		// {
+		// 	"code" : "SPCM 156",
 		// 	"units" : 1
 		// },
 		ObjectId("62812469c68081ea6a30df43"),
@@ -276,30 +266,30 @@ const degree = {
 		ObjectId("62812469c68081ea6a30df45"),
 		// {
 		// 	"code" : "MST 200A",
-		// 	"units" : 3
-		// },
-		ObjectId("62812469c68081ea6a30df42"),
-        // {
-		// 	"code" : "EDUC 144",
-		// 	"units" : 3
-		// },
-		ObjectId("6283a395a74021d2086763ab"),
-        // {
-		// 	"code" : "CHEM 102",
-		// 	"units" : 3
-		// },
-		ObjectId("62812469c68081ea6a30df46"),
-		// {
-		// 	"code" : "MATH 18",
 		// 	"units" : 5
 		// },
-		ObjectId("626d42befee24c0a7a8e930e"),
+		ObjectId("627293e1fc9afe8f46ba59aa"),
         // {
+		// 	"code" : "MATH 103",
+		// 	"units" : 3
+		// },
+		ObjectId("62728d04ecce07f44e4d1765"),
+        // {
+		// 	"code" : "PHYS 72",
+		// 	"units" : 3
+		// },
+		ObjectId("62728d04ecce07f44e4d1766"),
+		// {
+		// 	"code" : "PHYS 72.1",
+		// 	"units" : 3
+		// },
+		ObjectId("626d42befee24c0a7a8e930e"),
+		// {
 		// 	"code" : "COMM 10",
 		// 	"units" : 3
 		// },
 		ObjectId("62812469c68081ea6a30df47"),
-        // {
+		// {
 		// 	"code" : "MST 190",
 		// 	"units" : 3
 		// },
@@ -308,24 +298,29 @@ const degree = {
 		// 	"code" : "MST 200B",
 		// 	"units" : 3
 		// },
-		ObjectId("62728d04ecce07f44e4d1786"),
-        // {
-		// 	"code" : "CHEM 180",
-		// 	"units" : 3
+		ObjectId("62729007ab87167c1fc0cb87"),
+		// {
+		// 	"code" : "CHEM 160",
+		// 	"units" : 4
 		// },
 		ObjectId("626d42befee24c0a7a8e930d"),
 		// {
 		// 	"code" : "ARTS 1",
-		// 	"units" : 3
+		// 	"units" : 1
 		// },
 		ObjectId("62812469c68081ea6a30df48"),
 		// {
 		// 	"code" : "MST 191",
 		// 	"units" : 3
 		// },
-		ObjectId("62812469c68081ea6a30df44")
+		ObjectId("62812469c68081ea6a30df44"),
 		// {
 		// 	"code" : "MST 199",
+		// 	"units" : 4
+		// },
+		ObjectId("62728e10280e1499e84e2235")
+		// {
+		// 	"code" : "AMAT 105",
 		// 	"units" : 1
 		// }
 	],
