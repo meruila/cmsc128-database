@@ -343,6 +343,6 @@
 		],
 		"specializationUnits": 18,
 		"geElectiveUnits": 9,
-		"maxThesisIterations": 9
+		"maxThesisIterations": 3
 	}
 ]

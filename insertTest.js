@@ -45,7 +45,7 @@ var ObjectId = require('mongodb').ObjectId;
 
 const degree = {
 	'name': 'BSMATH',
-	'major': 'Thesis',
+	'major': 'SP',
 	'subjects': [
 		ObjectId('627293b65a538e6c6223a967'),
 		// {
@@ -217,11 +217,6 @@ const degree = {
 		// 	"code" : "MATH 198",
 		// 	"units" : 3
 		// },
-		ObjectId('627294067d4a78a8ddf24299'),
-		// {
-		// 	"code" : "MATH 200",
-		// 	"units" : 3
-		// },
 		ObjectId('627294067d4a78a8ddf2429a'),
 		// {
 		// 	"code" : "MATH 135",
@@ -237,6 +232,11 @@ const degree = {
 		// 	"code" : "MATH 181",
 		// 	"units" : 3
 		// },
+		ObjectId('62729422a4b8a01428939152'),
+		// {
+		// 	"code" : "MATH 190",
+		// 	"units" : 3
+		// },
 		ObjectId('62729422a4b8a01428939150'),
 		// {
 		// 	"code" : "MATH 192",
@@ -248,9 +248,9 @@ const degree = {
 		// 	"units" : 1
 		// },
 	],
-	'specializationUnits': 15,
+	'specializationUnits': 18,
 	'geElectiveUnits': 9,
-	'maxThesisIterations': 9,
+	'maxThesisIterations': 3,
 };
 
 const go = async () => {
