@@ -41,7 +41,7 @@ var ObjectId = require('mongodb').ObjectId;
 
 const degree = {
 	"name" : "BSMST",
-	"major" : "Biology",
+	"major" : "Chemistry",
 	"subjects" : [
 		ObjectId("6281243c9aa35146663c8010"),
 		// {
@@ -148,19 +148,24 @@ const degree = {
 		// 	"code" : "EDUC 102",
 		// 	"units" : 3
 		// },
-		ObjectId("6281243c9aa35146663c8015"),
+		ObjectId("62728d04ecce07f44e4d175c"),
 		// {
-		// 	"code" : "EDUC 111",
+		// 	"code" : "CHEM 32",
 		// 	"units" : 3
+		// },
+		ObjectId("62728d04ecce07f44e4d175d"),
+        // {
+		// 	"code" : "CHEM 32.1",
+		// 	"units" : 2
 		// },
 		ObjectId("62728d04ecce07f44e4d175a"),
 		// {
 		// 	"code" : "BIO 30",
 		// 	"units" : 3
 		// },
-		ObjectId("627289becf55453d96c4bd0f"),
+		ObjectId("62728d04ecce07f44e4d176b"),
 		// {
-		// 	"code" : "STAT 166",
+		// 	"code" : "STAT 162",
 		// 	"units" : 3
 		// },
 		ObjectId("6281245283f2534fc23c64cc"),
@@ -172,6 +177,16 @@ const degree = {
 		// {
 		// 	"code" : "ETHICS 1",
 		// 	"units" : 3
+		// },
+		ObjectId("626d44d7eb3a38230c7a3e7a"),
+		// {
+		// 	"code" : "HK 12",
+		// 	"units" : 0
+		// },
+		ObjectId("626d44d7eb3a38230c7a3e7b"),
+		// {
+		// 	"code" : "HK 13",
+		// 	"units" : 0
 		// },
 		ObjectId("626d44d7eb3a38230c7a3e81"),
 		// {
@@ -198,9 +213,9 @@ const degree = {
 		// 	"code" : "EDUC 122",
 		// 	"units" : 3
 		// },
-		ObjectId("62729007ab87167c1fc0cb85"),
+		ObjectId("627289becf55453d96c4bd0f"),
 		// {
-		// 	"code" : "BOT 14",
+		// 	"code" : "STAT 166",
 		// 	"units" : 3
 		// },
 		ObjectId("62729007ab87167c1fc0cb87"),
@@ -233,44 +248,44 @@ const degree = {
 		// 	"code" : "MST 123",
 		// 	"units" : 5
 		// },
-		ObjectId("62812469c68081ea6a30df42"),
+		ObjectId("6281243c9aa35146663c8015"),
         // {
-		// 	"code" : "EDUC 144",
+		// 	"code" : "EDUC 111",
 		// 	"units" : 3
 		// },
-		ObjectId("62729007ab87167c1fc0cb88"),
+		ObjectId("6283a29fa802c7a41e6e2e8a"),
 		// {
-		// 	"code" : "BIO 150",
+		// 	"code" : "BIO 160.1",
+		// 	"units" : 3
+		// },
+		ObjectId("62728d04ecce07f44e4d1765"),
+		// {
+		// 	"code" : "PHYS 72",
 		// 	"units" : 4
 		// },
-		ObjectId("62728cc3591bd41f02539495"),
+		ObjectId("62728d04ecce07f44e4d1766"),
 		// {
-		// 	"code" : "MCB 11",
-		// 	"units" : 3
-		// },
-		ObjectId("62729007ab87167c1fc0cb86"),
-		// {
-		// 	"code" : "ZOO 14",
-		// 	"units" : 3
-		// },
-		ObjectId("62728d04ecce07f44e4d176b"),
-		// {
-		// 	"code" : "STAT 162",
-		// 	"units" : 3
+		// 	"code" : "PHYS 72.1",
+		// 	"units" : 1
 		// },
 		ObjectId("62812469c68081ea6a30df43"),
 		// {
 		// 	"code" : "MST 195",
 		// 	"units" : 3
 		// },
-		ObjectId("62812469c68081ea6a30df44"),
-		// {
-		// 	"code" : "MST 199",
-		// 	"units" : 1
-		// },
 		ObjectId("62812469c68081ea6a30df45"),
 		// {
 		// 	"code" : "MST 200A",
+		// 	"units" : 3
+		// },
+		ObjectId("62812469c68081ea6a30df42"),
+        // {
+		// 	"code" : "EDUC 144",
+		// 	"units" : 3
+		// },
+		ObjectId("6283a395a74021d2086763ab"),
+        // {
+		// 	"code" : "CHEM 102",
 		// 	"units" : 3
 		// },
 		ObjectId("62812469c68081ea6a30df46"),
@@ -288,14 +303,14 @@ const degree = {
 		// 	"code" : "MST 190",
 		// 	"units" : 3
 		// },
-		ObjectId("62812469c68081ea6a30df48"),
-		// {
-		// 	"code" : "MST 191",
-		// 	"units" : 3
-		// },
 		ObjectId("62812469c68081ea6a30df49"),
 		// {
 		// 	"code" : "MST 200B",
+		// 	"units" : 3
+		// },
+		ObjectId("62728d04ecce07f44e4d1786"),
+        // {
+		// 	"code" : "CHEM 180",
 		// 	"units" : 3
 		// },
 		ObjectId("626d42befee24c0a7a8e930d"),
@@ -303,19 +318,14 @@ const degree = {
 		// 	"code" : "ARTS 1",
 		// 	"units" : 3
 		// },
-		ObjectId("62812469c68081ea6a30df4a"),
+		ObjectId("62812469c68081ea6a30df48"),
 		// {
-		// 	"code" : "HFDS 12",
+		// 	"code" : "MST 191",
 		// 	"units" : 3
 		// },
-		ObjectId("62728d04ecce07f44e4d1765"),
+		ObjectId("62812469c68081ea6a30df44")
 		// {
-		// 	"code" : "PHYS 72",
-		// 	"units" : 4
-		// },
-		ObjectId("62728d04ecce07f44e4d1766")
-		// {
-		// 	"code" : "PHYS 72.1",
+		// 	"code" : "MST 199",
 		// 	"units" : 1
 		// }
 	],
@@ -338,7 +348,7 @@ go();
 
 // [SUBJECT INSERT CODE]
 // Subject.insertMany([
-//     // { code: "BIO 198", units: 3 },
+//     // { code: "CHEM 102", units: 3 }
 //     // { code: "MATH 101", units: 3 },
 //     // { code: "MATH 103", units: 3 },
 //     // { code: "AMAT 105", units: 3 }
