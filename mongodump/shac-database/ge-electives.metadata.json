@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"ecb58abc2d6a4b949f5c7273693ce660","collectionName":"ge-electives","type":"collection"}

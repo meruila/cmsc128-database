@@ -45,11 +45,11 @@ var ObjectId = require('mongodb').ObjectId;
 
 const degree = {
 	'name': 'BSMST',
-	'major': 'Mathematics',
+	'major': 'Physics',
 	'subjects': [
 		ObjectId('6281243c9aa35146663c8010'),
 		// {
-		// 	"code" : "MST 101a",
+		// 	"code" : "MST 101A",
 		// 	"units" : 1
 		// },
 		ObjectId('62728df25f73ec537aa62c22'),
@@ -157,14 +157,19 @@ const degree = {
 		// 	"code" : "EDUC 111",
 		// 	"units" : 3
 		// },
-		ObjectId('627293b65a538e6c6223a967'),
+		ObjectId('62728d04ecce07f44e4d175e'),
 		// {
-		// 	"code" : "MATH 20",
-		// 	"units" : 3
+		// 	"code" : "PHYS 71",
+		// 	"units" : 4
 		// },
-		ObjectId('62728d04ecce07f44e4d1759'),
+		ObjectId('62728d04ecce07f44e4d175f'),
 		// {
-		// 	"code" : "MATH 28",
+		// 	"code" : "PHYS 71.1",
+		// 	"units" : 1
+		// },
+		ObjectId('62812469c68081ea6a30df46'),
+		// {
+		// 	"code" : "MATH 18",
 		// 	"units" : 3
 		// },
 		ObjectId('62728d04ecce07f44e4d175a'),
@@ -185,7 +190,7 @@ const degree = {
 		ObjectId('6281245283f2534fc23c64cd'),
 		// {
 		// 	"code" : "MST 101D",
-		// 	"units" : 0
+		// 	"units" : 1
 		// },
 		ObjectId('6281245283f2534fc23c64d0'),
 		// {
@@ -202,25 +207,30 @@ const degree = {
 		// 	"code" : "MST 40",
 		// 	"units" : 3
 		// },
-		ObjectId('62812469c68081ea6a30df46'),
+		ObjectId('62728d04ecce07f44e4d1765'),
 		// {
-		// 	"code" : "MATH 18",
+		// 	"code" : "PHYS 72",
+		// 	"units" : 4
+		// },
+		ObjectId('62728d04ecce07f44e4d1766'),
+		// {
+		// 	"code" : "PHYS 72.1",
+		// 	"units" : 1
+		// },
+		ObjectId('62729007ab87167c1fc0cb87'),
+		// {
+		// 	"code" : "CHEM 160",
 		// 	"units" : 3
 		// },
-		ObjectId('62728e10280e1499e84e2232'),
+		ObjectId('62728d04ecce07f44e4d176b'),
 		// {
-		// 	"code" : "MATH 101",
-		// 	"units" : 3
-		// },
-		ObjectId('627289becf55453d96c4bd0f'),
-		// {
-		// 	"code" : "STAT 166",
+		// 	"code" : "STAT 162",
 		// 	"units" : 3
 		// },
 		ObjectId('62728606f5ec17dac940459d'),
 		// {
 		// 	"code" : "COMA 150",
-		// 	"units" : 4
+		// 	"units" : 3
 		// },
 		ObjectId('626d44d7eb3a38230c7a3e85'),
 		// {
@@ -237,24 +247,14 @@ const degree = {
 		// 	"code" : "EDUC 144",
 		// 	"units" : 3
 		// },
-		ObjectId('6283a29fa802c7a41e6e2e8a'),
+		ObjectId('62728f25faca18b473a45e71'),
 		// {
-		// 	"code" : "BIO 160.1",
-		// 	"units" : 4
-		// },
-		ObjectId('62728d04ecce07f44e4d175e'),
-		// {
-		// 	"code" : "PHYS 71",
+		// 	"code" : "APHY 101",
 		// 	"units" : 3
 		// },
-		ObjectId('62728d04ecce07f44e4d175f'),
+		ObjectId('627289becf55453d96c4bd0f'),
 		// {
-		// 	"code" : "PHYS 71.1",
-		// 	"units" : 3
-		// },
-		ObjectId('62728d04ecce07f44e4d176b'),
-		// {
-		// 	"code" : "STAT 162",
+		// 	"code" : "STAT 166",
 		// 	"units" : 3
 		// },
 		ObjectId('6281245283f2534fc23c64cc'),
@@ -272,19 +272,19 @@ const degree = {
 		// 	"code" : "MST 200A",
 		// 	"units" : 5
 		// },
-		ObjectId('627293e1fc9afe8f46ba59aa'),
+		ObjectId('62728f25faca18b473a45e77'),
 		// {
-		// 	"code" : "MATH 103",
+		// 	"code" : "APHY 102",
 		// 	"units" : 3
 		// },
-		ObjectId('62728d04ecce07f44e4d1765'),
+		ObjectId('62728f25faca18b473a45e7b'),
 		// {
-		// 	"code" : "PHYS 72",
-		// 	"units" : 3
+		// 	"code" : "PHYS 192.1",
+		// 	"units" : 2
 		// },
-		ObjectId('62728d04ecce07f44e4d1766'),
+		ObjectId('62728d04ecce07f44e4d1761'),
 		// {
-		// 	"code" : "PHYS 72.1",
+		// 	"code" : "CMSC 12",
 		// 	"units" : 3
 		// },
 		ObjectId('626d42befee24c0a7a8e930e'),
@@ -297,15 +297,20 @@ const degree = {
 		// 	"code" : "MST 190",
 		// 	"units" : 3
 		// },
+		ObjectId('62812469c68081ea6a30df44'),
+		// {
+		// 	"code" : "MST 199",
+		// 	"units" : 1
+		// },
 		ObjectId('62812469c68081ea6a30df49'),
 		// {
 		// 	"code" : "MST 200B",
 		// 	"units" : 3
 		// },
-		ObjectId('62729007ab87167c1fc0cb87'),
+		ObjectId('6283ef93813396c6b07b3260'),
 		// {
-		// 	"code" : "CHEM 160",
-		// 	"units" : 4
+		// 	"code" : "PHYS 193.1",
+		// 	"units" : 2
 		// },
 		ObjectId('626d42befee24c0a7a8e930d'),
 		// {
@@ -317,16 +322,6 @@ const degree = {
 		// 	"code" : "MST 191",
 		// 	"units" : 3
 		// },
-		ObjectId('62812469c68081ea6a30df44'),
-		// {
-		// 	"code" : "MST 199",
-		// 	"units" : 4
-		// },
-		ObjectId('62728e10280e1499e84e2235'),
-		// {
-		// 	"code" : "AMAT 105",
-		// 	"units" : 1
-		// }
 	],
 	'specializationUnits': 0,
 	'geElectiveUnits': 9,
@@ -343,47 +338,44 @@ const go = async () => {
 	}
 };
 
-// go();
-
-insertSubj();
+go();
 
 // [SUBJECT INSERT CODE]
-Subject.insertMany([
-	{ code: 'CMSC 198', units: 3 },
-	{ code: 'MATH 198', units: 3 },
-	//     // { code: "MATH 103", units: 3 },
-	//     // { code: "AMAT 105", units: 3 }
-	//     // { code: "MST 101c", units: 1 },
-	//     // { code: "EDUC 102", units: 3 },
-	//     // { code: "EDUC 111", units: 3 },
-	//     // { code: "STAT 166", units: 3 },
-	//     // { code: "SPCM 156", units: 3 },
-	//     // { code: "MST 101d", units: 1 },
-	//     // { code: "DEVC 40", units: 3 },
-	//     // { code: "MST 40", units: 3 },
-	//     // { code: "EDUC 122", units: 3 },
-	//     // { code: "BOT 14", units: 3 },
-	//     // { code: "CHEM 160", units: 3 },
-	//     // { code: "MST 123", units: 5 },
-	//     // { code: "EDUC 144", units: 3 },
-	//     // { code: "MST 195", units: 3 },
-	//     // { code: "MST 199", units: 1 },
-	//     // { code: "MST 200a", units: 3 },
-	//     // { code: "MATH 18", units: 3 },
-	//     // { code: "MST 190", units: 3 },
-	//     // { code: "MST 191", units: 3 },
-	//     // { code: "MST 200b", units: 3 },
-	//     // { code: "HFDS 12", units: 3 },
-	//     // { code: "MATH 190", units: 3 },
-	//     // { code: "MATH 192", units: 3 },
-	//     // { code: "MA", units: 3 },
-	//     // { code: "CHEM 120.1", units: 2 },
-	//     // { code: "CHEM 171", units: 3 },
-	//     // { code: "CHEM 199", units: 1 }
-])
-	.then(function () {
-		console.log('Data inserted'); // Success
-	})
-	.catch(function (error) {
-		console.log(error); // Failure
-	});
+//Subject.insertMany([
+//	   //{ code: 'PHYS 193.1', units: 2 },
+//	   // { code: 'MATH 198', units: 3 },
+//     // { code: "MATH 103", units: 3 },
+//     // { code: "AMAT 105", units: 3 }
+//     // { code: "MST 101c", units: 1 },
+//     // { code: "EDUC 102", units: 3 },
+//     // { code: "EDUC 111", units: 3 },
+//     // { code: "STAT 166", units: 3 },
+//     // { code: "SPCM 156", units: 3 },
+//     // { code: "MST 101d", units: 1 },
+//     // { code: "DEVC 40", units: 3 },
+//     // { code: "MST 40", units: 3 },
+//     // { code: "EDUC 122", units: 3 },
+//     // { code: "BOT 14", units: 3 },
+//     // { code: "CHEM 160", units: 3 },
+//     // { code: "MST 123", units: 5 },
+//     // { code: "EDUC 144", units: 3 },
+//     // { code: "MST 195", units: 3 },
+//     // { code: "MST 199", units: 1 },
+//     // { code: "MST 200a", units: 3 },
+//     // { code: "MATH 18", units: 3 },
+//     // { code: "MST 190", units: 3 },
+//     // { code: "MST 191", units: 3 },
+//     // { code: "MST 200b", units: 3 },
+//     // { code: "HFDS 12", units: 3 },
+//     // { code: "MATH 190", units: 3 },
+//     // { code: "MATH 192", units: 3 },
+//     // { code: "CHEM 120.1", units: 2 },
+//     // { code: "CHEM 171", units: 3 },
+//     // { code: "CHEM 199", units: 1 }
+//])
+//	.then(function () {
+//		console.log('Data inserted'); // Success
+//	})
+//	.catch(function (error) {
+//		console.log(error); // Failure
+//	});
