@@ -1,0 +1,179 @@
+[
+  {
+    "name": "BSAPHY",
+    "major": "Thesis",
+    "subjects": [
+      {
+        "code": "PHYS 101",
+        "units": 4
+      },
+      {
+        "code": "CHEM 18",
+        "units": 3
+      },
+      {
+        "code": "CHEM 18.1",
+        "units": 2
+      },
+      {
+        "code": "MATH 27",
+        "units": 3
+      },
+      {
+        "code": "ARTS 1",
+        "units": 3
+      },
+      {
+        "code": "KAS 1",
+        "units": 3
+      },
+      {
+        "code": "HIST 1",
+        "units": 3
+      },
+      {
+        "code": "HK 11",
+        "units": 0
+      },
+      {
+        "code": "PHYS 102",
+        "units": 4
+      },
+      {
+        "code": "PHYS 111",
+        "units": 4
+      },
+      {
+        "code": "MATH 28",
+        "units": 3
+      },
+      {
+        "code": "COMA 150",
+        "units": 3
+      },
+      {
+        "code": "HK 12",
+        "units": 0
+      },
+      {
+        "code": "HK 13",
+        "units": 0
+      },
+      {
+        "code": "APHY 10.1",
+        "units": 1
+      },
+      {
+        "code": "APHY 101",
+        "units": 3
+      },
+      {
+        "code": "PHYS 103",
+        "units": 4
+      },
+      {
+        "code": "PHYS 112",
+        "units": 4
+      },
+      {
+        "code": "ETHICS 1",
+        "units": 3
+      },
+      {
+        "code": "NSTP 1",
+        "units": 0
+      },
+      {
+        "code": "PHYS 104",
+        "units": 4
+      },
+      {
+        "code": "PHYS 113",
+        "units": 4
+      },
+      {
+        "code": "PHYS 121",
+        "units": 3
+      },
+      {
+        "code": "PHYS 131",
+        "units": 3
+      },
+      {
+        "code": "APHY 102",
+        "units": 3
+      },
+      {
+        "code": "NSTP 2",
+        "units": 0
+      },
+      {
+        "code": "PHYS 115",
+        "units": 4
+      },
+      {
+        "code": "PHYS 122",
+        "units": 3
+      },
+      {
+        "code": "PHYS 132",
+        "units": 3
+      },
+      {
+        "code": "PHYS 192.1",
+        "units": 2
+      },
+      {
+        "code": "PI 10",
+        "units": 3
+      },
+      {
+        "code": "PHYS 141",
+        "units": 3
+      },
+      {
+        "code": "PHYS 151",
+        "units": 3
+      },
+      {
+        "code": "PHYS 165",
+        "units": 4
+      },
+      {
+        "code": "PHYS 195",
+        "units": 3
+      },
+      {
+        "code": "COMM 10",
+        "units": 3
+      },
+      {
+        "code": "APHY 198",
+        "units": 3
+      },
+      {
+        "code": "APHY 200",
+        "units": 3
+      },
+      {
+        "code": "PHYS 142",
+        "units": 3
+      },
+      {
+        "code": "APHY 191",
+        "units": 3
+      },
+      {
+        "code": "APHY 199",
+        "units": 1
+      },
+      {
+        "code": "STS 1",
+        "units": 3
+      }
+    ],
+    "specializationUnits": 21,
+    "geElectiveUnits": 9,
+    "maxThesisIterations": 9
+  }
+]
