@@ -239,13 +239,13 @@ const degree = {
 		// },
 		ObjectId('627292c8486fcb85aa703ac7'),
 		// {
-		// 	"code" : "CMSC 199",
-		// 	"units" : 1
+		// 	"code" : "CMSC 190",
+		// 	"units" : 3
 		// },
 		ObjectId('627292c8486fcb85aa703ac8'),
 		// {
-		// 	"code" : "CMSC 200",
-		// 	"units" : 3
+		// 	"code" : "CMSC 199",
+		// 	"units" : 1
 		// },
 		ObjectId('627292c8486fcb85aa703aca'),
 		// {
@@ -253,7 +253,7 @@ const degree = {
 		// 	"units" : 3
 		// },
 	],
-	'specializationUnits': 15,
+	'specializationUnits': 18,
 	'geElectiveUnits': 9,
 	'maxThesisIterations': 9,
 };
