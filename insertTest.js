@@ -45,6 +45,7 @@ var ObjectId = require('mongodb').ObjectId;
 // add required subjects, and change specializationUnits to 0 since they are
 // explicitly stated in the curricula.
 
+<<<<<<< Updated upstream
 // const degree = {
 // 	"name" : "BSMST",
 // 	"major" : "Chemistry",
@@ -276,6 +277,107 @@ var ObjectId = require('mongodb').ObjectId;
 // 	"geElectiveUnits" : 9,
 // 	"maxThesisIterations" : 3
 // };
+=======
+const degree = {
+	'name': 'BASOCIO',
+	'major': '',
+	'subjects': [		
+		ObjectId("626d42befee24c0a7a8e930f"),
+		// ETHICS 1
+		ObjectId("626d42befee24c0a7a8e9311"),
+		// HIST 1
+		ObjectId("626d42befee24c0a7a8e9310"),
+		// KAS 1
+		ObjectId("627289becf55453d96c4bd09"),
+		// SOC 10
+		ObjectId("627289becf55453d96c4bd0a"),
+		// ANTH 10
+		ObjectId("627289becf55453d96c4bd0b"),
+		// PSY 10
+		ObjectId("626d44d7eb3a38230c7a3e76"),
+		// HK 11
+		ObjectId("62853b58f921a9134490fe4c"),
+		// HIST 10
+		ObjectId("62728748ad94f0ad06fe9720"),
+		// POSC 10
+		ObjectId("627289becf55453d96c4bd0c"),
+		// SOC 100
+		ObjectId("627289becf55453d96c4bd0d"),
+		// SOC 110
+		ObjectId("626d44d7eb3a38230c7a3e7a"),
+		// HK 12
+		ObjectId("626d44d7eb3a38230c7a3e7b"),
+		// HK 13
+		ObjectId("626d42befee24c0a7a8e9312"),
+		// STS 1
+		ObjectId("626d42befee24c0a7a8e930d"),
+		// ARTS 1
+		ObjectId("62728748ad94f0ad06fe971f"),
+		// ECON 11
+		ObjectId("627289becf55453d96c4bd0e"),
+		// SOC 116
+		ObjectId("627289becf55453d96c4bd0f"),
+		// STAT 166
+		ObjectId("627289becf55453d96c4bd10"),
+		// SOC 130
+		ObjectId("627289becf55453d96c4bd11"),
+		// SOC 135
+		ObjectId("626d44d7eb3a38230c7a3e81"),
+		// NSTP 1
+		ObjectId("627289becf55453d96c4bd12"),
+		// AERS 160
+		ObjectId("627289becf55453d96c4bd13"),
+		// SOC 140
+		ObjectId("626d44d7eb3a38230c7a3e85"),
+		// NSTP 2
+		ObjectId("626d42befee24c0a7a8e9313"),
+		// PI 10
+		ObjectId("627289becf55453d96c4bd14"),
+		// SOC 107
+		ObjectId("627289becf55453d96c4bd15"),
+		// SOC 151
+		ObjectId("627289becf55453d96c4bd16"),
+		// SOC 195
+		ObjectId("627289becf55453d96c4bd17"),
+		// SOC 195.1
+		ObjectId("626d42befee24c0a7a8e930e"),
+		// COMM 10
+		ObjectId("627289becf55453d96c4bd18"),
+		// SOC 152
+		ObjectId("627289becf55453d96c4bd19"),
+		// SOC 166
+		ObjectId("627289becf55453d96c4bd1a"),
+		// SOC 192
+		ObjectId("627289becf55453d96c4bd1b"),
+		// SOC 198
+		ObjectId("627289becf55453d96c4bd1c"),
+		// SOC 114
+		ObjectId("627289becf55453d96c4bd1d"),
+		// SOC 120
+		ObjectId("627289becf55453d96c4bd1e"),
+		// SOC 180
+		ObjectId("627289becf55453d96c4bd1f"),
+		// SOC 191
+		ObjectId("627289becf55453d96c4bd20"),
+		// SOC 199
+		ObjectId("627289becf55453d96c4bd21"),
+		// SOC 200
+		ObjectId("627289becf55453d96c4bd22"),
+		// SOC 112
+		ObjectId("627289becf55453d96c4bd23"),
+		// SOC 160
+		ObjectId("627289becf55453d96c4bd24"),
+		// SOC 165
+		ObjectId("627289becf55453d96c4bd25"),
+		// SOC 170
+		ObjectId("627289becf55453d96c4bd26")
+		// SOC 175
+	],
+	'specializationUnits': 21,
+	'geElectiveUnits': 9,
+	'maxThesisIterations': 9,
+};
+>>>>>>> Stashed changes
 
 const go = async () => {
 	try {
@@ -291,9 +393,7 @@ const go = async () => {
 
 // [SUBJECT INSERT CODE]
 // Subject.insertMany([
-// 	{ code: 'PHLO 111', units: 3 },
-// 	{ code: 'PHLO 120', units: 3 },
-// 	{ code: 'PHLO 200', units: 3 }
+// 	{ code: 'HIST 10', units: 3 }
 // ])
 // 	.then(function () {
 // 		console.log('Data inserted'); // Success
