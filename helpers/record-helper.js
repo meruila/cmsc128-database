@@ -1,49 +1,69 @@
 const mongoose = require("mongoose");
-const bcrypt = require("bcrypt");
-
-const { updateMany } = require("../models/subject");
-// create a client to mongodb
-
-mongoose.connect(
-    "mongodb://localhost:27017/shac-database",
-    { useNewUrlParser: true, useUnifiedTopology: true },
-    (err) => {
-      if (err) { console.log(err); }
-      else { console.log("Successfully connected to Mongo DB"); }
-});
-
-// This is not to be defined here, for testing purposes only [END]
-
 const StudentRecord = require("../models/student-record");
 
-// Schema contained in /models/user
-// const UserSchema = new mongoose.Schema({
-//     name:  {
-//       fname: { type: String, required: true },
-//       lname: { type: String, required: true }
-//     },
-//     email: { type: String, unique: true, required: true },
-//     password: { type: String, required: true }
-//   });
+/*
+Given a student number, save a student record to database
+*/
+exports.saveRecord = async(records) => {
+  try{
+      record_arr = records.formattedArray;
 
-const studentRecord1 = new StudentRecord({
-  "name": {
-    "last": "Heeson",
-    "first": "Blue"
-  },
-  "course": "BAPHLO",
-  "studentNo": "2018-09876",
-});
+      for (let i = 0; i < record_arr.length; i++) {
+        record = record_arr[i].data;
+        let buffer = await StudentRecord.findOne({ "studentNumber": record.studentNo });
+        if (buffer != null){
+            return false; // student already exists
+        }
 
-// const user2 = new User({
-//   name:  {
-//       fname: "Gemmy",
-//       lname: "Avilon"
-//     },
-//     email: "gxavilon@up.edu.ph",
-//     password: "xdxdxd"
-// });
+        // creating base data for student record
+        student_record = {
+            name: {
+                lname: record.name.last,
+                fname: record.name.first
+            },
+            degreeProgram: record.course,
+            studentNumber: record.studentNo,
+            records: [ ],
+            totalUnitsTaken: record.totalUnitsTaken,
+            totalUnitsRequired: record.totalUnitsRequired,
+            GWA: record.GWA,
+            verifiedBy: [ ]
+        }
+        semesters = record.records
+        
+        for (let j = 0; j < semesters.length; j++) {
+            // populating semesters
+            semester = {
+                sem: semesters[j].sem,
+                year: semesters[j].year,
+                subjects: [],
+                units: semesters[j].units,
+                status: semesters[j].status
+            }
 
-async function saveStudRecord(studentRecord) {
-  await studentRecord.save();
+            semSubjects = semesters[j].subjects
+            for (let k = 0; k < semSubjects.length; k++) {
+                // populating subject data
+                subject = {
+                    code: semSubjects[k][0],
+                    grade: semSubjects[k][1],
+                    units: semSubjects[k][2],
+                    gradepoint: semSubjects[k][3],
+                    summation: semSubjects[k][4]
+                }
+                semester.subjects.push(subject);
+            }
+            student_record.records.push(semester);
+        }
+        
+        // console.log(student_record);
+        const studentRecord = new StudentRecord(student_record);
+        await studentRecord.save();
+      }
+      return true;        
+  }
+  catch(err){
+      throw err;
+  }
+  
 }
