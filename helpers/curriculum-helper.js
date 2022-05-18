@@ -32,6 +32,7 @@ const go = async (name) => {
         // console.log(out[0])
         for (let i = 0; i < out.length; i++) {
             let degree = {
+                _id: out[i]._id,
                 name: out[i].name,
                 major: out[i].major
             }
@@ -63,7 +64,7 @@ const go = async (name) => {
     }
 }
     
-go("BSMST");
+go("BACA");
 // console.log(program);
 
 // fs.readFile(program, 'utf8', function(err, data) {
