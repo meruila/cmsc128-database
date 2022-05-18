@@ -13,7 +13,9 @@ mongoose.connect(
 		}
 	}
 );
-
+mongoose.set('useNewUrlParser', true);
+mongoose.set('useFindAndModify', false);
+mongoose.set('useCreateIndex', true);
 // const User = require("./database/models/regular-user");
 // const Admin = require("./database/models/admin");
 
@@ -44,217 +46,70 @@ var ObjectId = require('mongodb').ObjectId;
 // explicitly stated in the curricula.
 
 const degree = {
-	'name': 'BSCS',
+	'name': 'BAPHLO',
 	'major': 'SP',
-	'subjects': [
-		ObjectId('62728d04ecce07f44e4d1761'),
-		// {
-		// 	"code" : "CMSC 12",
-		// 	"units" : 3
-		// },
-		ObjectId('627292bbe42248877729dd81'),
-		// {
-		// 	"code" : "CMSC 56",
-		// 	"units" : 3
-		// },
-		ObjectId('626d42befee24c0a7a8e930f'),
-		// {
-		// 	"code" : "ETHICS 1",
-		// 	"units" : 3
-		// },
-		ObjectId('62728cc3591bd41f02539496'),
-		// {
-		// 	"code" : "MATH 27",
-		// 	"units" : 3
-		// },
-		ObjectId('626d42befee24c0a7a8e9312'),
-		// {
-		// 	"code" : "STS 1",
-		// 	"units" : 3
-		// },
-		ObjectId('626d44d7eb3a38230c7a3e76'),
-		// {
-		// 	"code" : "HK 11",
-		// 	"units" : 0
-		// },
-		ObjectId('626d42befee24c0a7a8e930d'),
-		// {
-		// 	"code" : "ARTS 1",
-		// 	"units" : 3
-		// },
-		ObjectId('627292bbe42248877729dd82'),
-		// {
-		// 	"code" : "CMSC 21",
-		// 	"units" : 3
-		// },
-		ObjectId('627292bbe42248877729dd83'),
-		// {
-		// 	"code" : "CMSC 57",
-		// 	"units" : 3
-		// },
-		ObjectId('62728d04ecce07f44e4d1759'),
-		// {
-		// 	"code" : "MATH 28",
-		// 	"units" : 3
-		// },
-		ObjectId('626d42befee24c0a7a8e9310'),
-		// {
-		// 	"code" : "KAS 1",
-		// 	"units" : 3
-		// },
-		ObjectId('626d42befee24c0a7a8e9311'),
-		// {
-		// 	"code" : "HIST 1",
-		// 	"units" : 3
-		// },
-		ObjectId('626d44d7eb3a38230c7a3e7a'),
-		// {
-		// 	"code" : "HK 12",
-		// 	"units" : 0
-		// },
-		ObjectId('626d44d7eb3a38230c7a3e7b'),
-		// {
-		// 	"code" : "HK 13",
-		// 	"units" : 0
-		// },
-		ObjectId('627292bbe42248877729dd84'),
-		// {
-		// 	"code" : "CMSC 22",
-		// 	"units" : 3
-		// },
-		ObjectId('627292bbe42248877729dd85'),
-		// {
-		// 	"code" : "CMSC 123",
-		// 	"units" : 3
-		// },
-		ObjectId('627292bbe42248877729dd86'),
-		// {
-		// 	"code" : "CMSC 130",
-		// 	"units" : 3
-		// },
-		ObjectId('627292bbe42248877729dd87'),
-		// {
-		// 	"code" : "CMSC 150",
-		// 	"units" : 3
-		// },
-		ObjectId('626d42befee24c0a7a8e9313'),
-		// {
-		// 	"code" : "PI 10",
-		// 	"units" : 3
-		// },
-		ObjectId('626d44d7eb3a38230c7a3e81'),
-		// {
-		// 	"code" : "NSTP 1",
-		// 	"units" : 0
-		// },
-		ObjectId('627292bbe42248877729dd88'),
-		// {
-		// 	"code" : "CMSC 23",
-		// 	"units" : 3
-		// },
-		ObjectId('627292bbe42248877729dd89'),
-		// {
-		// 	"code" : "CMSC 100",
-		// 	"units" : 3
-		// },
-		ObjectId('627292bbe42248877729dd8a'),
-		// {
-		// 	"code" : "CMSC 127",
-		// 	"units" : 3
-		// },
-		ObjectId('627292bbe42248877729dd8b'),
-		// {
-		// 	"code" : "CMSC 131",
-		// 	"units" : 3
-		// },
-		ObjectId('62728df25f73ec537aa62c24'),
-		// {
-		// 	"code" : "STAT 101",
-		// 	"units" : 3
-		// },
-		ObjectId('626d44d7eb3a38230c7a3e85'),
-		// {
-		// 	"code" : "NSTP 2",
-		// 	"units" : 0
-		// },
-		ObjectId('626d42befee24c0a7a8e930e'),
-		// {
-		// 	"code" : "COMM 10",
-		// 	"units" : 3
-		// },
-		ObjectId('627292c8486fcb85aa703abd'),
-		// {
-		// 	"code" : "CMSC 124",
-		// 	"units" : 3
-		// },
-		ObjectId('627292c8486fcb85aa703abe'),
-		// {
-		// 	"code" : "CMSC 125",
-		// 	"units" : 3
-		// },
-		ObjectId('627292c8486fcb85aa703abf'),
-		// {
-		// 	"code" : "CMSC 132",
-		// 	"units" : 3
-		// },
-		ObjectId('627292c8486fcb85aa703ac0'),
-		// {
-		// 	"code" : "CMSC 141",
-		// 	"units" : 3
-		// },
-		ObjectId('627292c8486fcb85aa703ac1'),
-		// {
-		// 	"code" : "CMSC 170",
-		// 	"units" : 3
-		// },
-		ObjectId('627292c8486fcb85aa703ac2'),
-		// {
-		// 	"code" : "CMSC 128",
-		// 	"units" : 3
-		// },
-		ObjectId('627292c8486fcb85aa703ac3'),
-		// {
-		// 	"code" : "CMSC 137",
-		// 	"units" : 3
-		// },
-		ObjectId('627292c8486fcb85aa703ac4'),
-		// {
-		// 	"code" : "CMSC 142",
-		// 	"units" : 3
-		// },
-		ObjectId('627292c8486fcb85aa703ac5'),
-		// {
-		// 	"code" : "CMSC 173",
-		// 	"units" : 3
-		// },
-		ObjectId('627292c8486fcb85aa703ac6'),
-		// {
-		// 	"code" : "CMSC 180",
-		// 	"units" : 3
-		// },
-		ObjectId('6283e8ed0175f7122e43e495'),
-		// {
-		// 	"code" : "CMSC 198",
-		// 	"units" : 3
-		// },
-		ObjectId('627292c8486fcb85aa703ac7'),
-		// {
-		// 	"code" : "CMSC 190",
-		// 	"units" : 3
-		// },
-		ObjectId('627292c8486fcb85aa703ac8'),
-		// {
-		// 	"code" : "CMSC 199",
-		// 	"units" : 1
-		// },
-		ObjectId('627292c8486fcb85aa703aca'),
-		// {
-		// 	"code" : "ENG 10",
-		// 	"units" : 3
-		// },
+	'subjects': [		
+		ObjectId("62728748ad94f0ad06fe971a"),
+		// PHLO 11
+		ObjectId("62728748ad94f0ad06fe971b"),
+		// PHLO 12
+		ObjectId("626d44d7eb3a38230c7a3e81"),
+		// NSTP 1
+		ObjectId("626d44d7eb3a38230c7a3e76"),
+		// HK 11
+		ObjectId("62728748ad94f0ad06fe971c"),
+		// PHLO 150
+		ObjectId("62728748ad94f0ad06fe971d"),
+		// PHLO 171
+		ObjectId("62728748ad94f0ad06fe971e"),
+		// SPEC
+		ObjectId("62728748ad94f0ad06fe971f"),
+		// ECON 11
+		ObjectId("62728748ad94f0ad06fe9720"),
+		// POSC 10
+		ObjectId("626d44d7eb3a38230c7a3e85"),
+		// NSTP 2
+		ObjectId("626d44d7eb3a38230c7a3e7a"),
+		// HK 12
+		ObjectId("626d44d7eb3a38230c7a3e7b"),
+		// HK 13
+		ObjectId("62728748ad94f0ad06fe9721"),
+		// PHLO 110
+		ObjectId("62728748ad94f0ad06fe9722"),
+		// PHLO 112
+		ObjectId("62728748ad94f0ad06fe9723"),
+		// PHLO 173
+		ObjectId("6285168b678b450f4457ab8b"),
+		// PHLO 111
+		ObjectId("6285168b678b450f4457ab8c"),
+		// PHLO 120
+		ObjectId("62728748ad94f0ad06fe9724"),
+		// PHLO 174
+		ObjectId("62728748ad94f0ad06fe9725"),
+		// PHLO 181
+		ObjectId("62728748ad94f0ad06fe9726"),
+		// PHLO 195
+		ObjectId("62728748ad94f0ad06fe9727"),
+		// PHLO 197
+		ObjectId("62728748ad94f0ad06fe9728"),
+		// PHLO 113
+		ObjectId("62728748ad94f0ad06fe9729"),
+		// PHLO 182
+		ObjectId("62728748ad94f0ad06fe972a"),
+		// PHLO 176
+		ObjectId("62728748ad94f0ad06fe972b"),
+		// PHLO 178
+		ObjectId("62728748ad94f0ad06fe972c"),
+		// PHLO 190
+		ObjectId("62728748ad94f0ad06fe972d"),
+		// PHLO 160
+		ObjectId("62728748ad94f0ad06fe972e"),
+		// PHLO 184
+		ObjectId("62728748ad94f0ad06fe972f"),
+		// PHLO 185
 	],
-	'specializationUnits': 18,
-	'geElectiveUnits': 9,
+	'specializationUnits': 33,
+	'geElectiveUnits': 27,
 	'maxThesisIterations': 9,
 };
 
@@ -271,41 +126,14 @@ const go = async () => {
 go();
 
 // [SUBJECT INSERT CODE]
-//Subject.insertMany([
-//	   //{ code: 'PHYS 193.1', units: 2 },
-//	   // { code: 'MATH 198', units: 3 },
-//     // { code: "MATH 103", units: 3 },
-//     // { code: "AMAT 105", units: 3 }
-//     // { code: "MST 101c", units: 1 },
-//     // { code: "EDUC 102", units: 3 },
-//     // { code: "EDUC 111", units: 3 },
-//     // { code: "STAT 166", units: 3 },
-//     // { code: "SPCM 156", units: 3 },
-//     // { code: "MST 101d", units: 1 },
-//     // { code: "DEVC 40", units: 3 },
-//     // { code: "MST 40", units: 3 },
-//     // { code: "EDUC 122", units: 3 },
-//     // { code: "BOT 14", units: 3 },
-//     // { code: "CHEM 160", units: 3 },
-//     // { code: "MST 123", units: 5 },
-//     // { code: "EDUC 144", units: 3 },
-//     // { code: "MST 195", units: 3 },
-//     // { code: "MST 199", units: 1 },
-//     // { code: "MST 200a", units: 3 },
-//     // { code: "MATH 18", units: 3 },
-//     // { code: "MST 190", units: 3 },
-//     // { code: "MST 191", units: 3 },
-//     // { code: "MST 200b", units: 3 },
-//     // { code: "HFDS 12", units: 3 },
-//     // { code: "MATH 190", units: 3 },
-//     // { code: "MATH 192", units: 3 },
-//     // { code: "CHEM 120.1", units: 2 },
-//     // { code: "CHEM 171", units: 3 },
-//     // { code: "CHEM 199", units: 1 }
-//])
-//	.then(function () {
-//		console.log('Data inserted'); // Success
-//	})
-//	.catch(function (error) {
-//		console.log(error); // Failure
-//	});
+// Subject.insertMany([
+// 	{ code: 'PHLO 111', units: 3 },
+// 	{ code: 'PHLO 120', units: 3 },
+// 	{ code: 'PHLO 200', units: 3 }
+// ])
+// 	.then(function () {
+// 		console.log('Data inserted'); // Success
+// 	})
+// 	.catch(function (error) {
+// 		console.log(error); // Failure
+// 	});
