@@ -13,7 +13,9 @@ mongoose.connect(
 		}
 	}
 );
-
+mongoose.set('useNewUrlParser', true);
+mongoose.set('useFindAndModify', false);
+mongoose.set('useCreateIndex', true);
 // const User = require("./database/models/regular-user");
 // const Admin = require("./database/models/admin");
 
@@ -289,36 +291,9 @@ const go = async () => {
 
 // [SUBJECT INSERT CODE]
 // Subject.insertMany([
-// 	{ code: 'SPCM 151', units: 2 },
-// 	{ code: 'SPCM 152', units: 3 },
-//     { code: "SPCM 153", units: 3 },
-//     { code: "SPCM 154", units: 3 },
-//     { code: "SPCM 155", units: 1 },
-//     { code: "SPAN 10", units: 3 },
-//     { code: "SPCM 157", units: 3 },
-//     { code: "SPAN 11", units: 3 },
-//     { code: "SCIENCE 10", units: 3 },
-    // { code: "MST 101d", units: 1 },
-    // { code: "DEVC 40", units: 3 },
-    // { code: "MST 40", units: 3 },
-    // { code: "EDUC 122", units: 3 },
-    // { code: "BOT 14", units: 3 },
-    // { code: "CHEM 160", units: 3 },
-    // { code: "MST 123", units: 5 },
-    // { code: "EDUC 144", units: 3 },
-    // { code: "MST 195", units: 3 },
-    // { code: "MST 199", units: 1 },
-    // { code: "MST 200a", units: 3 },
-    // { code: "MATH 18", units: 3 },
-    // { code: "MST 190", units: 3 },
-    // { code: "MST 191", units: 3 },
-    // { code: "MST 200b", units: 3 },
-    // { code: "HFDS 12", units: 3 },
-    // { code: "MATH 190", units: 3 },
-    // { code: "MATH 192", units: 3 },
-    // { code: "CHEM 120.1", units: 2 },
-    // { code: "CHEM 171", units: 3 },
-    // { code: "CHEM 199", units: 1 }
+// 	{ code: 'PHLO 111', units: 3 },
+// 	{ code: 'PHLO 120', units: 3 },
+// 	{ code: 'PHLO 200', units: 3 }
 // ])
 // 	.then(function () {
 // 		console.log('Data inserted'); // Success
