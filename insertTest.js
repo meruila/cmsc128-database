@@ -46,82 +46,101 @@ var ObjectId = require('mongodb').ObjectId;
 // explicitly stated in the curricula.
 
 const degree = {
-	'name': 'BAPHLO',
+	'name': 'BASOC',
 	'major': 'Thesis',
-	'subjects': [
-		[ObjectId("626d42befee24c0a7a8e930d")],
-		// ARTS 1
-		[ObjectId("626d42befee24c0a7a8e930e")],
-		// COMM 10
+	'subjects': [		
 		[ObjectId("626d42befee24c0a7a8e930f")],
 		// ETHICS 1
-		[ObjectId("626d42befee24c0a7a8e9310"),
-		ObjectId("626d42befee24c0a7a8e9311")],
-		// KAS 1/HIST 1
-		[ObjectId("626d42befee24c0a7a8e9312")],
-		// STS 1
-		[ObjectId("626d42befee24c0a7a8e9313")],
-		// PI 10		
-		[ObjectId("62728748ad94f0ad06fe971a")],
-		// PHLO 11
-		[ObjectId("62728748ad94f0ad06fe971b")],
-		// PHLO 12
-		[ObjectId("626d44d7eb3a38230c7a3e81")],
-		// NSTP 1
+		[ObjectId("626d42befee24c0a7a8e9311"),
+		// HIST 1
+		ObjectId("626d42befee24c0a7a8e9310")],
+		// KAS 1
+		[ObjectId("627289becf55453d96c4bd09")],
+		// SOC 10
+		[ObjectId("627289becf55453d96c4bd0a")],
+		// ANTH 10
+		[ObjectId("627289becf55453d96c4bd0b")],
+		// PSY 10
 		[ObjectId("626d44d7eb3a38230c7a3e76")],
 		// HK 11
-		[ObjectId("62728748ad94f0ad06fe971c")],
-		// PHLO 150
-		[ObjectId("62728748ad94f0ad06fe971d")],
-		// PHLO 171
-		[ObjectId("62728748ad94f0ad06fe971e")],
-		// SPEC
-		[ObjectId("62728748ad94f0ad06fe971f"),
-		// ECON 11
-		ObjectId("62728748ad94f0ad06fe9720")],
+		[ObjectId("62853b58f921a9134490fe4c")],
+		// HIST 10
+		[ObjectId("62728748ad94f0ad06fe9720")],
 		// POSC 10
-		[ObjectId("626d44d7eb3a38230c7a3e85")],
-		// NSTP 2
+		[ObjectId("627289becf55453d96c4bd0c")],
+		// SOC 100
+		[ObjectId("627289becf55453d96c4bd0d")],
+		// SOC 110
 		[ObjectId("626d44d7eb3a38230c7a3e7a"),
 		// HK 12
 		ObjectId("626d44d7eb3a38230c7a3e7b")],
 		// HK 13
-		[ObjectId("62728748ad94f0ad06fe9721")],
-		// PHLO 110
-		[ObjectId("62728748ad94f0ad06fe9722")],
-		// PHLO 112
-		[ObjectId("62728748ad94f0ad06fe9723")],
-		// PHLO 173
-		[ObjectId("6285168b678b450f4457ab8b")],
-		// PHLO 111
-		[ObjectId("6285168b678b450f4457ab8c")],
-		// PHLO 120
-		[ObjectId("62728748ad94f0ad06fe9724")],
-		// PHLO 174
-		[ObjectId("62728748ad94f0ad06fe9725")],
-		// PHLO 181
-		[ObjectId("62728748ad94f0ad06fe9726")],
-		// PHLO 195
-		[ObjectId("62728748ad94f0ad06fe9727")],
-		// PHLO 197
-		[ObjectId("62728748ad94f0ad06fe9728")],
-		// PHLO 113
-		[ObjectId("62728748ad94f0ad06fe9729")],
-		// PHLO 182
-		[ObjectId("62728748ad94f0ad06fe972a")],
-		// PHLO 176
-		[ObjectId("62728748ad94f0ad06fe972b")],
-		// PHLO 178
-		[ObjectId("6285168b678b450f4457ab8d"),],
-		// PHLO 200
-		[ObjectId("62728748ad94f0ad06fe972d")],
-		// PHLO 160
-		[ObjectId("62728748ad94f0ad06fe972e")],
-		// PHLO 184
-		[ObjectId("62728748ad94f0ad06fe972f")],
-		// PHLO 185
+		[ObjectId("626d42befee24c0a7a8e9312")],
+		// STS 1
+		[ObjectId("626d42befee24c0a7a8e930d")],
+		// ARTS 1
+		[ObjectId("62728748ad94f0ad06fe971f")],
+		// ECON 11
+		[ObjectId("627289becf55453d96c4bd0e")],
+		// SOC 116
+		[ObjectId("627289becf55453d96c4bd0f")],
+		// STAT 166
+		[ObjectId("627289becf55453d96c4bd10"),
+		// SOC 130
+		ObjectId("627289becf55453d96c4bd11")],
+		// SOC 135
+		[ObjectId("626d44d7eb3a38230c7a3e81")],
+		// NSTP 1
+		[ObjectId("627289becf55453d96c4bd12")],
+		// AERS 160
+		[ObjectId("627289becf55453d96c4bd13")],
+		// SOC 140
+		[ObjectId("626d44d7eb3a38230c7a3e85")],
+		// NSTP 2
+		[ObjectId("626d42befee24c0a7a8e9313")],
+		// PI 10
+		[ObjectId("627289becf55453d96c4bd14")],
+		// SOC 107
+		[ObjectId("627289becf55453d96c4bd15")],
+		// SOC 151
+		[ObjectId("627289becf55453d96c4bd16")],
+		// SOC 195
+		[ObjectId("627289becf55453d96c4bd17")],
+		// SOC 195.1
+		[ObjectId("626d42befee24c0a7a8e930e")],
+		// COMM 10
+		[ObjectId("627289becf55453d96c4bd18")],
+		// SOC 152
+		[ObjectId("627289becf55453d96c4bd19")],
+		// SOC 166
+		[ObjectId("627289becf55453d96c4bd1a")],
+		// SOC 192
+		[ObjectId("627289becf55453d96c4bd1b")],
+		// SOC 198
+		[ObjectId("627289becf55453d96c4bd1c")],
+		// SOC 114
+		[ObjectId("627289becf55453d96c4bd1d")],
+		// SOC 120
+		[ObjectId("627289becf55453d96c4bd1e")],
+		// SOC 180
+		[ObjectId("627289becf55453d96c4bd1f")],
+		// SOC 191
+		[ObjectId("627289becf55453d96c4bd20")],
+		// SOC 199
+		[ObjectId("627289becf55453d96c4bd21")],
+		// SOC 200
+		[ObjectId("627289becf55453d96c4bd22")],
+		// SOC 112
+		[ObjectId("627289becf55453d96c4bd23"),
+		// SOC 160
+		ObjectId("627289becf55453d96c4bd24")],
+		// SOC 165
+		[ObjectId("627289becf55453d96c4bd25"),
+		// SOC 170
+		ObjectId("627289becf55453d96c4bd26")]
+		// SOC 175
 	],
-	'specializationUnits': 33,
+	'specializationUnits': 21,
 	'geElectiveUnits': 9,
 	'maxThesisIterations': 9,
 };
