@@ -47,7 +47,7 @@ var ObjectId = require('mongodb').ObjectId;
 
 const degree = {
 	'name': 'BAPHLO',
-	'major': 'SP',
+	'major': 'Thesis',
 	'subjects': [
 		[ObjectId("626d42befee24c0a7a8e930d")],
 		// ARTS 1
@@ -112,8 +112,8 @@ const degree = {
 		// PHLO 176
 		[ObjectId("62728748ad94f0ad06fe972b")],
 		// PHLO 178
-		[ObjectId("62728748ad94f0ad06fe972c")],
-		// PHLO 190
+		[ObjectId("6285168b678b450f4457ab8d"),],
+		// PHLO 200
 		[ObjectId("62728748ad94f0ad06fe972d")],
 		// PHLO 160
 		[ObjectId("62728748ad94f0ad06fe972e")],
