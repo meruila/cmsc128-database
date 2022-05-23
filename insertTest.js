@@ -45,24 +45,59 @@ var ObjectId = require('mongodb').ObjectId;
 // add required subjects, and change specializationUnits to 0 since they are
 // explicitly stated in the curricula.
 
-const degree2 = {
-	'name': 'BSMATH',
-	'major': 'SP',
+const degree = {
+	'name': 'BSCS',
+	'major': 'Thesis',
 	'subjects': [
-		[ObjectId('627293b65a538e6c6223a967')],
+		[ObjectId('62728d04ecce07f44e4d1761')],
 		// {
-		// 	"code" : "MATH 20",
+		// 	"code" : "CMSC 12",
 		// 	"units" : 3
 		// },
-		[ObjectId('62728df25f73ec537aa62c21')],
+		[ObjectId('627292bbe42248877729dd81')],
 		// {
-		// 	"code" : "MATH 36",
-		// 	"units" : 5
+		// 	"code" : "CMSC 56",
+		// 	"units" : 3
 		// },
-		[ObjectId('62728df25f73ec537aa62c22')],
+		[ObjectId('626d42befee24c0a7a8e930f')],
 		// {
-		// 	"code" : "BIO 11.1",
-		// 	"units" : 2
+		// 	"code" : "ETHICS 1",
+		// 	"units" : 3
+		// },
+		[ObjectId('62728cc3591bd41f02539496')],
+		// {
+		// 	"code" : "MATH 27",
+		// 	"units" : 3
+		// },
+		[ObjectId('626d42befee24c0a7a8e9312')],
+		// {
+		// 	"code" : "STS 1",
+		// 	"units" : 3
+		// },
+		[ObjectId('626d44d7eb3a38230c7a3e76')],
+		// {
+		// 	"code" : "HK 11",
+		// 	"units" : 0
+		// },
+		[ObjectId('626d42befee24c0a7a8e930d')],
+		// {
+		// 	"code" : "ARTS 1",
+		// 	"units" : 3
+		// },
+		[ObjectId('627292bbe42248877729dd82')],
+		// {
+		// 	"code" : "CMSC 21",
+		// 	"units" : 3
+		// },
+		[ObjectId('627292bbe42248877729dd83')],
+		// {
+		// 	"code" : "CMSC 57",
+		// 	"units" : 3
+		// },
+		[ObjectId('62728d04ecce07f44e4d1759')],
+		// {
+		// 	"code" : "MATH 28",
+		// 	"units" : 3
 		// },
 		[ObjectId('626d42befee24c0a7a8e9310'),
 		// {
@@ -72,41 +107,6 @@ const degree2 = {
 		ObjectId('626d42befee24c0a7a8e9311')],
 		// {
 		// 	"code" : "HIST 1",
-		// 	"units" : 3
-		// },
-		[ObjectId('626d42befee24c0a7a8e930f')],
-		// {
-		// 	"code" : "ETHICS 1",
-		// 	"units" : 3
-		// },
-		[ObjectId('626d44d7eb3a38230c7a3e76')],
-		// {
-		// 	"code" : "HK 11",
-		// 	"units" : 0
-		// },
-		[ObjectId('62728df25f73ec537aa62c23')],
-		// {
-		// 	"code" : "MATH 37",
-		// 	"units" : 3
-		// },
-		[ObjectId('62728df25f73ec537aa62c24')],
-		// {
-		// 	"code" : "STAT 101",
-		// 	"units" : 3
-		// },
-		[ObjectId('62728cc3591bd41f02539493')],
-		// {
-		// 	"code" : "CHEM 18",
-		// 	"units" : 3
-		// },
-		[ObjectId('62728cc3591bd41f02539494')],
-		// {
-		// 	"code" : "CHEM 18.1",
-		// 	"units" : 2
-		// },
-		[ObjectId('626d42befee24c0a7a8e930d')],
-		// {
-		// 	"code" : "ARTS 1",
 		// 	"units" : 3
 		// },
 		[ObjectId('626d44d7eb3a38230c7a3e7a'),
@@ -119,95 +119,24 @@ const degree2 = {
 		// 	"code" : "HK 13",
 		// 	"units" : 0
 		// },
-		[ObjectId('62728e10280e1499e84e2231')],
+		[ObjectId('627292bbe42248877729dd84')],
 		// {
-		// 	"code" : "MATH 38",
-		// 	"units" : 5
-		// },
-		[ObjectId('62728e10280e1499e84e2232')],
-		// {
-		// 	"code" : "MATH 101",
+		// 	"code" : "CMSC 22",
 		// 	"units" : 3
 		// },
-		[ObjectId('62728e10280e1499e84e2233')],
+		[ObjectId('627292bbe42248877729dd85')],
 		// {
-		// 	"code" : "PHYS 51",
-		// 	"units" : 4
-		// },
-		[ObjectId('62728e10280e1499e84e2234')],
-		// {
-		// 	"code" : "PHYS 51.1",
-		// 	"units" : 1
-		// },
-		[ObjectId('626d44d7eb3a38230c7a3e81')],
-		// {
-		// 	"code" : "NSTP 1",
-		// 	"units" : 0
-		// },
-		[ObjectId('627293e1fc9afe8f46ba59aa')],
-		// {
-		// 	"code" : "MATH 103",
+		// 	"code" : "CMSC 123",
 		// 	"units" : 3
 		// },
-		[ObjectId('627293e1fc9afe8f46ba59ab')],
+		[ObjectId('627292bbe42248877729dd86')],
 		// {
-		// 	"code" : "MATH 138",
+		// 	"code" : "CMSC 130",
 		// 	"units" : 3
 		// },
-		[ObjectId('627293e1fc9afe8f46ba59ac')],
+		[ObjectId('627292bbe42248877729dd87')],
 		// {
-		// 	"code" : "MATH 141",
-		// 	"units" : 3
-		// },
-		[ObjectId('62728d04ecce07f44e4d1762')],
-		// {
-		// 	"code" : "AMAT 152",
-		// 	"units" : 3
-		// },
-		[ObjectId('626d42befee24c0a7a8e9312')],
-		// {
-		// 	"code" : "STS 1",
-		// 	"units" : 3
-		// },
-		[ObjectId('626d44d7eb3a38230c7a3e85')],
-		// {
-		// 	"code" : "NSTP 2",
-		// 	"units" : 0
-		// },
-		[ObjectId('627293efd2258011801da807')],
-		// {
-		// 	"code" : "MATH 111",
-		// 	"units" : 3
-		// },
-		[ObjectId('62728e1f77ef69a8b992531e')],
-		// {
-		// 	"code" : "MATH 155",
-		// 	"units" : 3
-		// },
-		[ObjectId("62728e1f77ef69a8b9925320")],
-		[ObjectId('62728606f5ec17dac940459d')],
-		// {
-		// 	"code" : "COMA 150",
-		// 	"units" : 3
-		// },
-		[ObjectId('626d42befee24c0a7a8e930e')],
-		// {
-		// 	"code" : "COMM 10",
-		// 	"units" : 3
-		// },
-		[ObjectId('627293fb25ee6c7d1b0249dd')],
-		// {
-		// 	"code" : "MATH 120",
-		// 	"units" : 3
-		// },
-		[ObjectId('627293fb25ee6c7d1b0249de')],
-		// {
-		// 	"code" : "MATH 133",
-		// 	"units" : 3
-		// },
-		[ObjectId('62728e1f77ef69a8b992531b')],
-		// {
-		// 	"code" : "MATH 151",
+		// 	"code" : "CMSC 150",
 		// 	"units" : 3
 		// },
 		[ObjectId('626d42befee24c0a7a8e9313')],
@@ -215,50 +144,340 @@ const degree2 = {
 		// 	"code" : "PI 10",
 		// 	"units" : 3
 		// },
-		[ObjectId('6283e8ed0175f7122e43e496')],
+		[ObjectId('626d44d7eb3a38230c7a3e81')],
 		// {
-		// 	"code" : "MATH 198",
+		// 	"code" : "NSTP 1",
+		// 	"units" : 0
+		// },
+		[ObjectId('627292bbe42248877729dd88')],
+		// {
+		// 	"code" : "CMSC 23",
 		// 	"units" : 3
 		// },
-		[ObjectId('627294067d4a78a8ddf2429a')],
+		[ObjectId('627292bbe42248877729dd89')],
 		// {
-		// 	"code" : "MATH 135",
+		// 	"code" : "CMSC 100",
 		// 	"units" : 3
 		// },
-		[ObjectId('627294067d4a78a8ddf2429b')],
+		[ObjectId('627292bbe42248877729dd8a')],
 		// {
-		// 	"code" : "MATH 165",
+		// 	"code" : "CMSC 127",
 		// 	"units" : 3
 		// },
-		[ObjectId('62728e1f77ef69a8b992531d')],
+		[ObjectId('627292bbe42248877729dd8b')],
 		// {
-		// 	"code" : "MATH 181",
+		// 	"code" : "CMSC 131",
 		// 	"units" : 3
 		// },
-		[ObjectId('62729422a4b8a01428939152')],
+		[ObjectId('62728df25f73ec537aa62c24')],
 		// {
-		// 	"code" : "MATH 190",
+		// 	"code" : "STAT 101",
 		// 	"units" : 3
 		// },
-		[ObjectId('62729422a4b8a01428939150')],
+		[ObjectId('626d44d7eb3a38230c7a3e85')],
 		// {
-		// 	"code" : "MATH 192",
+		// 	"code" : "NSTP 2",
+		// 	"units" : 0
+		// },
+		[ObjectId('626d42befee24c0a7a8e930e')],
+		// {
+		// 	"code" : "COMM 10",
 		// 	"units" : 3
 		// },
-		[ObjectId('62729422a4b8a01428939151')]
+		[ObjectId('627292c8486fcb85aa703abd')],
 		// {
-		// 	"code" : "MATH 199",
+		// 	"code" : "CMSC 124",
+		// 	"units" : 3
+		// },
+		[ObjectId('627292c8486fcb85aa703abe')],
+		// {
+		// 	"code" : "CMSC 125",
+		// 	"units" : 3
+		// },
+		[ObjectId('627292c8486fcb85aa703abf')],
+		// {
+		// 	"code" : "CMSC 132",
+		// 	"units" : 3
+		// },
+		[ObjectId('627292c8486fcb85aa703ac0')],
+		// {
+		// 	"code" : "CMSC 141",
+		// 	"units" : 3
+		// },
+		[ObjectId('627292c8486fcb85aa703ac1')],
+		// {
+		// 	"code" : "CMSC 170",
+		// 	"units" : 3
+		// },
+		[ObjectId('627292c8486fcb85aa703ac2')],
+		// {
+		// 	"code" : "CMSC 128",
+		// 	"units" : 3
+		// },
+		[ObjectId('627292c8486fcb85aa703ac3')],
+		// {
+		// 	"code" : "CMSC 137",
+		// 	"units" : 3
+		// },
+		[ObjectId('627292c8486fcb85aa703ac4')],
+		// {
+		// 	"code" : "CMSC 142",
+		// 	"units" : 3
+		// },
+		[ObjectId('627292c8486fcb85aa703ac5')],
+		// {
+		// 	"code" : "CMSC 173",
+		// 	"units" : 3
+		// },
+		[ObjectId('627292c8486fcb85aa703ac6')],
+		// {
+		// 	"code" : "CMSC 180",
+		// 	"units" : 3
+		// },
+		[ObjectId('6283e8ed0175f7122e43e495')],
+		// {
+		// 	"code" : "CMSC 198",
+		// 	"units" : 3
+		// },
+		[ObjectId('627292c8486fcb85aa703ac7')],
+		// {
+		// 	"code" : "CMSC 199",
 		// 	"units" : 1
+		// },
+		[ObjectId('627292c8486fcb85aa703ac8')],
+		// {
+		// 	"code" : "CMSC 200",
+		// 	"units" : 3
+		// },
+		[ObjectId('627292c8486fcb85aa703aca')],
+		// {
+		// 	"code" : "ENG 10",
+		// 	"units" : 3
+		// },
+	],
+	'specializationUnits': 15,
+	'geElectiveUnits': 9,
+	'maxThesisIterations': 9,
+};
+
+const degree2 = {
+	'name': 'BSCS',
+	'major': 'SP',
+	'subjects': [
+		ObjectId('62728d04ecce07f44e4d1761'),
+		// {
+		// 	"code" : "CMSC 12",
+		// 	"units" : 3
+		// },
+		ObjectId('627292bbe42248877729dd81'),
+		// {
+		// 	"code" : "CMSC 56",
+		// 	"units" : 3
+		// },
+		ObjectId('626d42befee24c0a7a8e930f'),
+		// {
+		// 	"code" : "ETHICS 1",
+		// 	"units" : 3
+		// },
+		ObjectId('62728cc3591bd41f02539496'),
+		// {
+		// 	"code" : "MATH 27",
+		// 	"units" : 3
+		// },
+		ObjectId('626d42befee24c0a7a8e9312'),
+		// {
+		// 	"code" : "STS 1",
+		// 	"units" : 3
+		// },
+		ObjectId('626d44d7eb3a38230c7a3e76'),
+		// {
+		// 	"code" : "HK 11",
+		// 	"units" : 0
+		// },
+		ObjectId('626d42befee24c0a7a8e930d'),
+		// {
+		// 	"code" : "ARTS 1",
+		// 	"units" : 3
+		// },
+		ObjectId('627292bbe42248877729dd82'),
+		// {
+		// 	"code" : "CMSC 21",
+		// 	"units" : 3
+		// },
+		ObjectId('627292bbe42248877729dd83'),
+		// {
+		// 	"code" : "CMSC 57",
+		// 	"units" : 3
+		// },
+		ObjectId('62728d04ecce07f44e4d1759'),
+		// {
+		// 	"code" : "MATH 28",
+		// 	"units" : 3
+		// },
+		ObjectId('626d42befee24c0a7a8e9310'),
+		// {
+		// 	"code" : "KAS 1",
+		// 	"units" : 3
+		// },
+		ObjectId('626d42befee24c0a7a8e9311'),
+		// {
+		// 	"code" : "HIST 1",
+		// 	"units" : 3
+		// },
+		ObjectId('626d44d7eb3a38230c7a3e7a'),
+		// {
+		// 	"code" : "HK 12",
+		// 	"units" : 0
+		// },
+		ObjectId('626d44d7eb3a38230c7a3e7b'),
+		// {
+		// 	"code" : "HK 13",
+		// 	"units" : 0
+		// },
+		ObjectId('627292bbe42248877729dd84'),
+		// {
+		// 	"code" : "CMSC 22",
+		// 	"units" : 3
+		// },
+		ObjectId('627292bbe42248877729dd85'),
+		// {
+		// 	"code" : "CMSC 123",
+		// 	"units" : 3
+		// },
+		ObjectId('627292bbe42248877729dd86'),
+		// {
+		// 	"code" : "CMSC 130",
+		// 	"units" : 3
+		// },
+		ObjectId('627292bbe42248877729dd87'),
+		// {
+		// 	"code" : "CMSC 150",
+		// 	"units" : 3
+		// },
+		ObjectId('626d42befee24c0a7a8e9313'),
+		// {
+		// 	"code" : "PI 10",
+		// 	"units" : 3
+		// },
+		ObjectId('626d44d7eb3a38230c7a3e81'),
+		// {
+		// 	"code" : "NSTP 1",
+		// 	"units" : 0
+		// },
+		ObjectId('627292bbe42248877729dd88'),
+		// {
+		// 	"code" : "CMSC 23",
+		// 	"units" : 3
+		// },
+		ObjectId('627292bbe42248877729dd89'),
+		// {
+		// 	"code" : "CMSC 100",
+		// 	"units" : 3
+		// },
+		ObjectId('627292bbe42248877729dd8a'),
+		// {
+		// 	"code" : "CMSC 127",
+		// 	"units" : 3
+		// },
+		ObjectId('627292bbe42248877729dd8b'),
+		// {
+		// 	"code" : "CMSC 131",
+		// 	"units" : 3
+		// },
+		ObjectId('62728df25f73ec537aa62c24'),
+		// {
+		// 	"code" : "STAT 101",
+		// 	"units" : 3
+		// },
+		ObjectId('626d44d7eb3a38230c7a3e85'),
+		// {
+		// 	"code" : "NSTP 2",
+		// 	"units" : 0
+		// },
+		ObjectId('626d42befee24c0a7a8e930e'),
+		// {
+		// 	"code" : "COMM 10",
+		// 	"units" : 3
+		// },
+		ObjectId('627292c8486fcb85aa703abd'),
+		// {
+		// 	"code" : "CMSC 124",
+		// 	"units" : 3
+		// },
+		ObjectId('627292c8486fcb85aa703abe'),
+		// {
+		// 	"code" : "CMSC 125",
+		// 	"units" : 3
+		// },
+		ObjectId('627292c8486fcb85aa703abf'),
+		// {
+		// 	"code" : "CMSC 132",
+		// 	"units" : 3
+		// },
+		ObjectId('627292c8486fcb85aa703ac0'),
+		// {
+		// 	"code" : "CMSC 141",
+		// 	"units" : 3
+		// },
+		ObjectId('627292c8486fcb85aa703ac1'),
+		// {
+		// 	"code" : "CMSC 170",
+		// 	"units" : 3
+		// },
+		ObjectId('627292c8486fcb85aa703ac2'),
+		// {
+		// 	"code" : "CMSC 128",
+		// 	"units" : 3
+		// },
+		ObjectId('627292c8486fcb85aa703ac3'),
+		// {
+		// 	"code" : "CMSC 137",
+		// 	"units" : 3
+		// },
+		ObjectId('627292c8486fcb85aa703ac4'),
+		// {
+		// 	"code" : "CMSC 142",
+		// 	"units" : 3
+		// },
+		ObjectId('627292c8486fcb85aa703ac5'),
+		// {
+		// 	"code" : "CMSC 173",
+		// 	"units" : 3
+		// },
+		ObjectId('627292c8486fcb85aa703ac6'),
+		// {
+		// 	"code" : "CMSC 180",
+		// 	"units" : 3
+		// },
+		ObjectId('6283e8ed0175f7122e43e495'),
+		// {
+		// 	"code" : "CMSC 198",
+		// 	"units" : 3
+		// },
+		ObjectId('627292c8486fcb85aa703ac7'),
+		// {
+		// 	"code" : "CMSC 190",
+		// 	"units" : 3
+		// },
+		ObjectId('627292c8486fcb85aa703ac8'),
+		// {
+		// 	"code" : "CMSC 199",
+		// 	"units" : 1
+		// },
+		ObjectId('627292c8486fcb85aa703aca'),
+		// {
+		// 	"code" : "ENG 10",
+		// 	"units" : 3
 		// },
 	],
 	'specializationUnits': 18,
 	'geElectiveUnits': 9,
-	'maxThesisIterations': 3,
+	'maxThesisIterations': 9,
 };
 
 const go = async () => {
 	try {
-		let res = await Degree.create(degree2);
+		let res = await Degree.create(degree);
 		console.log(res);
 		console.log('Inserted degree program');
 	} catch (e) {
