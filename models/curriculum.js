@@ -29,7 +29,7 @@ const DegreeSchema = new mongoose.Schema({
 		type: String
 	},
 	subjects: {
-		type: [mongoose.ObjectId],
+		type: [[mongoose.ObjectId]],
 		required: true,
 	},
 	specializationUnits: {
