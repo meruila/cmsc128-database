@@ -1,259 +1,30 @@
 [
   {
-    "_id": "628b3f0143ce31eb2b1c969a",
-    "name": "BSAMAT",
-    "major": "SP",
-    "subjects": [
-      {
-        "code": [
-          "AMAT 19"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 36"
-        ],
-        "units": 5
-      },
-      {
-        "code": [
-          "BIO 11.1"
-        ],
-        "units": 2
-      },
-      {
-        "code": [
-          "KAS 1",
-          "HIST 1"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "ETHICS 1"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "HK 11"
-        ],
-        "units": 0
-      },
-      {
-        "code": [
-          "MATH 37"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "STAT 101"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "CHEM 18"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "CHEM 18.1"
-        ],
-        "units": 2
-      },
-      {
-        "code": [
-          "ARTS 1"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "HK 12",
-          "HK 13"
-        ],
-        "units": 0
-      },
-      {
-        "code": [
-          "AMAT 110"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 38"
-        ],
-        "units": 5
-      },
-      {
-        "code": [
-          "MATH 101"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "PHYS 51"
-        ],
-        "units": 4
-      },
-      {
-        "code": [
-          "PHYS 51.1"
-        ],
-        "units": 1
-      },
-      {
-        "code": [
-          "NSTP 1"
-        ],
-        "units": 0
-      },
-      {
-        "code": [
-          "AMAT 105"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "AMAT 112"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "AMAT 152"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "AMAT 170"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "STS 1"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "NSTP 2"
-        ],
-        "units": 0
-      },
-      {
-        "code": [
-          "MATH 151"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 174"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 181"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "COMM 10"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 155"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 175"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 195"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "COMA 150"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "PI 10"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "AMAT 190"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "AMAT 198"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "AMAT 199"
-        ],
-        "units": 1
-      }
-    ],
-    "specializationUnits": 27,
-    "geElectiveUnits": 9,
-    "maxThesisIterations": 3
-  },
-  {
-    "_id": "628b3f18df9cbc06f55910f4",
-    "name": "BSAMAT",
+    "_id": "6287c38e1a997042c479a2de",
+    "name": "BSACHM",
     "major": "Thesis",
     "subjects": [
       {
         "code": [
-          "AMAT 19"
+          "CHEM 18"
         ],
         "units": 3
       },
       {
         "code": [
-          "MATH 36"
-        ],
-        "units": 5
-      },
-      {
-        "code": [
-          "BIO 11.1"
+          "CHEM 18.1"
         ],
         "units": 2
       },
       {
         "code": [
-          "KAS 1",
-          "HIST 1"
+          "MCB 11"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "MATH 27"
         ],
         "units": 3
       },
@@ -265,33 +36,40 @@
       },
       {
         "code": [
+          "HIST 1",
+          "KAS 1"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
           "HK 11"
         ],
         "units": 0
       },
       {
         "code": [
-          "MATH 37"
+          "CHEM 19"
         ],
         "units": 3
       },
       {
         "code": [
-          "STAT 101"
+          "MATH 28"
         ],
         "units": 3
       },
       {
         "code": [
-          "CHEM 18"
+          "BIO 30"
         ],
         "units": 3
       },
       {
         "code": [
-          "CHEM 18.1"
+          "AGRI 31"
         ],
-        "units": 2
+        "units": 3
       },
       {
         "code": [
@@ -308,121 +86,38 @@
       },
       {
         "code": [
-          "AMAT 110"
+          "CHEM 32"
         ],
         "units": 3
       },
       {
         "code": [
-          "MATH 38"
+          "CHEM 32.1"
         ],
-        "units": 5
+        "units": 2
       },
       {
         "code": [
-          "MATH 101"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "PHYS 51"
+          "PHYS 71"
         ],
         "units": 4
       },
       {
         "code": [
-          "PHYS 51.1"
+          "PHYS 71.1"
         ],
         "units": 1
       },
       {
         "code": [
-          "NSTP 1"
-        ],
-        "units": 0
-      },
-      {
-        "code": [
-          "AMAT 105"
+          "BOT 20"
         ],
         "units": 3
       },
       {
         "code": [
-          "AMAT 112"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
+          "CMSC 12",
           "AMAT 152"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "AMAT 170"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "STS 1"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "NSTP 2"
-        ],
-        "units": 0
-      },
-      {
-        "code": [
-          "MATH 151"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 174"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 181"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "COMM 10"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 155"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 175"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 195"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "COMA 150"
         ],
         "units": 3
       },
@@ -434,24 +129,259 @@
       },
       {
         "code": [
-          "AMAT 200"
+          "NSTP 1"
+        ],
+        "units": 0
+      },
+      {
+        "code": [
+          "CHEM 43"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "CHEM 43.1"
+        ],
+        "units": 2
+      },
+      {
+        "code": [
+          "PHYS 72"
+        ],
+        "units": 4
+      },
+      {
+        "code": [
+          "PHYS 72.1"
+        ],
+        "units": 1
+      },
+      {
+        "code": [
+          "AGRI 21"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "AGRI 32"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "ECON 11"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "NSTP 2"
+        ],
+        "units": 0
+      },
+      {
+        "code": [
+          "CHEM 44"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "CHEM 44.1"
+        ],
+        "units": 2
+      },
+      {
+        "code": [
+          "STAT 162"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "AGRI 22"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "AAE 111",
+          "AAE 120"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "AGRI 61"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "CHEM 111"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "CHEM 131"
+        ],
+        "units": 4
+      },
+      {
+        "code": [
+          "CHEM 140"
+        ],
+        "units": 4
+      },
+      {
+        "code": [
+          "CHEM 161A"
+        ],
+        "units": 4
+      },
+      {
+        "code": [
+          "AGRI 51"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "AGRI 41"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "CHEM 111.1"
+        ],
+        "units": 2
+      },
+      {
+        "code": [
+          "CHEM 112"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "CHEM 137"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "CHEM 161B"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "CHEM 192"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "AGRI 42"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "CHEM 112.1"
+        ],
+        "units": 2
+      },
+      {
+        "code": [
+          "CHEM 115"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "CHEM 137.1"
+        ],
+        "units": 2
+      },
+      {
+        "code": [
+          "CHEM 161.1"
+        ],
+        "units": 2
+      },
+      {
+        "code": [
+          "COMM 10"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "CHEM 198"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "CHEM 133"
+        ],
+        "units": 4
+      },
+      {
+        "code": [
+          "CHEM 120"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "CHEM 199"
+        ],
+        "units": 1
+      },
+      {
+        "code": [
+          "CHEM 171"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "ACHM 200"
         ],
         "units": 6
       },
       {
         "code": [
-          "AMAT 198"
+          "STS 1"
         ],
         "units": 3
       },
       {
         "code": [
-          "AMAT 199"
+          "CHEM 180"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "CHEM 185"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "AGRI 199"
         ],
         "units": 1
       }
     ],
-    "specializationUnits": 24,
+    "specializationUnits": 15,
     "geElectiveUnits": 9,
     "maxThesisIterations": 3
   }

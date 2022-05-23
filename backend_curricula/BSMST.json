@@ -1,226 +1,322 @@
 [
   {
+    "_id": "628b53c52cf11a89aac2f348",
     "name": "BSMST",
     "major": "Biology",
     "subjects": [
       {
-        "code": "MST 101A",
+        "code": [
+          "MST 101A"
+        ],
         "units": 1
       },
       {
-        "code": "BIO 11.1",
+        "code": [
+          "BIO 11.1"
+        ],
         "units": 2
       },
       {
-        "code": "CHEM 18",
+        "code": [
+          "CHEM 18"
+        ],
         "units": 3
       },
       {
-        "code": "CHEM 18.1",
+        "code": [
+          "CHEM 18.1"
+        ],
         "units": 2
       },
       {
-        "code": "PHYS 50",
+        "code": [
+          "PHYS 50"
+        ],
         "units": 3
       },
       {
-        "code": "MATH 25",
+        "code": [
+          "MATH 25"
+        ],
         "units": 3
       },
       {
-        "code": "STS 1",
+        "code": [
+          "STS 1"
+        ],
         "units": 3
       },
       {
-        "code": "PI 10",
+        "code": [
+          "PI 10"
+        ],
         "units": 3
       },
       {
-        "code": "HK 11",
+        "code": [
+          "HK 11"
+        ],
         "units": 0
       },
       {
-        "code": "MST 101B",
+        "code": [
+          "MST 101B"
+        ],
         "units": 1
       },
       {
-        "code": "BIO 14",
+        "code": [
+          "BIO 14"
+        ],
         "units": 5
       },
       {
-        "code": "CHEM 40",
+        "code": [
+          "CHEM 40"
+        ],
         "units": 4
       },
       {
-        "code": "CHEM 40.1",
+        "code": [
+          "CHEM 40.1"
+        ],
         "units": 1
       },
       {
-        "code": "AMAT 19",
+        "code": [
+          "AMAT 19"
+        ],
         "units": 3
       },
       {
-        "code": "MATH 27",
+        "code": [
+          "MATH 27"
+        ],
         "units": 3
       },
       {
-        "code": "KAS 1",
+        "code": [
+          "KAS 1",
+          "HIST 1"
+        ],
         "units": 3
       },
       {
-        "code": "HIST 1",
-        "units": 3
-      },
-      {
-        "code": "HK 12",
+        "code": [
+          "HK 12",
+          "HK 13"
+        ],
         "units": 0
       },
       {
-        "code": "HK 13",
-        "units": 0
-      },
-      {
-        "code": "MST 101C",
+        "code": [
+          "MST 101C"
+        ],
         "units": 1
       },
       {
-        "code": "EDUC 102",
+        "code": [
+          "EDUC 102"
+        ],
         "units": 3
       },
       {
-        "code": "EDUC 111",
+        "code": [
+          "EDUC 111"
+        ],
         "units": 3
       },
       {
-        "code": "BIO 30",
+        "code": [
+          "BIO 30"
+        ],
         "units": 3
       },
       {
-        "code": "STAT 166",
+        "code": [
+          "STAT 166"
+        ],
         "units": 3
       },
       {
-        "code": "SPCM 156",
+        "code": [
+          "SPCM 156"
+        ],
         "units": 3
       },
       {
-        "code": "ETHICS 1",
+        "code": [
+          "ETHICS 1"
+        ],
         "units": 3
       },
       {
-        "code": "NSTP 1",
+        "code": [
+          "NSTP 1"
+        ],
         "units": 0
       },
       {
-        "code": "MST 101D",
+        "code": [
+          "MST 101D"
+        ],
         "units": 1
       },
       {
-        "code": "DEVC 40",
+        "code": [
+          "DEVC 40",
+          "MST 40"
+        ],
         "units": 3
       },
       {
-        "code": "MST 40",
+        "code": [
+          "EDUC 122"
+        ],
         "units": 3
       },
       {
-        "code": "EDUC 122",
+        "code": [
+          "BOT 14"
+        ],
         "units": 3
       },
       {
-        "code": "BOT 14",
+        "code": [
+          "CHEM 160"
+        ],
         "units": 3
       },
       {
-        "code": "CHEM 160",
-        "units": 3
-      },
-      {
-        "code": "PHYS 71",
+        "code": [
+          "PHYS 71"
+        ],
         "units": 4
       },
       {
-        "code": "PHYS 71.1",
+        "code": [
+          "PHYS 71.1"
+        ],
         "units": 1
       },
       {
-        "code": "COMA 150",
+        "code": [
+          "COMA 150"
+        ],
         "units": 3
       },
       {
-        "code": "NSTP 2",
+        "code": [
+          "NSTP 2"
+        ],
         "units": 0
       },
       {
-        "code": "MST 123",
+        "code": [
+          "MST 123"
+        ],
         "units": 5
       },
       {
-        "code": "EDUC 144",
+        "code": [
+          "EDUC 144"
+        ],
         "units": 3
       },
       {
-        "code": "BIO 150",
+        "code": [
+          "BIO 150"
+        ],
         "units": 4
       },
       {
-        "code": "MCB 11",
+        "code": [
+          "MCB 11"
+        ],
         "units": 3
       },
       {
-        "code": "ZOO 14",
+        "code": [
+          "ZOO 14"
+        ],
         "units": 3
       },
       {
-        "code": "STAT 162",
+        "code": [
+          "STAT 162"
+        ],
         "units": 3
       },
       {
-        "code": "MST 195",
+        "code": [
+          "MST 195"
+        ],
         "units": 3
       },
       {
-        "code": "MST 199",
+        "code": [
+          "MST 199"
+        ],
         "units": 1
       },
       {
-        "code": "MST 200A",
+        "code": [
+          "MST 200A"
+        ],
         "units": 3
       },
       {
-        "code": "MATH 18",
+        "code": [
+          "MATH 18"
+        ],
         "units": 3
       },
       {
-        "code": "COMM 10",
+        "code": [
+          "COMM 10"
+        ],
         "units": 3
       },
       {
-        "code": "MST 190",
+        "code": [
+          "MST 190"
+        ],
         "units": 3
       },
       {
-        "code": "MST 191",
+        "code": [
+          "MST 191"
+        ],
         "units": 3
       },
       {
-        "code": "MST 200B",
+        "code": [
+          "MST 200B"
+        ],
         "units": 3
       },
       {
-        "code": "ARTS 1",
+        "code": [
+          "ARTS 1"
+        ],
         "units": 3
       },
       {
-        "code": "HFDS 12",
+        "code": [
+          "HFDS 12"
+        ],
         "units": 3
       },
       {
-        "code": "PHYS 72",
+        "code": [
+          "PHYS 72"
+        ],
         "units": 4
       },
       {
-        "code": "PHYS 72.1",
+        "code": [
+          "PHYS 72.1"
+        ],
         "units": 1
       }
     ],
@@ -229,235 +325,323 @@
     "maxThesisIterations": 3
   },
   {
+    "_id": "628b57df38f85e0caa11c54c",
     "name": "BSMST",
     "major": "Chemistry",
     "subjects": [
       {
-        "code": "MST 101A",
+        "code": [
+          "MST 101A"
+        ],
         "units": 1
       },
       {
-        "code": "BIO 11.1",
+        "code": [
+          "BIO 11.1"
+        ],
         "units": 2
       },
       {
-        "code": "CHEM 18",
+        "code": [
+          "CHEM 18"
+        ],
         "units": 3
       },
       {
-        "code": "CHEM 18.1",
+        "code": [
+          "CHEM 18.1"
+        ],
         "units": 2
       },
       {
-        "code": "PHYS 50",
+        "code": [
+          "PHYS 50"
+        ],
         "units": 3
       },
       {
-        "code": "MATH 25",
+        "code": [
+          "MATH 25"
+        ],
         "units": 3
       },
       {
-        "code": "STS 1",
+        "code": [
+          "STS 1"
+        ],
         "units": 3
       },
       {
-        "code": "PI 10",
+        "code": [
+          "PI 10"
+        ],
         "units": 3
       },
       {
-        "code": "HK 11",
+        "code": [
+          "HK 11"
+        ],
         "units": 0
       },
       {
-        "code": "MST 101B",
+        "code": [
+          "MST 101B"
+        ],
         "units": 1
       },
       {
-        "code": "BIO 14",
+        "code": [
+          "BIO 14"
+        ],
         "units": 5
       },
       {
-        "code": "CHEM 40",
+        "code": [
+          "CHEM 40"
+        ],
         "units": 4
       },
       {
-        "code": "CHEM 40.1",
+        "code": [
+          "CHEM 40.1"
+        ],
         "units": 1
       },
       {
-        "code": "AMAT 19",
+        "code": [
+          "AMAT 19"
+        ],
         "units": 3
       },
       {
-        "code": "MATH 27",
+        "code": [
+          "MATH 27"
+        ],
         "units": 3
       },
       {
-        "code": "KAS 1",
+        "code": [
+          "KAS 1",
+          "HIST 1"
+        ],
         "units": 3
       },
       {
-        "code": "HIST 1",
-        "units": 3
-      },
-      {
-        "code": "HK 12",
+        "code": [
+          "HK 12",
+          "HK 13"
+        ],
         "units": 0
       },
       {
-        "code": "HK 13",
-        "units": 0
-      },
-      {
-        "code": "MST 101C",
+        "code": [
+          "MST 101C"
+        ],
         "units": 1
       },
       {
-        "code": "EDUC 102",
+        "code": [
+          "EDUC 102"
+        ],
         "units": 3
       },
       {
-        "code": "CHEM 32",
+        "code": [
+          "CHEM 32"
+        ],
         "units": 3
       },
       {
-        "code": "CHEM 32.1",
+        "code": [
+          "CHEM 32.1"
+        ],
         "units": 2
       },
       {
-        "code": "BIO 30",
+        "code": [
+          "BIO 30"
+        ],
         "units": 3
       },
       {
-        "code": "STAT 162",
+        "code": [
+          "STAT 162"
+        ],
         "units": 3
       },
       {
-        "code": "SPCM 156",
+        "code": [
+          "SPCM 156"
+        ],
         "units": 3
       },
       {
-        "code": "ETHICS 1",
+        "code": [
+          "ETHICS 1"
+        ],
         "units": 3
       },
       {
-        "code": "HK 12",
+        "code": [
+          "NSTP 1"
+        ],
         "units": 0
       },
       {
-        "code": "HK 13",
-        "units": 0
-      },
-      {
-        "code": "NSTP 1",
-        "units": 0
-      },
-      {
-        "code": "MST 101D",
+        "code": [
+          "MST 101D"
+        ],
         "units": 1
       },
       {
-        "code": "DEVC 40",
+        "code": [
+          "DEVC 40",
+          "MST 40"
+        ],
         "units": 3
       },
       {
-        "code": "MST 40",
+        "code": [
+          "EDUC 122"
+        ],
         "units": 3
       },
       {
-        "code": "EDUC 122",
+        "code": [
+          "STAT 166"
+        ],
         "units": 3
       },
       {
-        "code": "STAT 166",
+        "code": [
+          "CHEM 160"
+        ],
         "units": 3
       },
       {
-        "code": "CHEM 160",
-        "units": 3
-      },
-      {
-        "code": "PHYS 71",
+        "code": [
+          "PHYS 71"
+        ],
         "units": 4
       },
       {
-        "code": "PHYS 71.1",
+        "code": [
+          "PHYS 71.1"
+        ],
         "units": 1
       },
       {
-        "code": "COMA 150",
+        "code": [
+          "COMA 150"
+        ],
         "units": 3
       },
       {
-        "code": "NSTP 2",
+        "code": [
+          "NSTP 2"
+        ],
         "units": 0
       },
       {
-        "code": "MST 123",
+        "code": [
+          "MST 123"
+        ],
         "units": 5
       },
       {
-        "code": "EDUC 111",
+        "code": [
+          "EDUC 111"
+        ],
         "units": 3
       },
       {
-        "code": "BIO 160.1",
-        "units": 3
+        "code": [
+          "CHEM 160.1"
+        ],
+        "units": 2
       },
       {
-        "code": "PHYS 72",
+        "code": [
+          "PHYS 72"
+        ],
         "units": 4
       },
       {
-        "code": "PHYS 72.1",
+        "code": [
+          "PHYS 72.1"
+        ],
         "units": 1
       },
       {
-        "code": "MST 195",
+        "code": [
+          "MST 195"
+        ],
         "units": 3
       },
       {
-        "code": "MST 200A",
+        "code": [
+          "MST 200A"
+        ],
         "units": 3
       },
       {
-        "code": "EDUC 144",
+        "code": [
+          "EDUC 144"
+        ],
         "units": 3
       },
       {
-        "code": "CHEM 102",
+        "code": [
+          "CHEM 102"
+        ],
         "units": 3
       },
       {
-        "code": "MATH 18",
+        "code": [
+          "MATH 18"
+        ],
         "units": 3
       },
       {
-        "code": "COMM 10",
+        "code": [
+          "COMM 10"
+        ],
         "units": 3
       },
       {
-        "code": "MST 190",
+        "code": [
+          "MST 190"
+        ],
         "units": 3
       },
       {
-        "code": "MST 200B",
+        "code": [
+          "MST 200B"
+        ],
         "units": 3
       },
       {
-        "code": "CHEM 180",
+        "code": [
+          "CHEM 180"
+        ],
         "units": 3
       },
       {
-        "code": "ARTS 1",
+        "code": [
+          "ARTS 1"
+        ],
         "units": 3
       },
       {
-        "code": "MST 191",
+        "code": [
+          "MST 191"
+        ],
         "units": 3
       },
       {
-        "code": "MST 199",
+        "code": [
+          "MST 199"
+        ],
         "units": 1
       }
     ],
@@ -466,231 +650,323 @@
     "maxThesisIterations": 3
   },
   {
+    "_id": "628b5ce42d01bb7c40b6f3cf",
     "name": "BSMST",
     "major": "Mathematics",
     "subjects": [
       {
-        "code": "MST 101A",
+        "code": [
+          "MST 101A"
+        ],
         "units": 1
       },
       {
-        "code": "BIO 11.1",
+        "code": [
+          "BIO 11.1"
+        ],
         "units": 2
       },
       {
-        "code": "CHEM 18",
+        "code": [
+          "CHEM 18"
+        ],
         "units": 3
       },
       {
-        "code": "CHEM 18.1",
+        "code": [
+          "CHEM 18.1"
+        ],
         "units": 2
       },
       {
-        "code": "PHYS 50",
+        "code": [
+          "PHYS 50"
+        ],
         "units": 3
       },
       {
-        "code": "MATH 25",
+        "code": [
+          "MATH 25"
+        ],
         "units": 3
       },
       {
-        "code": "STS 1",
+        "code": [
+          "STS 1"
+        ],
         "units": 3
       },
       {
-        "code": "PI 10",
+        "code": [
+          "PI 10"
+        ],
         "units": 3
       },
       {
-        "code": "HK 11",
+        "code": [
+          "HK 11"
+        ],
         "units": 0
       },
       {
-        "code": "MST 101B",
+        "code": [
+          "MST 101B"
+        ],
         "units": 1
       },
       {
-        "code": "BIO 14",
+        "code": [
+          "BIO 14"
+        ],
         "units": 5
       },
       {
-        "code": "CHEM 40",
+        "code": [
+          "CHEM 40"
+        ],
         "units": 4
       },
       {
-        "code": "CHEM 40.1",
+        "code": [
+          "CHEM 40.1"
+        ],
         "units": 1
       },
       {
-        "code": "AMAT 19",
+        "code": [
+          "AMAT 19"
+        ],
         "units": 3
       },
       {
-        "code": "MATH 27",
+        "code": [
+          "MATH 27"
+        ],
         "units": 3
       },
       {
-        "code": "KAS 1",
+        "code": [
+          "KAS 1",
+          "HIST 1"
+        ],
         "units": 3
       },
       {
-        "code": "HIST 1",
-        "units": 3
-      },
-      {
-        "code": "HK 12",
+        "code": [
+          "HK 12",
+          "HK 13"
+        ],
         "units": 0
       },
       {
-        "code": "HK 13",
-        "units": 0
-      },
-      {
-        "code": "MST 101C",
+        "code": [
+          "MST 101C"
+        ],
         "units": 1
       },
       {
-        "code": "EDUC 102",
+        "code": [
+          "EDUC 102"
+        ],
         "units": 3
       },
       {
-        "code": "EDUC 111",
+        "code": [
+          "EDUC 111"
+        ],
         "units": 3
       },
       {
-        "code": "MATH 20",
+        "code": [
+          "MATH 20"
+        ],
         "units": 3
       },
       {
-        "code": "MATH 28",
+        "code": [
+          "MATH 28"
+        ],
         "units": 3
       },
       {
-        "code": "BIO 30",
+        "code": [
+          "BIO 30"
+        ],
         "units": 3
       },
       {
-        "code": "ETHICS 1",
+        "code": [
+          "ETHICS 1"
+        ],
         "units": 3
       },
       {
-        "code": "NSTP 1",
+        "code": [
+          "NSTP 1"
+        ],
         "units": 0
       },
       {
-        "code": "MST 101D",
+        "code": [
+          "MST 101D"
+        ],
         "units": 1
       },
       {
-        "code": "EDUC 122",
+        "code": [
+          "EDUC 122"
+        ],
         "units": 3
       },
       {
-        "code": "DEVC 40",
+        "code": [
+          "DEVC 40",
+          "MST 40"
+        ],
         "units": 3
       },
       {
-        "code": "MST 40",
+        "code": [
+          "MATH 18"
+        ],
         "units": 3
       },
       {
-        "code": "MATH 18",
+        "code": [
+          "MATH 101"
+        ],
         "units": 3
       },
       {
-        "code": "MATH 101",
+        "code": [
+          "STAT 166"
+        ],
         "units": 3
       },
       {
-        "code": "STAT 166",
+        "code": [
+          "COMA 150"
+        ],
         "units": 3
       },
       {
-        "code": "COMA 150",
-        "units": 3
-      },
-      {
-        "code": "NSTP 2",
+        "code": [
+          "NSTP 2"
+        ],
         "units": 0
       },
       {
-        "code": "MST 123",
+        "code": [
+          "MST 123"
+        ],
         "units": 5
       },
       {
-        "code": "EDUC 144",
+        "code": [
+          "EDUC 144"
+        ],
         "units": 3
       },
       {
-        "code": "BIO 160.1",
-        "units": 3
-      },
-      {
-        "code": "PHYS 71",
+        "code": [
+          "PHYS 71"
+        ],
         "units": 4
       },
       {
-        "code": "PHYS 71.1",
+        "code": [
+          "PHYS 71.1"
+        ],
         "units": 1
       },
       {
-        "code": "STAT 162",
+        "code": [
+          "STAT 162"
+        ],
         "units": 3
       },
       {
-        "code": "SPCM 156",
+        "code": [
+          "SPCM 156"
+        ],
         "units": 3
       },
       {
-        "code": "MST 195",
+        "code": [
+          "MST 195"
+        ],
         "units": 3
       },
       {
-        "code": "MST 200A",
+        "code": [
+          "MST 200A"
+        ],
         "units": 3
       },
       {
-        "code": "MATH 103",
+        "code": [
+          "MATH 103"
+        ],
         "units": 3
       },
       {
-        "code": "PHYS 72",
+        "code": [
+          "PHYS 72"
+        ],
         "units": 4
       },
       {
-        "code": "PHYS 72.1",
+        "code": [
+          "PHYS 72.1"
+        ],
         "units": 1
       },
       {
-        "code": "COMM 10",
+        "code": [
+          "COMM 10"
+        ],
         "units": 3
       },
       {
-        "code": "MST 190",
+        "code": [
+          "MST 190"
+        ],
         "units": 3
       },
       {
-        "code": "MST 200B",
+        "code": [
+          "MST 200B"
+        ],
         "units": 3
       },
       {
-        "code": "CHEM 160",
+        "code": [
+          "CHEM 160"
+        ],
         "units": 3
       },
       {
-        "code": "ARTS 1",
+        "code": [
+          "ARTS 1"
+        ],
         "units": 3
       },
       {
-        "code": "MST 191",
+        "code": [
+          "MST 191"
+        ],
         "units": 3
       },
       {
-        "code": "MST 199",
+        "code": [
+          "MST 199"
+        ],
         "units": 1
       },
       {
-        "code": "AMAT 105",
+        "code": [
+          "AMAT 105"
+        ],
         "units": 3
       }
     ],
@@ -699,235 +975,323 @@
     "maxThesisIterations": 3
   },
   {
+    "_id": "628b6ed9fe51759ceaede90e",
     "name": "BSMST",
     "major": "Physics",
     "subjects": [
       {
-        "code": "MST 101A",
+        "code": [
+          "MST 101A"
+        ],
         "units": 1
       },
       {
-        "code": "BIO 11.1",
+        "code": [
+          "BIO 11.1"
+        ],
         "units": 2
       },
       {
-        "code": "CHEM 18",
+        "code": [
+          "CHEM 18"
+        ],
         "units": 3
       },
       {
-        "code": "CHEM 18.1",
+        "code": [
+          "CHEM 18.1"
+        ],
         "units": 2
       },
       {
-        "code": "PHYS 50",
+        "code": [
+          "PHYS 50"
+        ],
         "units": 3
       },
       {
-        "code": "MATH 25",
+        "code": [
+          "MATH 25"
+        ],
         "units": 3
       },
       {
-        "code": "STS 1",
+        "code": [
+          "STS 1"
+        ],
         "units": 3
       },
       {
-        "code": "PI 10",
+        "code": [
+          "PI 10"
+        ],
         "units": 3
       },
       {
-        "code": "HK 11",
+        "code": [
+          "HK 11"
+        ],
         "units": 0
       },
       {
-        "code": "MST 101B",
+        "code": [
+          "MST 101B"
+        ],
         "units": 1
       },
       {
-        "code": "BIO 14",
+        "code": [
+          "BIO 14"
+        ],
         "units": 5
       },
       {
-        "code": "CHEM 40",
+        "code": [
+          "CHEM 40"
+        ],
         "units": 4
       },
       {
-        "code": "CHEM 40.1",
+        "code": [
+          "CHEM 40.1"
+        ],
         "units": 1
       },
       {
-        "code": "AMAT 19",
+        "code": [
+          "AMAT 19"
+        ],
         "units": 3
       },
       {
-        "code": "MATH 27",
+        "code": [
+          "MATH 27"
+        ],
         "units": 3
       },
       {
-        "code": "KAS 1",
+        "code": [
+          "KAS 1",
+          "HIST 1"
+        ],
         "units": 3
       },
       {
-        "code": "HIST 1",
-        "units": 3
-      },
-      {
-        "code": "HK 12",
+        "code": [
+          "HK 12",
+          "HK 13"
+        ],
         "units": 0
       },
       {
-        "code": "HK 13",
-        "units": 0
-      },
-      {
-        "code": "MST 101C",
+        "code": [
+          "MST 101C"
+        ],
         "units": 1
       },
       {
-        "code": "EDUC 102",
+        "code": [
+          "EDUC 102"
+        ],
         "units": 3
       },
       {
-        "code": "EDUC 111",
+        "code": [
+          "EDUC 111"
+        ],
         "units": 3
       },
       {
-        "code": "PHYS 71",
+        "code": [
+          "PHYS 71"
+        ],
         "units": 4
       },
       {
-        "code": "PHYS 71.1",
+        "code": [
+          "PHYS 71.1"
+        ],
         "units": 1
       },
       {
-        "code": "BIO 30",
+        "code": [
+          "MATH 18"
+        ],
         "units": 3
       },
       {
-        "code": "MATH 18",
+        "code": [
+          "BIO 30"
+        ],
         "units": 3
       },
       {
-        "code": "ETHICS 1",
+        "code": [
+          "ETHICS 1"
+        ],
         "units": 3
       },
       {
-        "code": "HK 12",
+        "code": [
+          "NSTP 1"
+        ],
         "units": 0
       },
       {
-        "code": "HK 13",
-        "units": 0
-      },
-      {
-        "code": "NSTP 1",
-        "units": 0
-      },
-      {
-        "code": "MST 101D",
+        "code": [
+          "MST 101D"
+        ],
         "units": 1
       },
       {
-        "code": "DEVC 40",
+        "code": [
+          "EDUC 122"
+        ],
         "units": 3
       },
       {
-        "code": "MST 40",
+        "code": [
+          "DEVC 40",
+          "MST 40"
+        ],
         "units": 3
       },
       {
-        "code": "EDUC 122",
-        "units": 3
-      },
-      {
-        "code": "PHYS 72",
+        "code": [
+          "PHYS 72"
+        ],
         "units": 4
       },
       {
-        "code": "PHYS 72.1",
+        "code": [
+          "PHYS 72.1"
+        ],
         "units": 1
       },
       {
-        "code": "CHEM 160",
+        "code": [
+          "CHEM 160"
+        ],
         "units": 3
       },
       {
-        "code": "STAT 162",
+        "code": [
+          "STAT 162"
+        ],
         "units": 3
       },
       {
-        "code": "COMA 150",
+        "code": [
+          "COMA 150"
+        ],
         "units": 3
       },
       {
-        "code": "NSTP 2",
+        "code": [
+          "NSTP 2"
+        ],
         "units": 0
       },
       {
-        "code": "MST 123",
+        "code": [
+          "MST 123"
+        ],
         "units": 5
       },
       {
-        "code": "EDUC 144",
+        "code": [
+          "EDUC 144"
+        ],
         "units": 3
       },
       {
-        "code": "APHY 101",
+        "code": [
+          "APHY 101"
+        ],
         "units": 3
       },
       {
-        "code": "STAT 166",
+        "code": [
+          "STAT 166"
+        ],
         "units": 3
       },
       {
-        "code": "SPCM 156",
+        "code": [
+          "SPCM 156"
+        ],
         "units": 3
       },
       {
-        "code": "MST 195",
+        "code": [
+          "MST 195"
+        ],
         "units": 3
       },
       {
-        "code": "MST 200A",
+        "code": [
+          "MST 200A"
+        ],
         "units": 3
       },
       {
-        "code": "APHY 102",
+        "code": [
+          "APHY 102"
+        ],
         "units": 3
       },
       {
-        "code": "PHYS 192.1",
+        "code": [
+          "PHYS 192.1"
+        ],
         "units": 2
       },
       {
-        "code": "CMSC 12",
+        "code": [
+          "CMSC 12"
+        ],
         "units": 3
       },
       {
-        "code": "COMM 10",
+        "code": [
+          "COMM 10"
+        ],
         "units": 3
       },
       {
-        "code": "MST 190",
+        "code": [
+          "MST 190"
+        ],
         "units": 3
       },
       {
-        "code": "MST 199",
+        "code": [
+          "MST 199"
+        ],
         "units": 1
       },
       {
-        "code": "MST 200B",
+        "code": [
+          "MST 200B"
+        ],
         "units": 3
       },
       {
-        "code": "PHYS 192.1",
+        "code": [
+          "PHYS 193.1"
+        ],
         "units": 2
       },
       {
-        "code": "ARTS 1",
+        "code": [
+          "ARTS 1"
+        ],
         "units": 3
       },
       {
-        "code": "MST 191",
+        "code": [
+          "MST 191"
+        ],
         "units": 3
       }
     ],

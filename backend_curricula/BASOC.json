@@ -1,43 +1,37 @@
 [
   {
-    "_id": "628bcdee8dfba5b8a227cde4",
-    "name": "BSBIO",
+    "_id": "628af89ad04cd31b7782dcf0",
+    "name": "BASOC",
     "major": "Thesis",
     "subjects": [
       {
         "code": [
-          "CHEM 18"
+          "ETHICS 1"
         ],
         "units": 3
       },
       {
         "code": [
-          "MATH 25"
+          "HIST 1",
+          "KAS 1"
         ],
         "units": 3
       },
       {
         "code": [
-          "MCB 11"
+          "SOC 10"
         ],
         "units": 3
       },
       {
         "code": [
-          "KAS 1",
-          "HIST 1"
+          "ANTH 10"
         ],
         "units": 3
       },
       {
         "code": [
-          "ARTS 1"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "STS 1"
+          "PSY 10"
         ],
         "units": 3
       },
@@ -49,25 +43,25 @@
       },
       {
         "code": [
-          "BIO 11.1"
-        ],
-        "units": 2
-      },
-      {
-        "code": [
-          "CHEM 18.1"
-        ],
-        "units": 2
-      },
-      {
-        "code": [
-          "BIO 30"
+          "HIST 10"
         ],
         "units": 3
       },
       {
         "code": [
-          "PI 10"
+          "POSC 10"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "SOC 100"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "SOC 110"
         ],
         "units": 3
       },
@@ -80,45 +74,40 @@
       },
       {
         "code": [
-          "CHEM 40"
-        ],
-        "units": 4
-      },
-      {
-        "code": [
-          "CHEM 40.1"
-        ],
-        "units": 1
-      },
-      {
-        "code": [
-          "BIO 14"
-        ],
-        "units": 5
-      },
-      {
-        "code": [
-          "BOT 14"
+          "STS 1"
         ],
         "units": 3
       },
       {
         "code": [
-          "ZOO 14"
+          "ARTS 1"
         ],
         "units": 3
       },
       {
         "code": [
-          "CHEM 160"
+          "ECON 11"
         ],
         "units": 3
       },
       {
         "code": [
-          "BIO 150"
+          "SOC 116"
         ],
-        "units": 4
+        "units": 3
+      },
+      {
+        "code": [
+          "STAT 166"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "SOC 130",
+          "SOC 135"
+        ],
+        "units": 3
       },
       {
         "code": [
@@ -128,37 +117,13 @@
       },
       {
         "code": [
-          "PHYS 51"
-        ],
-        "units": 4
-      },
-      {
-        "code": [
-          "PHYS 51.1"
-        ],
-        "units": 1
-      },
-      {
-        "code": [
-          "BIO 101"
+          "AERS 160"
         ],
         "units": 3
       },
       {
         "code": [
-          "CHEM 160.1"
-        ],
-        "units": 2
-      },
-      {
-        "code": [
-          "BIO 140"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "ABME 10"
+          "SOC 140"
         ],
         "units": 3
       },
@@ -170,21 +135,33 @@
       },
       {
         "code": [
-          "STAT 164"
+          "PI 10"
         ],
         "units": 3
       },
       {
         "code": [
-          "BIO 120"
+          "SOC 107"
         ],
         "units": 3
       },
       {
         "code": [
-          "BIO 142"
+          "SOC 151"
         ],
         "units": 3
+      },
+      {
+        "code": [
+          "SOC 195"
+        ],
+        "units": 2
+      },
+      {
+        "code": [
+          "SOC 195.1"
+        ],
+        "units": 1
       },
       {
         "code": [
@@ -194,48 +171,86 @@
       },
       {
         "code": [
-          "BIO 195"
+          "SOC 152"
         ],
         "units": 3
       },
       {
         "code": [
-          "BIO 127"
+          "SOC 166"
         ],
         "units": 3
       },
       {
         "code": [
-          "ETHICS 1"
+          "SOC 192"
         ],
         "units": 3
       },
       {
         "code": [
-          "BIO 198"
+          "SOC 198"
         ],
         "units": 3
       },
       {
         "code": [
-          "COMA 150"
+          "SOC 114"
         ],
         "units": 3
       },
       {
         "code": [
-          "BIO 199"
+          "SOC 120"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "SOC 180"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "SOC 191"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "SOC 199"
         ],
         "units": 1
       },
       {
         "code": [
-          "BIO 200"
+          "SOC 200"
         ],
         "units": 6
+      },
+      {
+        "code": [
+          "SOC 112"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "SOC 160",
+          "SOC 165"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "SOC 170",
+          "SOC 175"
+        ],
+        "units": 3
       }
     ],
-    "specializationUnits": 33,
+    "specializationUnits": 21,
     "geElectiveUnits": 9,
     "maxThesisIterations": 9
   }

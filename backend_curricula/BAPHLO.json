@@ -1,170 +1,12 @@
 [
   {
-    "_id": "628b3f0143ce31eb2b1c969a",
-    "name": "BSAMAT",
+    "_id": "628aef44dfb954b36badf1cb",
+    "name": "BAPHLO",
     "major": "SP",
     "subjects": [
       {
         "code": [
-          "AMAT 19"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 36"
-        ],
-        "units": 5
-      },
-      {
-        "code": [
-          "BIO 11.1"
-        ],
-        "units": 2
-      },
-      {
-        "code": [
-          "KAS 1",
-          "HIST 1"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "ETHICS 1"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "HK 11"
-        ],
-        "units": 0
-      },
-      {
-        "code": [
-          "MATH 37"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "STAT 101"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "CHEM 18"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "CHEM 18.1"
-        ],
-        "units": 2
-      },
-      {
-        "code": [
           "ARTS 1"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "HK 12",
-          "HK 13"
-        ],
-        "units": 0
-      },
-      {
-        "code": [
-          "AMAT 110"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 38"
-        ],
-        "units": 5
-      },
-      {
-        "code": [
-          "MATH 101"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "PHYS 51"
-        ],
-        "units": 4
-      },
-      {
-        "code": [
-          "PHYS 51.1"
-        ],
-        "units": 1
-      },
-      {
-        "code": [
-          "NSTP 1"
-        ],
-        "units": 0
-      },
-      {
-        "code": [
-          "AMAT 105"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "AMAT 112"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "AMAT 152"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "AMAT 170"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "STS 1"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "NSTP 2"
-        ],
-        "units": 0
-      },
-      {
-        "code": [
-          "MATH 151"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 174"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 181"
         ],
         "units": 3
       },
@@ -176,193 +18,14 @@
       },
       {
         "code": [
-          "MATH 155"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 175"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 195"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "COMA 150"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "PI 10"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "AMAT 190"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "AMAT 198"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "AMAT 199"
-        ],
-        "units": 1
-      }
-    ],
-    "specializationUnits": 27,
-    "geElectiveUnits": 9,
-    "maxThesisIterations": 3
-  },
-  {
-    "_id": "628b3f18df9cbc06f55910f4",
-    "name": "BSAMAT",
-    "major": "Thesis",
-    "subjects": [
-      {
-        "code": [
-          "AMAT 19"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 36"
-        ],
-        "units": 5
-      },
-      {
-        "code": [
-          "BIO 11.1"
-        ],
-        "units": 2
-      },
-      {
-        "code": [
-          "KAS 1",
-          "HIST 1"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
           "ETHICS 1"
         ],
         "units": 3
       },
       {
         "code": [
-          "HK 11"
-        ],
-        "units": 0
-      },
-      {
-        "code": [
-          "MATH 37"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "STAT 101"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "CHEM 18"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "CHEM 18.1"
-        ],
-        "units": 2
-      },
-      {
-        "code": [
-          "ARTS 1"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "HK 12",
-          "HK 13"
-        ],
-        "units": 0
-      },
-      {
-        "code": [
-          "AMAT 110"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 38"
-        ],
-        "units": 5
-      },
-      {
-        "code": [
-          "MATH 101"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "PHYS 51"
-        ],
-        "units": 4
-      },
-      {
-        "code": [
-          "PHYS 51.1"
-        ],
-        "units": 1
-      },
-      {
-        "code": [
-          "NSTP 1"
-        ],
-        "units": 0
-      },
-      {
-        "code": [
-          "AMAT 105"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "AMAT 112"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "AMAT 152"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "AMAT 170"
+          "KAS 1",
+          "HIST 1"
         ],
         "units": 3
       },
@@ -374,85 +37,388 @@
       },
       {
         "code": [
-          "NSTP 2"
-        ],
-        "units": 0
-      },
-      {
-        "code": [
-          "MATH 151"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 174"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 181"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "COMM 10"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 155"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 175"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "MATH 195"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "COMA 150"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
           "PI 10"
         ],
         "units": 3
       },
       {
         "code": [
-          "AMAT 200"
+          "PHLO 11"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 12"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "NSTP 1"
+        ],
+        "units": 0
+      },
+      {
+        "code": [
+          "HK 11"
+        ],
+        "units": 0
+      },
+      {
+        "code": [
+          "PHLO 150"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 171"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "SPEC"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "ECON 11",
+          "POSC 10"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "NSTP 2"
+        ],
+        "units": 0
+      },
+      {
+        "code": [
+          "HK 12",
+          "HK 13"
+        ],
+        "units": 0
+      },
+      {
+        "code": [
+          "PHLO 110"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 112"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 173"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 111"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 120"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 174"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 181"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 195"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 197"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 113"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 182"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 176"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 178"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 190"
         ],
         "units": 6
       },
       {
         "code": [
-          "AMAT 198"
+          "PHLO 160"
         ],
         "units": 3
       },
       {
         "code": [
-          "AMAT 199"
+          "PHLO 184"
         ],
-        "units": 1
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 185"
+        ],
+        "units": 3
       }
     ],
-    "specializationUnits": 24,
+    "specializationUnits": 33,
     "geElectiveUnits": 9,
-    "maxThesisIterations": 3
+    "maxThesisIterations": 9
+  },
+  {
+    "_id": "628af05741d326ba6a8b37aa",
+    "name": "BAPHLO",
+    "major": "Thesis",
+    "subjects": [
+      {
+        "code": [
+          "ARTS 1"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "COMM 10"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "ETHICS 1"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "KAS 1",
+          "HIST 1"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "STS 1"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PI 10"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 11"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 12"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "NSTP 1"
+        ],
+        "units": 0
+      },
+      {
+        "code": [
+          "HK 11"
+        ],
+        "units": 0
+      },
+      {
+        "code": [
+          "PHLO 150"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 171"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "SPEC"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "ECON 11",
+          "POSC 10"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "NSTP 2"
+        ],
+        "units": 0
+      },
+      {
+        "code": [
+          "HK 12",
+          "HK 13"
+        ],
+        "units": 0
+      },
+      {
+        "code": [
+          "PHLO 110"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 112"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 173"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 111"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 120"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 174"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 181"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 195"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 197"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 113"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 182"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 176"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 178"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 200"
+        ],
+        "units": 6
+      },
+      {
+        "code": [
+          "PHLO 160"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 184"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 185"
+        ],
+        "units": 3
+      }
+    ],
+    "specializationUnits": 33,
+    "geElectiveUnits": 9,
+    "maxThesisIterations": 9
   }
 ]

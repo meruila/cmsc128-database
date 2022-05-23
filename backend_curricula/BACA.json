@@ -1,155 +1,219 @@
 [
   {
-    "_id": "6283ee118d5d6c03bf058237",
+    "_id": "6287d5feece7c62ff3d35182",
     "name": "BACA",
     "major": "",
     "subjects": [
       {
-        "code": "ARTS 1",
+        "code": [
+          "ARTS 1"
+        ],
         "units": 3
       },
       {
-        "code": "COMM 10",
+        "code": [
+          "COMM 10"
+        ],
         "units": 3
       },
       {
-        "code": "KAS 1",
+        "code": [
+          "KAS 1",
+          "HIST 1"
+        ],
         "units": 3
       },
       {
-        "code": "HIST 1",
+        "code": [
+          "COMA 101"
+        ],
         "units": 3
       },
       {
-        "code": "COMA 101",
+        "code": [
+          "HUM 100"
+        ],
         "units": 3
       },
       {
-        "code": "HUM 100",
+        "code": [
+          "SPCM 102"
+        ],
         "units": 3
       },
       {
-        "code": "SPCM 102",
-        "units": 3
-      },
-      {
-        "code": "HK 11",
+        "code": [
+          "HK 11"
+        ],
         "units": 0
       },
       {
-        "code": "ETHICS 1",
+        "code": [
+          "ETHICS 1"
+        ],
         "units": 3
       },
       {
-        "code": "STS 1",
+        "code": [
+          "STS 1"
+        ],
         "units": 3
       },
       {
-        "code": "COMA 102",
+        "code": [
+          "COMA 102"
+        ],
         "units": 3
       },
       {
-        "code": "ENG 100",
+        "code": [
+          "ENG 100"
+        ],
         "units": 3
       },
       {
-        "code": "SPCM 101",
+        "code": [
+          "SPCM 101"
+        ],
         "units": 3
       },
       {
-        "code": "HK 12",
+        "code": [
+          "HK 12",
+          "HK 13"
+        ],
         "units": 0
       },
       {
-        "code": "HK 13",
+        "code": [
+          "ENG 101"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "ENG 104"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "HUM 101"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "THEA 101"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "THEA 102"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "NSTP 1"
+        ],
         "units": 0
       },
       {
-        "code": "ENG 101",
+        "code": [
+          "COMA 103"
+        ],
         "units": 3
       },
       {
-        "code": "ENG 104",
+        "code": [
+          "COMA 192"
+        ],
         "units": 3
       },
       {
-        "code": "HUM 101",
+        "code": [
+          "SPCM 104"
+        ],
         "units": 3
       },
       {
-        "code": "THEA 101",
-        "units": 3
-      },
-      {
-        "code": "THEA 102",
-        "units": 3
-      },
-      {
-        "code": "NSTP 1",
+        "code": [
+          "NSTP 2"
+        ],
         "units": 0
       },
       {
-        "code": "COMA 103",
+        "code": [
+          "COMA 190"
+        ],
         "units": 3
       },
       {
-        "code": "COMA 192",
+        "code": [
+          "COMA 150"
+        ],
         "units": 3
       },
       {
-        "code": "SPCM 104",
+        "code": [
+          "COMA 193"
+        ],
         "units": 3
       },
       {
-        "code": "NSTP 2",
-        "units": 0
-      },
-      {
-        "code": "COMA 190",
-        "units": 3
-      },
-      {
-        "code": "COMA 150",
-        "units": 3
-      },
-      {
-        "code": "COMA 193",
-        "units": 3
-      },
-      {
-        "code": "COMA 199",
+        "code": [
+          "COMA 199"
+        ],
         "units": 1
       },
       {
-        "code": "COMA 200A",
+        "code": [
+          "COMA 200A"
+        ],
         "units": 3
       },
       {
-        "code": "COMA 105",
+        "code": [
+          "COMA 105"
+        ],
         "units": 3
       },
       {
-        "code": "COMA 200",
+        "code": [
+          "COMA 200"
+        ],
+        "units": 6
+      },
+      {
+        "code": [
+          "HUM 102"
+        ],
         "units": 3
       },
       {
-        "code": "HUM 102",
+        "code": [
+          "THEA 103"
+        ],
         "units": 3
       },
       {
-        "code": "THEA 103",
+        "code": [
+          "PI 10"
+        ],
         "units": 3
       },
       {
-        "code": "PI 10",
+        "code": [
+          "HUM 104"
+        ],
         "units": 3
       },
       {
-        "code": "HUM 104",
-        "units": 3
-      },
-      {
-        "code": "HUM 170",
+        "code": [
+          "HUM 170"
+        ],
         "units": 3
       }
     ],
