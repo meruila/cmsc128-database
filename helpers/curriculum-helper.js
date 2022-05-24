@@ -1,5 +1,3 @@
-// not to be used in actual app
-
 const mongoose = require("mongoose");
 const fs = require("fs");
 var ObjectId = require('mongodb').ObjectId;
@@ -12,24 +10,17 @@ mongoose.connect(
       else { console.log("Successfully connected to Mongo DB"); }
 });
 
-// const Curriculum = require("../models/curriculum");
+/*
+    curriculum-helper retrieves the curriculum from the database and converts it to array of objects
+*/
+
 const Subject = require("../models/subject.js");
 const { Degree } = require("../models/curriculum");
-// const User = require("../models/regular-user");
-// retrieve find by name (course code)
-// output array
-// retrieve each subject in each course
-// output final array
-
-let degreeProgram = []
 
 const go = async (name) => {
     try {
+        let degreeProgram = []
         const out = await Degree.find({name: name});
-            // .exec.toArray(function (err, data) {
-            //     console.log(data);
-            // });
-        // console.log(out[0])
         for (let i = 0; i < out.length; i++) {
             let degree = {
                 _id: out[i]._id,
@@ -40,21 +31,28 @@ const go = async (name) => {
             let array_output = []
 
             for (let j = 0; j < array_input.length; j++) {
-                let subject_object = new ObjectId(out[i].subjects[j]);
+                let choices = {
+                    "code": [],
+                    "units": 0
+                };
+                for (let k = 0; k < out[i].subjects[j].length; k++) {
 
-                const raw_subj = await Subject.findById(subject_object);
-                const subj = { code: raw_subj.code, units: raw_subj.units };
-
-                array_output.push(subj);
+                    let subject_object = new ObjectId(out[i].subjects[j][k]);
+                    const raw_subj = await Subject.findById(subject_object);
+                    const subj = { code: raw_subj.code, units: raw_subj.units };
+                    choices.units = subj.units;
+                    choices.code.push(subj.code);
+                }
+                array_output.push(choices);
             }
 
-            
             degree.subjects = array_output;
             degree.specializationUnits = out[i].specializationUnits;
             degree.geElectiveUnits = out[i].geElectiveUnits;
             degree.maxThesisIterations = out[i].maxThesisIterations;
-            // console.log(degree);
+
             degreeProgram.push(degree);
+            
             fs.writeFileSync('./degree.json', JSON.stringify(degreeProgram, null, 2) , 'utf-8');
         }
         return degreeProgram;
@@ -63,8 +61,15 @@ const go = async (name) => {
         console.log(e);
     }
 }
-    
-go("BACA");
+
+go("BSACHM");
+
+// const go2 = async () => {
+//     degree = await go("BSACHM");
+//     console.log(degree);
+// }
+
+// go2();
 // console.log(program);
 
 // fs.readFile(program, 'utf8', function(err, data) {
