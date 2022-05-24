@@ -1,6 +1,6 @@
 [
   {
-    "_id": "628bb27b9410d985917450bc",
+    "_id": "628c25c6c984cbbc7c7f6ceb",
     "name": "BSSTAT",
     "major": "SP",
     "subjects": [
@@ -267,12 +267,6 @@
       {
         "code": [
           "STAT 183"
-        ],
-        "units": 3
-      },
-      {
-        "code": [
-          "STAT 190"
         ],
         "units": 3
       },

@@ -1,6 +1,6 @@
 [
   {
-    "_id": "6287c38e1a997042c479a2de",
+    "_id": "628c27ec3636097a889e2484",
     "name": "BSACHM",
     "major": "Thesis",
     "subjects": [
@@ -240,7 +240,7 @@
         "code": [
           "CHEM 161A"
         ],
-        "units": 4
+        "units": 3
       },
       {
         "code": [
@@ -346,7 +346,7 @@
       },
       {
         "code": [
-          "CHEM 171"
+          "AGRI 171"
         ],
         "units": 3
       },
