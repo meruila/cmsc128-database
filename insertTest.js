@@ -45,99 +45,209 @@ var ObjectId = require('mongodb').ObjectId;
 // add required subjects, and change specializationUnits to 0 since they are
 // explicitly stated in the curricula.
 
-const degree = {
-	'name': 'BSBIO',
-	'major': 'Thesis',
-	'subjects': [
-		[ObjectId("62728cc3591bd41f02539493")],
-		// CHEM 18
-		[ObjectId("62729007ab87167c1fc0cb81")],
-		//MATH 25
-		[ObjectId("62728cc3591bd41f02539495")],
-		//MCB 11
-		[ObjectId("626d42befee24c0a7a8e9310"),
-		// KAS 1
-		ObjectId("626d42befee24c0a7a8e9311")],
-		// HIST 1
-		[ObjectId("626d42befee24c0a7a8e930d")],
-		// ARTS 1
-		[ObjectId("626d42befee24c0a7a8e9312")],
-		// STS 1
-		[ObjectId("626d44d7eb3a38230c7a3e76")],
-		// HK 11
-		[ObjectId("62728df25f73ec537aa62c22")],
-		//BIO 11.1
-		[ObjectId("62728cc3591bd41f02539494")],
-		// CHEM 18.1
-		[ObjectId("62728d04ecce07f44e4d175a")],
-		//BIO 30
-		[ObjectId("626d42befee24c0a7a8e9313")],
-		// PI 10
-		[ObjectId("626d44d7eb3a38230c7a3e7a"),
-		// HK 12
-		ObjectId("626d44d7eb3a38230c7a3e7b")],
-		// HK 13
-		[ObjectId("62729007ab87167c1fc0cb82")],
-		//CHEM 40
-		[ObjectId("62729007ab87167c1fc0cb83")],
-		//CHEM 40.1
-		[ObjectId("62729007ab87167c1fc0cb84")],
-		//BIO 14
-		[ObjectId("62729007ab87167c1fc0cb85")],
-		//BOT 14
-		[ObjectId("62729007ab87167c1fc0cb86")],
-		//ZOO 14
-		[ObjectId("62729007ab87167c1fc0cb87")],
-		//CHEM 160
-		[ObjectId("62729007ab87167c1fc0cb88")],
-		//BIO 150
-		[ObjectId("626d44d7eb3a38230c7a3e81")],
-		// NSTP 1
-		[ObjectId("62728e10280e1499e84e2233")],
-		//PHYS 51
-		[ObjectId("62728e10280e1499e84e2234")],
-		//PHYS 51.1
-		[ObjectId("627290194e19b2ffd466b9cd")],
-		//BIO 101
-		[ObjectId("627290194e19b2ffd466b9ce")],
-		//CHEM 160.1
-		[ObjectId("627290194e19b2ffd466b9cf")],
-		//BIO 140
-		[ObjectId("627290194e19b2ffd466b9d0")],
-		//ABME 10
-		[ObjectId("626d44d7eb3a38230c7a3e85")],
-		// NSTP 2
-		[ObjectId("627290194e19b2ffd466b9d1")],
-		//STAT 164
-		[ObjectId("627290194e19b2ffd466b9d2")],
-		//BIO 120
-		[ObjectId("627290194e19b2ffd466b9d3")],
-		//BIO 142
-		[ObjectId("626d42befee24c0a7a8e930e")],
-		// COMM 10
-		[ObjectId("627290194e19b2ffd466b9d4")],
-		// BIO 195
-		[ObjectId("627290194e19b2ffd466b9d5")],
-		//BIO 127
-		[ObjectId("626d42befee24c0a7a8e930f")],
-		// ETHICS 1
-		[ObjectId("628132c30a2229912b1b909f")],
-		//BIO 198
-		[ObjectId("62728606f5ec17dac940459d")],
-		// COMA 150
-		[ObjectId("627290194e19b2ffd466b9d6")],
-		// BIO 199
-		[ObjectId("627290194e19b2ffd466b9d7")]
-		// BIO 200
+const degree6 = {
+	"name" : "BSACHM",
+	"major" : "Thesis",
+	"subjects" : [
+		[
+			ObjectId("62728cc3591bd41f02539493")
+		],
+		[
+			ObjectId("62728cc3591bd41f02539494")
+		],
+		[
+			ObjectId("62728cc3591bd41f02539495")
+		],
+		[
+			ObjectId("62728cc3591bd41f02539496")
+		],
+		[
+			ObjectId("626d42befee24c0a7a8e930f")
+		],
+		[
+			ObjectId("626d42befee24c0a7a8e9311"),
+			ObjectId("626d42befee24c0a7a8e9310")
+		],
+		[
+			ObjectId("626d44d7eb3a38230c7a3e76")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1758")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1759")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d175a")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d175b")
+		],
+		[
+			ObjectId("626d42befee24c0a7a8e930d")
+		],
+		[
+			ObjectId("626d44d7eb3a38230c7a3e7a"),
+			ObjectId("626d44d7eb3a38230c7a3e7b")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d175c")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d175d")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d175e")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d175f")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1760")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1761"),
+			ObjectId("62728d04ecce07f44e4d1762")
+		],
+		[
+			ObjectId("626d42befee24c0a7a8e9313")
+		],
+		[
+			ObjectId("626d44d7eb3a38230c7a3e81")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1763")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1764")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1765")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1766")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1767")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1768")
+		],
+		[
+			ObjectId("62728748ad94f0ad06fe971f")
+		],
+		[
+			ObjectId("626d44d7eb3a38230c7a3e85")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1769")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d176a")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d176b")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d176c")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d176d"),
+			ObjectId("62728d04ecce07f44e4d176e")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d176f")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1770")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1771")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1772")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1773")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1774")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1775")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1776")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1777")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1778")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1779")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d177a")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d177b")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d177c")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d177d")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d177e")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d177f")
+		],
+		[
+			ObjectId("626d42befee24c0a7a8e930e")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1780")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1781")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1782")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1783")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1784")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1785")
+		],
+		[
+			ObjectId("626d42befee24c0a7a8e9312")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1786")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1787")
+		],
+		[
+			ObjectId("62728d04ecce07f44e4d1788")
+		]
 	],
-	'specializationUnits': 33,
-	'geElectiveUnits': 9,
-	'maxThesisIterations': 9,
+	"specializationUnits" : 15,
+	"geElectiveUnits" : 9,
+	"maxThesisIterations" : 3
 };
 
 const go = async () => {
 	try {
-		let res = await Degree.create(degree);
+		let res = await Degree.create(degree6);
 		console.log(res);
 		console.log('Inserted degree program');
 	} catch (e) {
