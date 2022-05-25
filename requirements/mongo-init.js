@@ -6,13 +6,11 @@ async function main() {
   try {
     await client.connect();
     const db = await client.db("shac-database");
-    await db.createCollection("admin");
-    await db.createCollection("user");
+    await db.createCollection("curriculum");
+    await db.createCollection("log");
     await db.createCollection("student-record");
-    await db.createCollection("degree-program");
-    await db.createCollection("semester");
-    await db.createCollection("course");
-    await db.createCollection("ge-electives");
+    await db.createCollection("subject");
+    await db.createCollection("user");
   } catch (err) {
     console.error(err);
   } finally {
