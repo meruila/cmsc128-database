@@ -189,6 +189,10 @@ exports.demoteToRegular = async (email) => {
     }   
 }
 
+/*
+Given an email, this gets the profile.
+Returns null/user details.
+*/
 exports.getProfile = async (email) => {
     try{
         let user = await User.findOne({ 'user.email': email });
@@ -207,34 +211,26 @@ exports.getProfile = async (email) => {
     }  
 }
 
-// exports.editUser = async (email) => {
-//     try{
-//         let res = await User.updateOne(
-//             { 'user.email': email },
-//             { $set: {
-//                 'user.name.fname':"",
-//                 'user.name.lname':"",
-//                 'user.password':""
-//             }}
-//         );
+/*
+Given an email, user's first and last name are updated.
+Returns true/false.
+*/
+exports.editUser = async (email,fname,lname) => {
+    try{
+        let res = await User.updateOne(
+            { 'user.email': email },
+            { $set: {
+                'user.name.fname':fname,
+                'user.name.lname':lname,
+            }}
+        );
 
-//         if(res.modifiedCount <= 0){
-//             return false;
-//         }else {
-//             return true;
-//         }        
-//     } catch(err){
-//         throw(err);
-//     }   
-// }
-
-// ( { title: "Tag" },
-// {
-//   $set: {
-//     plot: "One month every year, five highly competitive friends
-//            hit the ground running for a no-holds-barred game of tag"
-//   }
-//   { $currentDate: { lastUpdated: true } }
-// })
-
-
+        if(res.modifiedCount <= 0){
+            return false;
+        }else {
+            return true;
+        }        
+    } catch(err){
+        throw(err);
+    }   
+}
