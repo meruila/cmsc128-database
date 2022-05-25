@@ -185,7 +185,7 @@
         "code": [
           "PHLO 190"
         ],
-        "units": 6
+        "units": 3
       },
       {
         "code": [
@@ -202,6 +202,12 @@
       {
         "code": [
           "PHLO 185"
+        ],
+        "units": 3
+      },
+      {
+        "code": [
+          "PHLO 190"
         ],
         "units": 3
       }

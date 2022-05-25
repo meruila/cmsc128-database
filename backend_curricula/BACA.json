@@ -215,6 +215,12 @@
           "HUM 170"
         ],
         "units": 3
+      },
+      {
+        "code": [
+          "COMA 200A"
+        ],
+        "units": 3
       }
     ],
     "specializationUnits": 39,
