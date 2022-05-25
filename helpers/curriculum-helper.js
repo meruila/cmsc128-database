@@ -1,14 +1,14 @@
 const mongoose = require("mongoose");
-const fs = require("fs");
+// const fs = require("fs");
 var ObjectId = require('mongodb').ObjectId;
 
-mongoose.connect(
-    "mongodb://localhost:27017/shac-database",
-    { useNewUrlParser: true, useUnifiedTopology: true },
-    (err) => {
-      if (err) { console.log(err); }
-      else { console.log("Successfully connected to Mongo DB"); }
-});
+// mongoose.connect(
+//     "mongodb://localhost:27017/shac-database",
+//     { useNewUrlParser: true, useUnifiedTopology: true },
+//     (err) => {
+//       if (err) { console.log(err); }
+//       else { console.log("Successfully connected to Mongo DB"); }
+// });
 
 /*
     curriculum-helper retrieves the curriculum from the database and converts it to array of objects
@@ -17,7 +17,8 @@ mongoose.connect(
 const Subject = require("../models/subject.js");
 const { Degree } = require("../models/curriculum");
 
-const go = async (name) => {
+exports.checkCurriculum = async(name) => {
+// const go = async (name) => {
     try {
         let degreeProgram = []
         const out = await Degree.find({name: name});
@@ -53,7 +54,7 @@ const go = async (name) => {
 
             degreeProgram.push(degree);
             
-            fs.writeFileSync('./degree.json', JSON.stringify(degreeProgram, null, 2) , 'utf-8');
+            // fs.writeFileSync('./degree.json', JSON.stringify(degreeProgram, null, 2) , 'utf-8');
         }
         return degreeProgram;
         
@@ -62,7 +63,7 @@ const go = async (name) => {
     }
 }
 
-go("BSACHM");
+// go("BACA");
 
 // const go2 = async () => {
 //     degree = await go("BSACHM");
