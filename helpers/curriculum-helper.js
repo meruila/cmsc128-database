@@ -1,26 +1,16 @@
 const mongoose = require("mongoose");
-// const fs = require("fs");
 var ObjectId = require('mongodb').ObjectId;
-
-// mongoose.connect(
-//     "mongodb://localhost:27017/shac-database",
-//     { useNewUrlParser: true, useUnifiedTopology: true },
-//     (err) => {
-//       if (err) { console.log(err); }
-//       else { console.log("Successfully connected to Mongo DB"); }
-// });
 
 /*
     curriculum-helper retrieves the curriculum from the database and converts it to array of objects
 */
 
-const Subject = require("../models/subject.js");
-const { Degree } = require("../models/curriculum");
+const Subject = require("../models/subject");
+const Degree = require("../models/curriculum");
 
 exports.checkCurriculum = async(name) => {
-// const go = async (name) => {
     try {
-        let degreeProgram = []
+        let degreeProgram = [];
         const out = await Degree.find({name: name});
         for (let i = 0; i < out.length; i++) {
             let degree = {
@@ -54,7 +44,6 @@ exports.checkCurriculum = async(name) => {
 
             degreeProgram.push(degree);
             
-            // fs.writeFileSync('./degree.json', JSON.stringify(degreeProgram, null, 2) , 'utf-8');
         }
         return degreeProgram;
         
@@ -62,20 +51,3 @@ exports.checkCurriculum = async(name) => {
         console.log(e);
     }
 }
-
-// go("BACA");
-
-// const go2 = async () => {
-//     degree = await go("BSACHM");
-//     console.log(degree);
-// }
-
-// go2();
-// console.log(program);
-
-// fs.readFile(program, 'utf8', function(err, data) {
-
-    // check student.json for new file
-// fs.writeFileSync('./degree.json', JSON.stringify(program, null, 2) , 'utf-8');
-//     console.log(degree)
-// })
