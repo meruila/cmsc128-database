@@ -75,9 +75,11 @@ exports.retrieveStudentRecords = async () => {
 /*
 Returns a single student record.
 */
-exports.viewStudentRecord = async(studentNo) => {
-    try{        
+exports.viewStudentRecord = async(studentNo, email) => {
+    try{     
         const record = await StudentRecord.findOne({studentNo: studentNo});
+
+        await dbLog.saveLog(getCurrentTime(), "Viewed", studentNo, email);
         return record;
     }catch(e){
         console.log(e);
@@ -88,13 +90,13 @@ exports.viewStudentRecord = async(studentNo) => {
 /*
 Given a student number, replace a student record in the database
 */
-exports.editStudentRecord = async(record) => {
+exports.editStudentRecord = async(record, email) => {
     try {
         let buffer = await StudentRecord.findOne({ "studentNo": record.studentNo });
         if (buffer == null) {
             return false; //student does not exist
         }
-        // const studentRecord = new StudentRecord(record);
+        
         await StudentRecord.updateOne({
             studentNo: record.studentNo
         }, {
@@ -108,7 +110,7 @@ exports.editStudentRecord = async(record) => {
                 "GWA": record.GWA
             }
         })
-        
+        await dbLog.saveLog(getCurrentTime(), "Updated", studentNo, email);
         return true;   
     }
     catch(e) {
@@ -120,12 +122,13 @@ exports.editStudentRecord = async(record) => {
 Deletes a student record.
 Returns true if deleted, false if not deleted.
 */
-exports.delStudentRecord = async(studentNo) => {
+exports.delStudentRecord = async(studentNo, email) => {
     try{        
         const res = await StudentRecord.deleteOne({studentNo: studentNo});
         if (res.deletedCount <= 0){
             return false;
         } else {
+            await dbLog.saveLog(getCurrentTime(), "Deleted", studentNo, email);
             return true;
         }    
     }catch(e){
@@ -134,7 +137,7 @@ exports.delStudentRecord = async(studentNo) => {
     }
 }
 
-exports.showSummary = async() => {
+exports.showSummary = async(email) => {
     try {      
         const recs = await StudentRecord.find({});
         if (recs.length == 0) {
@@ -160,6 +163,7 @@ exports.showSummary = async() => {
             }
             records.push(record);
         }
+        await dbLog.saveLog(getCurrentTime(), "Viewed", "Summary", email);
         return records;
 
     } catch(e) {
@@ -187,6 +191,7 @@ exports.affixSign = async(studentNo, email) => {
             return false;
         }
         
+        await dbLog.saveLog(getCurrentTime(), "Signed", studentNo, email);
         // record.verifiedBy.push(user_objectID);
         return true;
     } catch (e) {
@@ -225,6 +230,8 @@ exports.adminRemoved = async(studentNo, email) => {
     if (record.modifiedCount <= 0) {
         return false;
     }
+
+    await dbLog.saveLog(getCurrentTime(), "Unsigned", "All Records", email);
     return true;
 }
 
@@ -239,13 +246,10 @@ exports.removeSign = async(studentNo, email) => {
         )
 
         if (!viewRecord || !user){
-            console.log("email q: ", email);
-            console.log("EMPTY record/user", user);
             return false;
         }
 
         if (viewRecord.verifiedBy.length === 0 || viewRecord.verifiedBy.length > 1) {
-            // console.log("nagkaproblema sa length ni verfied by ", viewRecord.verifiedBy.length);
             return false;
         }
 
@@ -255,10 +259,10 @@ exports.removeSign = async(studentNo, email) => {
                 { $set: { verifiedBy: [] } }
             )
         } else {
-            console.log("hindi ako yung first :((", viewRecord.verifiedBy[0]);
             return false;
         }
         
+        await dbLog.saveLog(getCurrentTime(), "Unsigned", studentNo, email);
         // record.verifiedBy.push(user_objectID);
         return true;
     } catch (e) {
@@ -266,11 +270,12 @@ exports.removeSign = async(studentNo, email) => {
     }
 }
 
-exports.delStudentRecords = async() => {
+exports.delStudentRecords = async(email) => {
     try {
         const records = await recordsCountHelper();
         const toDelete = await StudentRecord.deleteMany();
         if (toDelete.deletedCount == records[0].length) {
+            await dbLog.saveLog(getCurrentTime(), "Deleted", "All Records", email);
             return true;
         } else {
             return false;
@@ -279,8 +284,3 @@ exports.delStudentRecords = async() => {
         throw e;
     }
 }
-
-// db["student-record"].updateOne(
-//     { studentNo: "2019-09876" },
-//     { $push: { verifiedBy: { $each: [ ObjectId("628b8cf74f761e30d07a8cb8"), ObjectId("628cade02f48da2058e6df12") ] } } }
-//  )
