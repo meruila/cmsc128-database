@@ -11,54 +11,37 @@
  *      geElectiveUnits: number of ge elective units to be taken by the user
  *      maxThesisIterations: maximum number of thesis iterations
  *
- *  - GEElectiveSchema:
- *      geElectiveUnits: reference to Subject schema
- *                       list of GE Elective subjects
- *
  ********************************/
 
-const mongoose = require('mongoose');
+ const mongoose = require('mongoose');
 
-// Degree Program Schema
-const DegreeSchema = new mongoose.Schema({
-	name: {
-		type: String,
-		required: true,
-	},
-	major : {
-		type: String
-	},
-	subjects: {
-		type: [[mongoose.ObjectId]],
-		required: true,
-	},
-	specializationUnits: {
-		type: Number,
-		required: true,
-	},
-	geElectiveUnits: {
-		type: Number,
-		required: true,
-	},
-	maxThesisIterations: {
-		type: Number,
-		required: true,
-	},
-},
-	{ collection : 'curriculum' }
-);
+ // Degree Program Schema
+ const DegreeSchema = new mongoose.Schema({
+	 name: {
+		 type: String,
+		 required: true,
+	 },
+	 major : {
+		 type: String
+	 },
+	 subjects: {
+		 type: [[mongoose.ObjectId]],
+		 required: true,
+	 },
+	 specializationUnits: {
+		 type: Number,
+		 required: true,
+	 },
+	 geElectiveUnits: {
+		 type: Number,
+		 required: true,
+	 },
+	 maxThesisIterations: {
+		 type: Number,
+		 required: true,
+	 },
+ },
+	 { collection : 'curriculum' }
+ );
 
-// GE Elective Schema
-const GEElectiveSchema = new mongoose.Schema({
-	geElectives: {
-		type: [mongoose.ObjectId],
-		required: true,
-	},
-},
-	{ collection : 'curriculum' }
-);
-
-const degreeSchema = mongoose.model('degrees', DegreeSchema);
-const geElectiveSchema = mongoose.model('electives', GEElectiveSchema);
-
-module.exports = { 'Degree': degreeSchema, 'GEElective': geElectiveSchema };
+ module.exports = mongoose.model("Degree", DegreeSchema);

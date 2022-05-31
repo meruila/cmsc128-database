@@ -15,8 +15,8 @@
  *          - Subjects Taken        (Array)
  *          - Units                 (String)
  *          - Status                (String)
- *      Verified By                 (Array) (Reference to Admin or User model)
- *      Remarks                     (String)
+ *      Verified By                 (Array)
+ * 
 ********************************/
 
 const mongoose = require("mongoose");       
@@ -90,10 +90,7 @@ const StudentRecord_Schema = new mongoose.Schema({
     },
     
     verifiedBy: {
-        type: [mongoose.ObjectId]
-    },
-    remarks: {
-        type: String
+        type: [String]
     }
 },
 { collection : 'student-record' });
