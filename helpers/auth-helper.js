@@ -29,13 +29,21 @@ Given credentials, save admin to database
 */
 exports.saveAdminUser = async(creds) => {
     try{
-        let buffer = await Admin.findOne({ "user.email": creds.user.email });
+        const buffer = await Admin.findOne({ "user.email": creds.user.email });
         if (buffer != null){
-            return false; // admin already exists
-        }
-        const userAdmin = new Admin(creds);
-        await userAdmin.save();
-        return true;        
+            return false; 
+        }else{
+            const buffer2 = await Admin.findOne({"user.role":"admin"})
+            console.log(buffer2);
+            if(buffer2 != null){
+                return false;
+            }else{
+                const userAdmin = new Admin(creds);
+                await userAdmin.save();
+                return true; 
+            }
+        }       
+        return false;
     }
     catch(err){
         throw err;
@@ -230,6 +238,17 @@ exports.editUser = async (email,fname,lname) => {
         }else {
             return true;
         }        
+    } catch(err){
+        throw(err);
+    }   
+}
+
+exports.editPassword = async (email, password) => {
+    try{
+        let user = await User.findOne({ 'user.email': email });
+        user.user.password = password;
+        await user.save();
+        return true; 
     } catch(err){
         throw(err);
     }   
