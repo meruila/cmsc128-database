@@ -4,6 +4,9 @@ const User = require("../models/regular-user");
 const dbLog = require("./log-helper")
 var ObjectId = require('mongodb').ObjectId;
 
+/*
+Returns a string containing the current date and time.
+*/
 const getCurrentTime = () => {
     var today = new Date();
     var date = (today.getMonth()+1)+'-'+today.getDate()+'-'+today.getFullYear();
@@ -14,7 +17,7 @@ const getCurrentTime = () => {
 
 /*
 Given a student number, save a student record to database
-TODO: send reasons why student record was not saved
+Returns a list of saved and rejected student records with their corresponding reasons.
 */
 exports.saveRecord = async(recs, email) => {
     let savedList = [];
@@ -49,6 +52,7 @@ exports.saveRecord = async(recs, email) => {
 
             let studentDocument = new StudentRecord(studentRecord);
             await studentDocument.save();
+            // Log that the student record is saved in the system
             await dbLog.saveLog(nowTime, "Added", record.studentNo, email);
             savedList.push(recs[i].filename);
         }
@@ -64,7 +68,7 @@ Returns [] if there is no record found
 */
 exports.retrieveStudentRecords = async () => {
     try{        
-        const recs = await StudentRecord.find({}).select({_id:0, studentNo: 1, name:1, course:1});
+        const recs = await StudentRecord.find({}).select({_id:0, studentNo: 1, name:1, course:1, verifiedBy:1});
         return recs;
     }catch(e){
         console.log(e);
@@ -78,7 +82,7 @@ Returns a single student record.
 exports.viewStudentRecord = async(studentNo, email) => {
     try{     
         const record = await StudentRecord.findOne({studentNo: studentNo});
-
+        // Log that the student record is viewed by a user
         await dbLog.saveLog(getCurrentTime(), "Viewed", studentNo, email);
         return record;
     }catch(e){
@@ -107,10 +111,12 @@ exports.editStudentRecord = async(record, email) => {
                 "records": record.records,
                 "totalUnitsTaken": record.totalUnitsTaken,
                 "totalUnitsRequired": record.totalUnitsRequired,
-                "GWA": record.GWA
+                "GWA": record.GWA,
+                "remarks": record.remarks
             }
         })
-        await dbLog.saveLog(getCurrentTime(), "Updated", studentNo, email);
+        // Log that the student record is edited by a user
+        await dbLog.saveLog(getCurrentTime(), "Updated", record.studentNo, email);
         return true;   
     }
     catch(e) {
@@ -119,8 +125,8 @@ exports.editStudentRecord = async(record, email) => {
 }
 
 /*
-Deletes a student record.
-Returns true if deleted, false if not deleted.
+Given a student number and an admin email, delete a student records.
+Admin only function.
 */
 exports.delStudentRecord = async(studentNo, email) => {
     try{        
@@ -137,9 +143,13 @@ exports.delStudentRecord = async(studentNo, email) => {
     }
 }
 
+/*
+Returns all completely verified student records (i.e. signed by two users) sorted by GWA
+*/
 exports.showSummary = async(email) => {
-    try {      
-        const recs = await StudentRecord.find({});
+    try {
+        // finds all student records, sorted by GWA      
+        const recs = await StudentRecord.find({}).sort({GWA:1});
         if (recs.length == 0) {
             return recs;
         }
@@ -163,6 +173,7 @@ exports.showSummary = async(email) => {
             }
             records.push(record);
         }
+        // Log that the summary is viewed by a user
         await dbLog.saveLog(getCurrentTime(), "Viewed", "Summary", email);
         return records;
 
@@ -172,6 +183,9 @@ exports.showSummary = async(email) => {
     }
 }
 
+/*
+Given a student number and a user email, sign a student record.
+*/
 exports.affixSign = async(studentNo, email) => {
     try {
         const viewRecord = await StudentRecord.findOne(
@@ -190,9 +204,9 @@ exports.affixSign = async(studentNo, email) => {
         if (record === null) {
             return false;
         }
-        
+
+        // Log that the summary is signed by a user
         await dbLog.saveLog(getCurrentTime(), "Signed", studentNo, email);
-        // record.verifiedBy.push(user_objectID);
         return true;
     } catch (e) {
         throw e;
@@ -200,6 +214,9 @@ exports.affixSign = async(studentNo, email) => {
     
 }
 
+/*
+Returns a list of all student records and all completely verified student records
+*/
 recordsCountHelper = async() => {
     try {
         const allStudentRecords = StudentRecord.find();
@@ -211,6 +228,9 @@ recordsCountHelper = async() => {
     }
 }
 
+/*
+Returns the number of all student records and all completely verified student records
+*/
 exports.recordsCount = async() => {
     try{
         const records = await recordsCountHelper();
@@ -221,6 +241,10 @@ exports.recordsCount = async() => {
         
 }
 
+/*
+Given a student number and an admin email, remove all signatories in the student record.
+Admin only function.
+*/
 exports.adminRemoved = async(studentNo, email) => {
     const record = await StudentRecord.updateOne(
         { studentNo: studentNo },
@@ -231,10 +255,16 @@ exports.adminRemoved = async(studentNo, email) => {
         return false;
     }
 
-    await dbLog.saveLog(getCurrentTime(), "Unsigned", "All Records", email);
+    // Log that the student record is unsigned by a user
+    await dbLog.saveLog(getCurrentTime(), "Unsigned", studentNo, email);
     return true;
 }
 
+/*
+Given a student number and an email, unsign their verification of the student record.
+A student record can only be unsigned if the user was the first to sign the record.
+If the user was the second person to sign, unsigning can only be done by an admin (see adminRemoved).
+*/
 exports.removeSign = async(studentNo, email) => {
     try {
         const viewRecord = await StudentRecord.findOne(
@@ -262,19 +292,25 @@ exports.removeSign = async(studentNo, email) => {
             return false;
         }
         
+        // Log that the student record is unsigned by a user
         await dbLog.saveLog(getCurrentTime(), "Unsigned", studentNo, email);
-        // record.verifiedBy.push(user_objectID);
+        
         return true;
     } catch (e) {
         throw e;
     }
 }
 
+/*
+Given an admin email, delete all student records.
+Admin only function.
+*/
 exports.delStudentRecords = async(email) => {
     try {
         const records = await recordsCountHelper();
         const toDelete = await StudentRecord.deleteMany();
         if (toDelete.deletedCount == records[0].length) {
+            // Log that all student records are deleted by an admin
             await dbLog.saveLog(getCurrentTime(), "Deleted", "All Records", email);
             return true;
         } else {

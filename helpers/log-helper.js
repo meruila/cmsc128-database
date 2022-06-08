@@ -1,14 +1,93 @@
 const mongoose = require("mongoose");
 
-const Admin = require("../models/admin");
 const User = require("../models/regular-user");
 const Record = require("../models/student-record");
 const Log = require("../models/log");
 
-exports.addLog = async (log) => {
+/*
+Returns a string containing the current date and time.
+*/
+const getCurrentTime = () => {
+    var today = new Date();
+    var date = (today.getMonth()+1)+'-'+today.getDate()+'-'+today.getFullYear();
+    var time = today.getHours() + ":" + today.getMinutes();
+    var dateTime = date+' '+time;
+    return dateTime;
+}
+
+/*
+Returns an array of existing logs in the system.
+*/
+const logsCountHelper = async() => {
+    try {
+        const allLogs = Log.find();
+        return Promise.all([allLogs]);
+    } catch (e) {
+        throw e;
+    }
+}
+
+exports.logCount = logsCountHelper;
+
+/*
+Given an email, return a string containing the first and last name of the user.
+*/
+findUserName = async(email) => {
+    let name = "";
+    let toFind = await User.findOne({ "user.email": email });
+    name += toFind.first + " " + toFind.last;
+    return name;
+}
+
+/*
+Delete oldest 250 (countDeleted) logs.
+*/
+const deleteOldLogs = async () => { 
+    try {
+        let countDeleted = 250;
+        let toDelete = await Log.find({}, {_id : 1}).limit(countDeleted).sort({})
+        let buffer = await Log.deleteMany({_id: {$in: toDelete}});
+        return true; 
+    } catch (e) {
+        throw e;
+    }
+    
+}
+
+/*
+When the system reaches 500 logs (threshold), call deleteOldLogs()
+*/
+const autoDeleteHelper = async () => {
+    let threshold = 500;
+    const logs = await logsCountHelper();
+    if(logs[0].length > threshold) {
+        await deleteOldLogs();
+        return "deleted";
+    }else{
+        return "did not delete";
+    }
+}
+
+/*
+Given the current time, type of action*, student number, and email of a user, save the log.
+Also checks if the system needs to delete old logs.
+
+* Examples of action types: view/edit/delete student record, view summary
+*/
+const saveLogHelper = async (currentTime, msg, studNum, email) => {
     try{
-        const newLog = new Log(log);
-        await newLog.save();
+        
+        let newLog = {
+            time: currentTime,
+            description: msg,
+            recordNumber: studNum,
+            editorEmail: email
+        }
+
+        const logDocument = new Log(newLog);
+        await logDocument.save();  
+        await autoDeleteHelper();
+
         return true;
     }
     catch (e){
@@ -17,10 +96,25 @@ exports.addLog = async (log) => {
     }
 }
 
+exports.saveLog = saveLogHelper;
+
+/*
+Returns all logs in the system
+*/
 exports.viewAllLogs = async () => {
     try {
         const logs = await Log.find();
-        return logs;
+        let formattedLogs = [];
+        for (i in logs) {
+            log = {
+                time: logs[i].time,
+                description: logs[i].description,
+                recordNumber: logs[i].recordNumber,
+                editorName: logs[i].editorEmail
+            }
+            formattedLogs.push(log);
+        }
+        return formattedLogs;
     }
     catch(e) {
         console.log(e);
@@ -28,62 +122,20 @@ exports.viewAllLogs = async () => {
     }    
 }
 
-exports.viewLogsByUser = async (email) => {
+/*
+Deletes all logs. Admin only function.
+*/
+exports.delAllLogs = async(email) => {
     try {
-        let log_editor = {};
-        // look in admin collection
-        const buffer_1 = await Admin.findOne({user.email: email});
-        if (userAdmin != null) {
-            editor = buffer_1;
+        const logs = await logsCountHelper();
+        const toDelete = await Log.deleteMany();
+        if (toDelete.deletedCount == logs[0].length) {
+            await saveLogHelper(getCurrentTime(), "Cleared Previous Logs", "N/A", email);
+            return true;
+        } else {
+            return false;
         }
-
-        else{
-            // else, look in user collection
-            const buffer_2 = await User.findOne({user.email: email});
-            if (buffer_2 != null) {
-                editor = buffer_2;
-            }
-            else{
-                throw "User Not Found!";
-            }
-        }
-
-        logs = await Log.find({editor: log_editor._id});
-        if (logs != null) {
-            return logs;
-        }
-        else{
-            throw "No Existing Log/s";
-        }
-
-
-    }
-    catch (e){
-        console.log(e);
-        return false;
-    }
-}
-
-exports.viewLogsByStudRecord = async (student_No) => {
-    try {
-        // look in student record collection
-        const stud_record = await Record.findOne({studentNumber: student_No});
-        if (stud_record == null) {
-            throw "Student Record Not Found!"
-        }
-
-        logs = await Log.find({record: stud_record._id});
-        if (logs != null) {
-            return logs;
-        }
-        else{
-            throw "No Existing Log/s";
-        }
-
-
-    }
-    catch (e){
-        console.log(e);
-        return false;
+    } catch (e) {
+        throw e;
     }
 }

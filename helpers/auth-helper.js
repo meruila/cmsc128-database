@@ -25,6 +25,23 @@ exports.findUser = async (email) => {
 }
 
 /*
+Check if there is an admin in the database
+*/
+exports.adminInDB = async() => {
+    try {
+        const buffer = await Admin.findOne({"user.role":"admin"});
+        if (buffer == null) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+    catch (err) {
+        throw err;
+    }
+}
+
+/*
 Given credentials, save admin to database
 */
 exports.saveAdminUser = async(creds) => {
@@ -34,7 +51,6 @@ exports.saveAdminUser = async(creds) => {
             return false; 
         }else{
             const buffer2 = await Admin.findOne({"user.role":"admin"})
-            console.log(buffer2);
             if(buffer2 != null){
                 return false;
             }else{
@@ -243,6 +259,10 @@ exports.editUser = async (email,fname,lname) => {
     }   
 }
 
+/*
+Given an email and a new password, user's old password is updated.
+Returns true if the new password is saved.
+*/
 exports.editPassword = async (email, password) => {
     try{
         let user = await User.findOne({ 'user.email': email });
