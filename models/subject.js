@@ -5,10 +5,6 @@
  *      code: course code of the subject (String)
  *      units: specified number of units for the subject (Number)
  * 
- * NOTE:
- *      The Subject schema will be used on a Student Record's taken-subject and on the Degree Program
- *      of a Curriculum.
- * 
  */
 
 const mongoose = require('mongoose');

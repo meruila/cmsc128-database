@@ -13,11 +13,6 @@
  const bcrypt = require('bcrypt');
  
  
- // We can also write the subdocument on a separate file like here:
- //  https://stackoverflow.com/questions/25880589/how-can-i-separate-mongoose-subdocument-into-seperate-files
- // So we can utilize the code reuse for both admin and regular-user.
- // I'm not sure if under ng models ba talaga ilalagay yun or sa helpers or utils folder, if ever.
- 
  const AdminSchema = new mongoose.Schema({
    // -- Start user info subdocument
    user: {

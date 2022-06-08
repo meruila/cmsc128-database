@@ -2,20 +2,21 @@
  * 
  * STUDENT RECORD SCHEMA
  * Attributes:
- *      Name
- *          - first                 (String)
+ *      name
  *          - last                  (String)
- *      Student Number              (String)
- *      Degree Program              (Reference to Degree model)
+ *          - first                 (String)
+ *      course                      (String)
+ *      studentNo                   (String)
  *      Total Units Taken           (String)
  *      GWA                         (String)
- *      Records                     (Array)
- *          - Semester              (String)
- *          - Academic Year         (String)
- *          - Subjects Taken        (Array)
- *          - Units                 (String)
- *          - Status                (String)
- *      Verified By                 (Array)
+ *      records                     (Array of Semesters)
+ *          - sem                   (String)
+ *          - year                  (String)
+ *          - subjects              (Array)
+ *          - units                 (String)
+ *          - status                (String)
+ *      verifiedBy                  (Array of String)
+ *      remarks                     (Array of String)
  * 
 ********************************/
 
@@ -61,7 +62,6 @@ const StudentRecord_Schema = new mongoose.Schema({
     course: {                              
         type: String,                  
         required: true,
-        // ref: 'Degree'
     },
     studentNo : {
         type: String,                               
@@ -89,7 +89,13 @@ const StudentRecord_Schema = new mongoose.Schema({
         required: true
     },
     
+    // emails of users that signed the student record
     verifiedBy: {
+        type: [String]
+    },
+
+    // comments of users on the student record
+    remarks: {
         type: [String]
     }
 },
